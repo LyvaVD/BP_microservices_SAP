@@ -1,0 +1,74 @@
+%---------- Inleiding ---------------------------------------------------------
+
+\section{Introductie} % The \section*{} command stops section numbering
+\label{sec:introductie}
+
+Hoe Microservice integration patterns een order to cash proces in SAP beinvloedt. Dit onderwerp werd gekozen omdat deze nieuwe technology een interessante invloed kan hebben op de order-to-cash proces. Dit is een manier om connecties te maken met de databank. In de meeste software wordt gebruik gemaakt van één grote databank of meerdere databanken die in staan zijn om meerde services te voorzien van data. Bij microservice integration patterns wordt voor elke service een aparte databank opgesteld. Niet voor elke kleine service kan een aparte databank gemaakt worden. De kost zou hoog kunnen oplopen. Er worden meestal grote stukken opgedeeld in kleinere. Dit heeft als voordeel om de performantie te verhogen. Maar de belangrijkste vraag is namelijk: Hoe microservice integration patterns een order-to-cash in SAP beïnvloedt.
+
+%---------- Stand van zaken ---------------------------------------------------
+
+\section{Literatuurstudie}
+\label{sec:state-of-the-art}
+
+Over het onderwerp "Microservice Integration Patterns on Order-to-Cash proces in SAP", is er nog niets verschenen. De meeste informatie komt uit artikels die meer uitleg geven over microservices en artikels met een uitgebreide beschrijving over wat order-to-cash inhoudt.
+
+\subsection{Waarom microservices gebruiken} 
+In het artikel van ~\cite{Gunaratne2017} werd besproken hoe je een microservice werkt. En waarom deze gebruikt worden. Volgens dit artikel zijn microservices een goede, nieuwe techniek die op lange termijn huidige SOA's kan vervangen. 
+
+~\cite{AlAtrash2018} beschrijft waarom je deze techniek kunt gebruiken, in de plaats van de kleinere SOA-services. Ook hier wordt verwezen naar de belangrijkheid van de requirements van de business. Door de grootte van deze services, is er de mogelijkheid om te caching. 
+
+~\cite{devoteam2018} legt uit waarom microservices een kleine-SOA is. Een microservice omvat bepaalde, aanvullende, concepten omliggend deze 'kleinere services' en dit is waar ze beginnen met aantonen van de verschillen.
+
+Is de integratie van microservices wel mogelijk? Deze vraag beantwoordt door ~\cite{VanBart2018}. Software wordt meestal nog geimplementeerd in de 3-tiers manier. Ook wel monolithic genoemd. De applicatie is uit een alleenstaande unit gemaakt. Eén verandering heeft een impact op de volledige applicatie. Is dit dan een geldige reden om voor microservices te kiezen? Dat hangt af van wat je applicatie percies nodig heeft. Niet alle applicaties worden er beter van om een microservice te implementeren. Een microservice  bestaat er uit om op zichzelf te werken. Dit wordt uitgelegd in het volgende deel.
+
+\subsection{Principes voor Microservices Integration}
+
+De principes van microservices integration werden uitgelegd in volgend artikel ~\cite{Aradhye2018}.
+In het artikel wordt op een duidelijke manier uitgelegd hoe microservices worden gebruikt. Microservices worden het best opgesteld aan de hand van business units. Een microservice wordt benaderd vanuit de business requirements. Deze hebben, volgens dit artikel, een betere performantie dan de huidig gebruikte techniek. Microservices worden opgedeeld in verschillende klasses. Bijvoorbeeld:
+\begin{itemize}
+	\item één voor klantendata
+	\item één voor bestellingen
+	\item één voor "wil-ik" lijsten
+\end{itemize}
+
+De belangrijkste eigenschappen van microservices zijn:
+\begin{itemize}
+	\item Microservice bestaat uit meerdere componenten
+	\item Gemaakt voor de business
+	\item Microservice maakt gebruik van simpele routing
+	\item Een microservice is gedecentraliseerd
+	\item Een microservice werkt zelfstandig
+\end{itemize}
+
+\subsection{Order-to-cash in SAP}
+Order-to-cash is een van de vele processen in SAP die vast gelegd zijn. Dit proces legt uit hoe men van een bestelling naar de inning van het geld gaat. Er zijn verschillende versies van hoe het proces gaat. Volgens ~\cite{Akhtar2018} verloopt het proces als volgt: er wordt een order geplaatst dan wordt die bestelling geleverd, daarna wordt er een factuur opgesteld en als laatste wordt het geld geind. Het proces op zich is niet ingewikkeld. ~\cite{OpenSAPOrderToCash2018} geeft veel meer uitleg over wat er achter de schermen gebeurd. Bij dit proces wordt de financiële kant van SAP aangesproken, ook de verkoop en distributie alsook de stock worden aangesproken. Een gedetailleerder proces houdt in dat er een sales order gemaakt wordt. Dan wordt de stock bekeken. Afhankelijk van de beschikbaarheid van de goederen kan er een levering gepland worden. Zijn de goederen beschikbaar, dan kan er na de planning van de levering, effectief geleverd worden. Als volgt wordt er een factuur opgemaakt. Als laatste komt dan het betalingsproces. 
+
+% Voor literatuurverwijzingen zijn er twee belangrijke commando's:
+% \autocite{KEY} => (Auteur, jaartal) Gebruik dit als de naam van de auteur
+%   geen onderdeel is van de zin.
+% \textcite{KEY} => Auteur (jaartal)  Gebruik dit als de auteursnaam wel een
+%   functie heeft in de zin (bv. ``Uit onderzoek door Doll & Hill (1954) bleek
+%   ...'')
+
+%---------- Methodologie ------------------------------------------------------
+\section{Methodologie}
+\label{sec:methodologie}
+In dit werk gaan we onderzoeken hoe we Microservices kunnen integreren in SAP. De services die ze nu gebruiken vergelijken met microservices. Kunnen microservices de werking van SAP versnellen en performanter maken bij fouten?
+Eerst willen we het volledige systeem van SAP en microservices los van elkaar begrijpen. Daarna gaan we alles opdelen in kleinere services om die dan te implementeren in het gekozen pattern. Er zal uitgebreid getest worden. Ook op performantie wordt er grondig getest. Hoe zullen de andere services reageren wanneer er één uitvalt. De gekozen methode is opzetten en testen. 
+Het onderzoek zal uitwijzen of microservices een goede keuze is voor grote, complexe software pakketten. 
+Er zal ook onderzocht worden wat de impact is op de reactiesnelheid van de services.
+
+
+%---------- Verwachte resultaten ----------------------------------------------
+\section{Verwachte resultaten}
+\label{sec:verwachte_resultaten}
+De microservices zouden moeten zorgen voor een stabielere applicatie. Microservices zijn "Designed for failure". Ook zou er uit dit project moeten komen dat andere microservices blijven draaien bij het uitvallen van één ervan.
+Ik denk dat voor sommige delen van SAP deze techniek een verbetering kan zijn. Maar alles in microservices omzetten is te complex. Bij enkele microservices zal ook de kost berekend worden.  
+
+
+%---------- Verwachte conclusies ----------------------------------------------
+\section{Verwachte conclusies}
+\label{sec:verwachte_conclusies}
+
+De conclusie die we uit dit onderzoek  kunnen trekken: microservices integration patterns zijn voordeliger en gebruiksvriendelijker dan het huidige systeem is voor de mensen die de software gaan gebruiken. Bij fouten aan een service, zal het platform nog beschikbaar zijn. Het risico is wel dat door de relatief nieuwe techniek, er enkele dingen niet zullen lopen zoals we zouden willen. Het is mogelijk dat we maar tot een gedeeltelijke conclusie komen.
+
