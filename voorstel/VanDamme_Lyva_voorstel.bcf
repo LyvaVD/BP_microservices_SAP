@@ -2122,15 +2122,16 @@
   <!-- SECTION 0 -->
   <bcf:bibdata section="0">
     <bcf:datasource type="file" datatype="bibtex">voorstel.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">voorstel.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">Gunaratne2017</bcf:citekey>
-    <bcf:citekey order="2">AlAtrash2018</bcf:citekey>
+    <bcf:citekey order="1">Gunaratne2018</bcf:citekey>
+    <bcf:citekey order="2">Atrash2018</bcf:citekey>
     <bcf:citekey order="3">devoteam2018</bcf:citekey>
     <bcf:citekey order="4">VanBart2018</bcf:citekey>
-    <bcf:citekey order="5">Aradhye2018</bcf:citekey>
-    <bcf:citekey order="6">Akhtar2018</bcf:citekey>
-    <bcf:citekey order="7">OpenSAPOrderToCash2018</bcf:citekey>
+    <bcf:citekey order="5">Aradheye2018</bcf:citekey>
+    <bcf:citekey order="6">Akthar2018</bcf:citekey>
+    <bcf:citekey order="7">OpenSap2018</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">

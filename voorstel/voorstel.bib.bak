@@ -41,11 +41,4 @@
   year    = {2018},
 }
 
-@Article{VanBart2018,
-  author  = {Van Bart, A.},
-  title   = {Microservices and integration: Doing IT rigth?},
-  journal = {devoteam},
-  year    = {2018},
-}
-
 @Comment{jabref-meta: databaseType:biblatex;}
