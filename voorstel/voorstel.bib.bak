@@ -41,4 +41,39 @@
   year    = {2018},
 }
 
+@Article{VanBart2018,
+  author  = {Van Bart, A.},
+  title   = {Microservices and integration: Doing IT rigth?},
+  journal = {devoteam},
+  year    = {2018},
+}
+
+@Article{Hirsch2018,
+  author = {Dick Hirsch},
+  title  = {SAP Hybris retires YaaS.io - where do SAP microservices go from here?},
+  year   = {2018},
+}
+
+@Article{Kopecz2018,
+  author = {Klaus Kopecz},
+  title  = {Multi-Target Applications, Microservices and APIs},
+  year   = {2018},
+  date   = {2018-01-05},
+}
+
+@Article{CiderBlog2018,
+  author  = {Ciber},
+  title   = {MIcroservices: het einde van de SAP spaghetti?},
+  journal = {cider blog},
+  year    = {2018},
+}
+
+@Article{Spichale2018,
+  author  = {Kai Spichale},
+  title   = {What is wrong with API-first Microservices},
+  journal = {SAP blogs},
+  year    = {2018},
+  date    = {2018-01-21},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
