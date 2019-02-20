@@ -41,6 +41,7 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
+      \field{journaltitle}{SAP}
       \field{title}{What order-to-cash cycle controls in SAP ensure compliance?}
       \field{year}{2018}
     \endentry
@@ -146,6 +147,32 @@
       \field{title}{Wiring Microservices, Integration Microservices \& APIs.}
       \field{year}{2018}
     \endentry
+    \entry{Kyma2019}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=c3d6752305b32e460afe796f12cd8a22}{%
+           family={Kyma},
+           familyi={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{c3d6752305b32e460afe796f12cd8a22}
+      \strng{fullhash}{c3d6752305b32e460afe796f12cd8a22}
+      \strng{bibnamehash}{c3d6752305b32e460afe796f12cd8a22}
+      \strng{authorbibnamehash}{c3d6752305b32e460afe796f12cd8a22}
+      \strng{authornamehash}{c3d6752305b32e460afe796f12cd8a22}
+      \strng{authorfullhash}{c3d6752305b32e460afe796f12cd8a22}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{13}
+      \field{journaltitle}{kyma-project}
+      \field{month}{2}
+      \field{title}{What is kyma?}
+      \field{year}{2019}
+      \field{dateera}{ce}
+    \endentry
     \entry{OpenSap2018}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=d356182c5713a25d6c26ab0fe0184301}{%
@@ -168,6 +195,35 @@
       \field{journaltitle}{Order-to-cash overview}
       \field{title}{Order-to-cash overview}
       \field{year}{2018}
+    \endentry
+    \entry{Semerdzhiev2018}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=0b7f5ae345d980122e0b761fd84dc0f7}{%
+           family={Semerdzhiev},
+           familyi={S\bibinitperiod},
+           given={Karsimir},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0b7f5ae345d980122e0b761fd84dc0f7}
+      \strng{fullhash}{0b7f5ae345d980122e0b761fd84dc0f7}
+      \strng{bibnamehash}{0b7f5ae345d980122e0b761fd84dc0f7}
+      \strng{authorbibnamehash}{0b7f5ae345d980122e0b761fd84dc0f7}
+      \strng{authornamehash}{0b7f5ae345d980122e0b761fd84dc0f7}
+      \strng{authorfullhash}{0b7f5ae345d980122e0b761fd84dc0f7}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{24}
+      \field{journaltitle}{Kyma-project}
+      \field{month}{7}
+      \field{title}{Introducing project Kyma}
+      \field{year}{2018}
+      \field{dateera}{ce}
     \endentry
     \entry{VanBart2018}{article}{}
       \name{author}{1}{}{%
@@ -196,6 +252,7 @@
       \field{year}{2018}
     \endentry
   \enddatalist
+  \missing{CiberBlog2018}
 \endrefsection
 \endinput
 

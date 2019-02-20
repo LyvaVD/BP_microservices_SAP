@@ -3,14 +3,18 @@
 \section{Introductie} % The \section*{} command stops section numbering
 \label{sec:introductie}
 
-Hoe Microservice integration patterns een order to cash proces in SAP beinvloedt. Dit onderwerp werd gekozen omdat deze nieuwe technology een interessante invloed kan hebben op de order-to-cash proces. Dit is een manier om connecties te maken met de databank. In de meeste software wordt gebruik gemaakt van één grote databank of meerdere databanken die in staan zijn om meerde services te voorzien van data. Bij microservice integration patterns wordt voor elke service een aparte databank opgesteld. Niet voor elke kleine service kan een aparte databank gemaakt worden. De kost zou hoog kunnen oplopen. Er worden meestal grote stukken opgedeeld in kleinere. Dit heeft als voordeel om de performantie te verhogen. Maar de belangrijkste vraag is namelijk: Hoe microservice integration patterns een order-to-cash in SAP beïnvloedt.
+Hoe Microservice integration patterns een order to cash proces in SAP beinvloedt. Dit onderwerp werd gekozen omdat deze nieuwe technology een interessante invloed kan hebben op de order-to-cash proces. Dit is een manier om een proces robuuster te maken. In de meeste software wordt gebruik gemaakt van één grote databank of meerdere databanken die in staan zijn om meerde services te voorzien van data. Bij microservice integration patterns wordt voor elke service een aparte databank opgesteld. Dit is maar een klein deeltje van een microservice. De microservices moeten voldoen aan business requirements. SAP zelf heeft ook al veel ondernomen omtrend microservices. Eén van hun oplossingen is Kyma. Maar de belangrijkste vraag is namelijk: Hoe microservice integration patterns een order-to-cash in SAP beïnvloedt. Deze bachelorproef zal voor het grootste deel een theoretische vergelijking zijn. Omdat deze studie als bachelorproef dient, is er maar beperkte tijd en resources om een onderzoek te doen. 
 
 %---------- Stand van zaken ---------------------------------------------------
 
 \section{Literatuurstudie}
 \label{sec:state-of-the-art}
 
-Over het onderwerp "Microservice Integration Patterns on Order-to-Cash proces in SAP", is er nog niets verschenen. De meeste informatie komt uit artikels die meer uitleg geven over microservices en artikels met een uitgebreide beschrijving over wat order-to-cash inhoudt.
+Over het onderwerp "Microservice Integration Patterns on Order-to-Cash proces in SAP", zijn er nauwelijks thesissen te vinden. De meeste informatie komt uit artikels die meer uitleg geven over microservices en artikels met een uitgebreide beschrijving over wat order-to-cash inhoudt.
+Voor wie denkt dat microservices iets nieuws is, zit er een beetje naast. Grote bedrijven zoals Netflix, Twitter, Amazon en facebook maken al gebruik van deze technologie. ~\cite{CiberBlog2018}
+
+\subsection{Wat zijn microservices?}
+Het bouwen van aparte functies/modules met hun eigen interface en methoden. Deze manier van werken is in het voordeel van Agile. Bij Agile wordt er gewerkt met deeltjes software opleveren en opgeleverde software, daar wordt er zo goed als niks meer aan veranderd. Microservices worden onderverdeeld aan de hand van business requirements. Deels zorgen microservices ervoor dat er beter moet worden samengewerkt met de business.
 
 \subsection{Waarom microservices gebruiken} 
 In het artikel van ~\cite{Gunaratne2018} werd besproken hoe je een microservice werkt. En waarom deze gebruikt worden. Volgens dit artikel zijn microservices een goede, nieuwe techniek die op lange termijn huidige SOA's kan vervangen. 
@@ -43,6 +47,10 @@ De belangrijkste eigenschappen van microservices zijn:
 \subsection{Order-to-cash in SAP}
 Order-to-cash is een van de vele processen in SAP die vast gelegd zijn. Dit proces legt uit hoe men van een bestelling naar de inning van het geld gaat. Er zijn verschillende versies van hoe het proces gaat. Volgens ~\cite{Akthar2018} verloopt het proces als volgt: er wordt een order geplaatst dan wordt die bestelling geleverd, daarna wordt er een factuur opgesteld en als laatste wordt het geld geind. Het proces op zich is niet ingewikkeld. ~\cite{OpenSap2018} geeft veel meer uitleg over wat er achter de schermen gebeurd. Bij dit proces wordt de financiële kant van SAP aangesproken, ook de verkoop en distributie alsook de stock worden aangesproken. Een gedetailleerder proces houdt in dat er een sales order gemaakt wordt. Dan wordt de stock bekeken. Afhankelijk van de beschikbaarheid van de goederen kan er een levering gepland worden. Zijn de goederen beschikbaar, dan kan er na de planning van de levering, effectief geleverd worden. Als volgt wordt er een factuur opgemaakt. Als laatste komt dan het betalingsproces. 
 
+\subsection{Kyma}
+Kyma is een open-source project van SAP. Het is vooral gebaseerd op Kubernetes. Op deze manier kan je oplossingen in de Cloud maken. Kyma is special omdat zij zo goed als alle oplossingen op één plek hebben. Zij hebben een application connector. Kyma is serverless. Ze maken service management eenvoudiger. ~\cite{Kyma2019}
+Volgens het artikel van ~\cite{Semerdzhiev2018} is er meer nood aan openheid en een modernere architectuur. Dat is ook de reden waarom Kyma een open source project is. Kyma ondersteund container-based werken (zoals docker) alsook cloud-native apps. 
+
 % Voor literatuurverwijzingen zijn er twee belangrijke commando's:
 % \autocite{KEY} => (Auteur, jaartal) Gebruik dit als de naam van de auteur
 %   geen onderdeel is van de zin.
@@ -53,17 +61,14 @@ Order-to-cash is een van de vele processen in SAP die vast gelegd zijn. Dit proc
 %---------- Methodologie ------------------------------------------------------
 \section{Methodologie}
 \label{sec:methodologie}
-In dit werk gaan we onderzoeken hoe we Microservices kunnen integreren in SAP. De services die ze nu gebruiken vergelijken met microservices. Kunnen microservices de werking van SAP versnellen en performanter maken bij fouten?
-Eerst willen we het volledige systeem van SAP en microservices los van elkaar begrijpen. Daarna gaan we alles opdelen in kleinere services om die dan te implementeren in het gekozen pattern. Er zal uitgebreid getest worden. Ook op performantie wordt er grondig getest. Hoe zullen de andere services reageren wanneer er één uitvalt. De gekozen methode is opzetten en testen. 
-Het onderzoek zal uitwijzen of microservices een goede keuze is voor grote, complexe software pakketten. 
-Er zal ook onderzocht worden wat de impact is op de reactiesnelheid van de services.
+In dit werk gaan we onderzoeken op welke manier microservices een invloed zou kunnen hebben op een order-to-cash proces in SAP. De services die ze nu gebruiken vergelijken met microservices. Kunnen microservices de werking van SAP versnellen en performanter maken bij fouten?
+Eerst willen we het volledige order-to-cash proces verstaan. Dan gaan we gaan onderzoeken welke verschillende mogelijkheden er zijn in verband met microservices. Kyma, PaaS.io of zijn er nog andere die een grote rol kunnen spelen. Ook moet er gekeken worden welke manier van communiceren tussen de microservices het beste is. Voor dit onderzoek zal er veel literatuur studie gedaan worden. 
 
 
 %---------- Verwachte resultaten ----------------------------------------------
 \section{Verwachte resultaten}
 \label{sec:verwachte_resultaten}
-De microservices zouden moeten zorgen voor een stabielere applicatie. Microservices zijn "Designed for failure". Ook zou er uit dit project moeten komen dat andere microservices blijven draaien bij het uitvallen van één ervan.
-Ik denk dat voor sommige delen van SAP deze techniek een verbetering kan zijn. Maar alles in microservices omzetten is te complex. Bij enkele microservices zal ook de kost berekend worden.  
+Naar de al gelezen literatuur kijkende, zou Kyma eigenlijk de beste oplossing moeten zijn. Deze is namelijk zelf afkomstig van SAP. Dit zou een goede oplossing moeten zijn. Maar zijn microservices wel haalbaar in een order-to-cash proces in SAP. Eerst zal dit duidelijk moeten worden vooraleer we gaan kijken naar welke microservice de best mogelijk noden opvult. 
 
 
 %---------- Verwachte conclusies ----------------------------------------------

@@ -1,15 +1,17 @@
 [0] Config.pm:302> INFO - This is Biber 2.11
-[0] Config.pm:305> INFO - Logfile is 'VanDamme_Lyva_voorstel.blg'
-[34] biber-MSWIN64:313> INFO - === 
-[64] Biber.pm:371> INFO - Reading 'VanDamme_Lyva_voorstel.bcf'
-[178] Biber.pm:857> INFO - Found 7 citekeys in bib section 0
-[195] Biber.pm:3976> INFO - Processing section 0
-[211] Biber.pm:4136> INFO - Looking for bibtex format file 'voorstel.bib' for section 0
-[215] bibtex.pm:1500> INFO - LaTeX decoding ...
-[224] bibtex.pm:1316> INFO - Found BibTeX data source 'voorstel.bib'
-[267] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[267] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'variable = shifted' with 'variable = non-ignorable'
-[267] Biber.pm:3804> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'nl-NL'
-[268] Biber.pm:3810> INFO - No sort tailoring available for locale 'nl-NL'
-[275] bbl.pm:617> INFO - Writing 'VanDamme_Lyva_voorstel.bbl' with encoding 'UTF-8'
-[279] bbl.pm:720> INFO - Output to VanDamme_Lyva_voorstel.bbl
+[1] Config.pm:305> INFO - Logfile is 'VanDamme_Lyva_voorstel.blg'
+[106] biber-MSWIN64:313> INFO - === 
+[165] Biber.pm:371> INFO - Reading 'VanDamme_Lyva_voorstel.bcf'
+[484] Biber.pm:857> INFO - Found 10 citekeys in bib section 0
+[513] Biber.pm:3976> INFO - Processing section 0
+[547] Biber.pm:4136> INFO - Looking for bibtex format file 'voorstel.bib' for section 0
+[554] bibtex.pm:1500> INFO - LaTeX decoding ...
+[584] bibtex.pm:1316> INFO - Found BibTeX data source 'voorstel.bib'
+[677] Utils.pm:193> WARN - I didn't find a database entry for 'CiberBlog2018' (section 0)
+[736] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'variable = shifted' with 'variable = non-ignorable'
+[736] UCollate.pm:68> INFO - Overriding locale 'nl-NL' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[737] Biber.pm:3804> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'nl-NL'
+[737] Biber.pm:3810> INFO - No sort tailoring available for locale 'nl-NL'
+[762] bbl.pm:617> INFO - Writing 'VanDamme_Lyva_voorstel.bbl' with encoding 'UTF-8'
+[774] bbl.pm:720> INFO - Output to VanDamme_Lyva_voorstel.bbl
+[774] Biber.pm:110> INFO - WARNINGS: 1
