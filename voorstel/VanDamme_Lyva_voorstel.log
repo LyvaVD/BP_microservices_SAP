@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.20)  20 FEB 2019 22:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.20)  22 FEB 2019 08:05
 entering extended mode
 **./VanDamme_Lyva_voorstel.tex
 (VanDamme_Lyva_voorstel.tex
@@ -1129,7 +1129,14 @@ Package biblatex Info: ... file 'VanDamme_Lyva_voorstel.bbl' found.
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
-(biblatex)                CiberBlog2018
+(biblatex)                \egroup 
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                \global 
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
@@ -1276,27 +1283,36 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 97.
 Package rerunfilecheck Info: File `VanDamme_Lyva_voorstel.out' has not changed.
 
 (rerunfilecheck)             Checksum: FD9ACA75FB2A0A693E1F0C80D7F2BDC7;676.
+
+
+Package biblatex Warning: Please rerun LaTeX.
+(biblatex)                Page breaks have changed.
+
 Package logreq Info: Writing requests to 'VanDamme_Lyva_voorstel.run.xml'.
 \openout1 = `VanDamme_Lyva_voorstel.run.xml'.
 
- ) 
+ )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 48 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 28529 strings out of 492970
- 508120 string characters out of 3127037
- 1121167 words of memory out of 3000000
- 31919 multiletter control sequences out of 15000+200000
- 588834 words of font info for 218 fonts, out of 3000000 for 9000
+ 28528 strings out of 492970
+ 508132 string characters out of 3127037
+ 1121168 words of memory out of 3000000
+ 31918 multiletter control sequences out of 15000+200000
+ 588752 words of font info for 218 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  50i,14n,63p,1134b,3825s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}
-<C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb><C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/he
-lvetic/uhvb8a.pfb><C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-urw/helvetic/uhvr8a.pfb><C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/urw/times/utmb8a.pfb><C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/type1/urw/times/utmr8a.pfb><C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/urw/times/utmri8a.pfb>
-Output written on VanDamme_Lyva_voorstel.pdf (3 pages, 180937 bytes).
+{C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvip
+s/base/8r.enc}<C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb><C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/urw/helvetic/uhvb8a.pfb><C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Users/Lyva/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Lyva/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Lyva/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on VanDamme_Lyva_voorstel.pdf (3 pages, 179433 bytes).
 PDF statistics:
  139 PDF objects out of 1000 (max. 8388607)
  24 named destinations out of 1000 (max. 500000)

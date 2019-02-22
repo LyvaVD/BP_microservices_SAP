@@ -2125,16 +2125,17 @@
     <bcf:datasource type="file" datatype="bibtex">voorstel.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">CiberBlog2018</bcf:citekey>
+    <bcf:citekey order="1">CiderBlog2018</bcf:citekey>
     <bcf:citekey order="2">Gunaratne2018</bcf:citekey>
     <bcf:citekey order="3">Atrash2018</bcf:citekey>
     <bcf:citekey order="4">devoteam2018</bcf:citekey>
     <bcf:citekey order="5">VanBart2018</bcf:citekey>
     <bcf:citekey order="6">Aradheye2018</bcf:citekey>
     <bcf:citekey order="7">Akthar2018</bcf:citekey>
-    <bcf:citekey order="8">OpenSap2018</bcf:citekey>
-    <bcf:citekey order="9">Kyma2019</bcf:citekey>
-    <bcf:citekey order="10">Semerdzhiev2018</bcf:citekey>
+    <bcf:citekey order="8">\global</bcf:citekey>
+    <bcf:citekey order="9">\egroup</bcf:citekey>
+    <bcf:citekey order="10">Kyma2019</bcf:citekey>
+    <bcf:citekey order="11">Semerdzhiev2018</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">

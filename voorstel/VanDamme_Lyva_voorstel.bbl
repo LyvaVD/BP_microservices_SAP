@@ -98,6 +98,29 @@
       \field{year}{2018}
       \field{dateera}{ce}
     \endentry
+    \entry{CiderBlog2018}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=958c265c1cd1824aa9044394070d581f}{%
+           family={Ciber},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{958c265c1cd1824aa9044394070d581f}
+      \strng{fullhash}{958c265c1cd1824aa9044394070d581f}
+      \strng{bibnamehash}{958c265c1cd1824aa9044394070d581f}
+      \strng{authorbibnamehash}{958c265c1cd1824aa9044394070d581f}
+      \strng{authornamehash}{958c265c1cd1824aa9044394070d581f}
+      \strng{authorfullhash}{958c265c1cd1824aa9044394070d581f}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{cider blog}
+      \field{title}{MIcroservices: het einde van de SAP spaghetti?}
+      \field{year}{2018}
+    \endentry
     \entry{devoteam2018}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=37d8bd72c4e69744cedd7f11ca2da987}{%
@@ -173,29 +196,6 @@
       \field{year}{2019}
       \field{dateera}{ce}
     \endentry
-    \entry{OpenSap2018}{article}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=d356182c5713a25d6c26ab0fe0184301}{%
-           family={OpenSAP},
-           familyi={O\bibinitperiod}}}%
-      }
-      \strng{namehash}{d356182c5713a25d6c26ab0fe0184301}
-      \strng{fullhash}{d356182c5713a25d6c26ab0fe0184301}
-      \strng{bibnamehash}{d356182c5713a25d6c26ab0fe0184301}
-      \strng{authorbibnamehash}{d356182c5713a25d6c26ab0fe0184301}
-      \strng{authornamehash}{d356182c5713a25d6c26ab0fe0184301}
-      \strng{authorfullhash}{d356182c5713a25d6c26ab0fe0184301}
-      \field{sortinit}{O}
-      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Order-to-cash overview}
-      \field{title}{Order-to-cash overview}
-      \field{year}{2018}
-    \endentry
     \entry{Semerdzhiev2018}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=0b7f5ae345d980122e0b761fd84dc0f7}{%
@@ -252,7 +252,8 @@
       \field{year}{2018}
     \endentry
   \enddatalist
-  \missing{CiberBlog2018}
+  \missing{\egroup}
+  \missing{\global}
 \endrefsection
 \endinput
 
