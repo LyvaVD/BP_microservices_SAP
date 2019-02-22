@@ -95,7 +95,7 @@
   date    = {2018-07-24},
 }
 
-@Article{,
+@Article{Goerke2018,
   author  = {Bjoern Goerke},
   title   = {SAP Cloud Platform: An open enterprise platform with a cloud-native core},
   journal = {SAP blogs},

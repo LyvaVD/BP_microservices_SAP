@@ -117,8 +117,8 @@
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{cider blog}
-      \field{title}{MIcroservices: het einde van de SAP spaghetti?}
+      \field{journaltitle}{https://www.ciber.nl/blog/deel-2-microservices-het-einde-van-de-sap-spaghetti}
+      \field{title}{Microservices: het einde van de SAP spaghetti?}
       \field{year}{2018}
     \endentry
     \entry{devoteam2018}{article}{}
@@ -190,11 +190,34 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{13}
-      \field{journaltitle}{kyma-project}
+      \field{journaltitle}{https://kyma-project.io/}
       \field{month}{2}
       \field{title}{What is kyma?}
       \field{year}{2019}
       \field{dateera}{ce}
+    \endentry
+    \entry{OpenSap2018}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=d356182c5713a25d6c26ab0fe0184301}{%
+           family={OpenSAP},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{d356182c5713a25d6c26ab0fe0184301}
+      \strng{fullhash}{d356182c5713a25d6c26ab0fe0184301}
+      \strng{bibnamehash}{d356182c5713a25d6c26ab0fe0184301}
+      \strng{authorbibnamehash}{d356182c5713a25d6c26ab0fe0184301}
+      \strng{authornamehash}{d356182c5713a25d6c26ab0fe0184301}
+      \strng{authorfullhash}{d356182c5713a25d6c26ab0fe0184301}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Order-to-cash overview}
+      \field{title}{Order-to-cash overview}
+      \field{year}{2018}
     \endentry
     \entry{Semerdzhiev2018}{article}{}
       \name{author}{1}{}{%
@@ -219,7 +242,7 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{24}
-      \field{journaltitle}{Kyma-project}
+      \field{journaltitle}{https://kyma-project.io/blog/introducing-project-kyma/}
       \field{month}{7}
       \field{title}{Introducing project Kyma}
       \field{year}{2018}
@@ -252,8 +275,6 @@
       \field{year}{2018}
     \endentry
   \enddatalist
-  \missing{\egroup}
-  \missing{\global}
 \endrefsection
 \endinput
 
