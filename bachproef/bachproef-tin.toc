@@ -11,31 +11,31 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.4}Opzet van deze bachelorproef}{14}{section.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Stand van zaken}{15}{chapter.2}
+\contentsline {chapter}{\numberline {2}Stand van zaken}{17}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Methodologie}{19}{chapter.3}
+\contentsline {chapter}{\numberline {3}Methodologie}{21}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Conclusie}{21}{chapter.4}
+\contentsline {chapter}{\numberline {4}Conclusie}{23}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{23}{appendix.A}
+\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{25}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Introductie}{23}{section.A.1}
+\contentsline {section}{\numberline {A.1}Introductie}{25}{section.A.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Literatuurstudie}{23}{section.A.2}
+\contentsline {section}{\numberline {A.2}Literatuurstudie}{25}{section.A.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.1}Wat zijn microservices?}{24}{subsection.A.2.1}
+\contentsline {subsection}{\numberline {A.2.1}Wat zijn microservices?}{26}{subsection.A.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.2}Waarom microservices gebruiken}{24}{subsection.A.2.2}
+\contentsline {subsection}{\numberline {A.2.2}Waarom microservices gebruiken}{26}{subsection.A.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.3}Principes voor Microservices Integration}{24}{subsection.A.2.3}
+\contentsline {subsection}{\numberline {A.2.3}Principes voor Microservices Integration}{26}{subsection.A.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.4}Order-to-cash in SAP}{25}{subsection.A.2.4}
+\contentsline {subsection}{\numberline {A.2.4}Order-to-cash in SAP}{27}{subsection.A.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.5}Kyma}{25}{subsection.A.2.5}
+\contentsline {subsection}{\numberline {A.2.5}Kyma}{27}{subsection.A.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Methodologie}{25}{section.A.3}
+\contentsline {section}{\numberline {A.3}Methodologie}{27}{section.A.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}Verwachte resultaten}{26}{section.A.4}
+\contentsline {section}{\numberline {A.4}Verwachte resultaten}{28}{section.A.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.5}Verwachte conclusies}{26}{section.A.5}
+\contentsline {section}{\numberline {A.5}Verwachte conclusies}{28}{section.A.5}
 \contentsfinish 
