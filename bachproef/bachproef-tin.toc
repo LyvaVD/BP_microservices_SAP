@@ -13,29 +13,57 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Stand van zaken}{17}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Methodologie}{21}{chapter.3}
+\contentsline {section}{\numberline {2.1}Microservices}{17}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Conclusie}{23}{chapter.4}
+\contentsline {subsection}{\numberline {2.1.1}Definitie}{17}{subsection.2.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{25}{appendix.A}
+\contentsline {subsection}{\numberline {2.1.2}Het belang van microservices}{17}{subsection.2.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Introductie}{25}{section.A.1}
+\contentsline {subsection}{\numberline {2.1.3}Algemene aanpak om microservices te implementeren}{17}{subsection.2.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Literatuurstudie}{25}{section.A.2}
+\contentsline {subsection}{\numberline {2.1.4}De voordelen en nadelen van microserivces}{18}{subsection.2.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.1}Wat zijn microservices?}{26}{subsection.A.2.1}
+\contentsline {subsection}{\numberline {2.1.5}Voorbeelden}{18}{subsection.2.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.2}Waarom microservices gebruiken}{26}{subsection.A.2.2}
+\contentsline {section}{\numberline {2.2}Order-to-cash proces in SAP}{18}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.3}Principes voor Microservices Integration}{26}{subsection.A.2.3}
+\contentsline {subsection}{\numberline {2.2.1}Definite}{18}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.4}Order-to-cash in SAP}{27}{subsection.A.2.4}
+\contentsline {subsection}{\numberline {2.2.2}Technologie}{18}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.5}Kyma}{27}{subsection.A.2.5}
+\contentsline {subsubsection}{Onderdelen van een order-to-cash proces}{18}{section*.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Methodologie}{27}{section.A.3}
+\contentsline {subsubsection}{Wat biedt SAP zelf aan voor microservices}{18}{section*.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}Verwachte resultaten}{28}{section.A.4}
+\contentsline {subsection}{\numberline {2.2.3}Een order-to-cash proces vanuit de business}{18}{subsection.2.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.5}Verwachte conclusies}{28}{section.A.5}
+\contentsline {subsection}{\numberline {2.2.4}Het proces afstemmen met de business}{18}{subsection.2.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Requirements van de business}{18}{section.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Methodologie}{23}{chapter.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Conclusie}{25}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{27}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.1}Introductie}{27}{section.A.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.2}Literatuurstudie}{27}{section.A.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.2.1}Wat zijn microservices?}{28}{subsection.A.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.2.2}Waarom microservices gebruiken}{28}{subsection.A.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.2.3}Principes voor Microservices Integration}{28}{subsection.A.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.2.4}Order-to-cash in SAP}{29}{subsection.A.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {A.2.5}Kyma}{29}{subsection.A.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.3}Methodologie}{29}{section.A.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.4}Verwachte resultaten}{30}{section.A.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {A.5}Verwachte conclusies}{30}{section.A.5}
 \contentsfinish 
