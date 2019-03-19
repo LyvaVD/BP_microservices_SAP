@@ -1,0 +1,176 @@
+% Encoding: UTF-8
+
+@Article{Drake2017,
+  author  = {Adam Drake},
+  title   = {Enough with the microservices},
+  journal = {https://adamdrake.com/enough-with-the-microservices.html},
+  year    = {2017},
+  date    = {2017-05-20},
+}
+
+@Article{Jackson2018,
+  author  = {Joab Jackson},
+  title   = {Debugging Microservices: Lessons from Google, Facebook, Lyft},
+  journal = {https://thenewstack.io/debugging-microservices-lessons-from-google-facebook-lyft/},
+  year    = {2018},
+  date    = {2018-07-03},
+}
+
+@Article{RDX2016,
+  author  = {RDX},
+  title   = {REST in Peace: Microservices vs monoliths in real-life examples},
+  journal = {https://medium.freecodecamp.org/rest-in-peace-to-microservices-or-not-6d097b6c8279},
+  year    = {2016},
+  date    = {2016-12-13},
+}
+
+@Article{Madurai2018,
+  author  = {Vivek Madurai},
+  title   = {Frontend in Microservice Architecture},
+  journal = {https://medium.com/@vivekmadurai/frontend-in-microservice-architecture-1e5bfa08e3e4},
+  year    = {2018},
+  date    = {2018-03-09},
+}
+
+@Article{Tripathi2016,
+  author  = {Ashutosh Tripathi},
+  title   = {What is Facebook's architecture?},
+  journal = {https://www.quora.com/What-is-Facebooks-architecture-6},
+  year    = {2016},
+  date    = {2016-05-21},
+}
+
+@Article{Sommermann2014,
+  author  = {Daniel Sommmermann},
+  title   = {Introducing Proxygen, Facebook's C++ HTTP framework},
+  journal = {https://code.fb.com/production-engineering/introducing-proxygen-facebook-s-c-http-framework/},
+  year    = {2014},
+  date    = {2014-11-05},
+}
+
+@Article{series2018,
+  author  = {Api u Series},
+  title   = {Microservices 101: Understanding and leveraging microservices},
+  journal = {https://www.programmableweb.com/api-university/microservices-101-understanding-and-leveraging-microservices},
+}
+
+@Article{Mauro2015,
+  author  = {Tony Mauro},
+  title   = {Adopting Microservices at Netflix: Lessons for Architectural Design},
+  journal = {https://www.nginx.com/blog/microservices-at-netflix-architectural-best-practices/},
+  year    = {2015},
+  date    = {2015-02-15},
+}
+
+@Article{Ho2015,
+  author  = {Alan Ho},
+  title   = {Microservices at Amazon},
+  journal = {https://apigee.com/about/blog/api-technology/microservices-amazon},
+  year    = {2015},
+  date    = {2015-11-11},
+}
+
+@Article{Benetis2016,
+  author  = {Rimantas Benetis},
+  title   = {A 6-point plan for implementing a scalable microservices architecture},
+  journal = {https://www.devbridge.com/articles/a-6-point-plan-for-implementing-a-scalable-microservices-architecture/},
+  year    = {2016},
+  date    = {2016-11-11},
+}
+
+@Article{Mauersberger2017,
+  author  = {Laura Mauersberger},
+  title   = {Why Netflix, Amazon, and Apple Care about microservices},
+  journal = {https://blog.leanix.net/en/why-netflix-amazon-and-apple-care-about-microservices},
+  year    = {2017},
+  date    = {2017-07-18},
+}
+
+@Article{Fulton2015,
+  author  = {Scott M. Fulton III},
+  title   = {What led Amazon to its own microservices architecture},
+  journal = {https://thenewstack.io/led-amazon-microservices-architecture/},
+  year    = {2015},
+  date    = {2015-10-08},
+}
+
+@Article{Ismail2018,
+  author  = {Kaya Ismail},
+  title   = {7 Tech giants embracing microservices},
+  journal = {https://www.cmswire.com/information-management/7-tech-giants-embracing-microservices/},
+  year    = {2018},
+  date    = {2018-08-23},
+}
+
+@Article{Aslam2016,
+  author  = {Asim Aslam},
+  title   = {Why companies adopt microservices and how they succeed},
+  journal = {https://medium.com/microhq/why-companies-adopt-microservices-and-how-they-succeed-2ad32f39c65a},
+  year    = {2016},
+  date    = {2016-07-05},
+}
+
+@Article{enabledSolutions2018,
+  author  = {Enabled solutions},
+  title   = {Why microservices are the new innovation enablers for enterprises},
+  journal = {https://hackernoon.com/why-microservices-are-the-new-innovation-enablers-for-enterprises-6a4c637fd901},
+  year    = {2018},
+  date    = {2018-08-20},
+}
+
+@Article{Lawton2017,
+  author  = {George Lawton},
+  title   = {How microservices patterns made Uber's architecture perform better},
+  journal = {https://www.theserverside.com/feature/How-microservices-patterns-helped-Uber-systems-perform-better},
+  year    = {2017},
+}
+
+@Article{Gonchar2018,
+  author  = {Grygoriy Gonchar},
+  title   = {Data consistency in microservices architecture},
+  journal = {https://ebaytech.berlin/data-consistency-in-microservices-architecture-bf99ba31636f},
+  year    = {2018},
+  date    = {2018-09-05},
+}
+
+@Article{Knorr2016,
+  author  = {Eric Knorr},
+  title   = {What eBay looks like under the hood},
+  journal = {https://www.infoworld.com/article/3041064/what-ebay-looks-like-under-the-hood.html},
+  year    = {2016},
+  date    = {2016-03-07},
+}
+
+@Article{highScalability2015,
+  author  = {High scalability},
+  title   = {Deep lessons from Google and Ebay on building ecosystems of microservices},
+  journal = {http://highscalability.com/blog/2015/12/1/deep-lessons-from-google-and-ebay-on-building-ecosystems-of.html},
+  year    = {2015},
+  date    = {2015-12-01},
+}
+
+@Article{Thennakoon2017,
+  author  = {Tharanga Thennakoon},
+  title   = {Microservices implementation - Netflix stack},
+  journal = {https://medium.com/@tharanganilupul/microservices-implementation-netflix-stack-ba4f4a57a79f},
+  year    = {2017},
+  date    = {2017-06-17},
+}
+
+@Article{smartbear2015,
+  author  = {Smartbear software},
+  title   = {Why you can't talk about microservices without mentioning netflix},
+  journal = {https://smartbear.com/blog/develop/why-you-cant-talk-about-microservices-without-ment/},
+  year    = {2015},
+  date    = {2015-12-08},
+}
+
+@Article{Mauro2015a,
+  author  = {Tony Mauro},
+  title   = {Adopting Microservices at Netflix: Lessons for team and process design},
+  journal = {https://www.nginx.com/blog/adopting-microservices-at-netflix-lessons-for-team-and-process-design/},
+  year    = {2015},
+  date    = {2015-03-10},
+}
+
+@Comment{jabref-meta: databaseType:biblatex;}

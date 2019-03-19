@@ -2128,18 +2128,22 @@
     <bcf:citekey order="1">Pollefliet2011</bcf:citekey>
     <bcf:citekey order="2">Pollefliet2011</bcf:citekey>
     <bcf:citekey order="3">Mauersberger2017</bcf:citekey>
-    <bcf:citekey order="4">Knuth1998</bcf:citekey>
-    <bcf:citekey order="5">Creeger2009</bcf:citekey>
-    <bcf:citekey order="6">CiderBlog2018</bcf:citekey>
-    <bcf:citekey order="7">Gunaratne2018</bcf:citekey>
-    <bcf:citekey order="8">Atrash2018</bcf:citekey>
-    <bcf:citekey order="9">devoteam2018</bcf:citekey>
-    <bcf:citekey order="10">VanBart2018</bcf:citekey>
-    <bcf:citekey order="11">Aradheye2018</bcf:citekey>
-    <bcf:citekey order="12">Akthar2018</bcf:citekey>
-    <bcf:citekey order="13">OpenSap2018</bcf:citekey>
-    <bcf:citekey order="14">Kyma2019</bcf:citekey>
-    <bcf:citekey order="15">Semerdzhiev2018</bcf:citekey>
+    <bcf:citekey order="4">series2018</bcf:citekey>
+    <bcf:citekey order="5">Benetis2016</bcf:citekey>
+    <bcf:citekey order="6">series2018</bcf:citekey>
+    <bcf:citekey order="7">Mauersberger2017</bcf:citekey>
+    <bcf:citekey order="8">Knuth1998</bcf:citekey>
+    <bcf:citekey order="9">Creeger2009</bcf:citekey>
+    <bcf:citekey order="10">CiderBlog2018</bcf:citekey>
+    <bcf:citekey order="11">Gunaratne2018</bcf:citekey>
+    <bcf:citekey order="12">Atrash2018</bcf:citekey>
+    <bcf:citekey order="13">devoteam2018</bcf:citekey>
+    <bcf:citekey order="14">VanBart2018</bcf:citekey>
+    <bcf:citekey order="15">Aradheye2018</bcf:citekey>
+    <bcf:citekey order="16">Akthar2018</bcf:citekey>
+    <bcf:citekey order="17">OpenSap2018</bcf:citekey>
+    <bcf:citekey order="18">Kyma2019</bcf:citekey>
+    <bcf:citekey order="19">Semerdzhiev2018</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="apa">
