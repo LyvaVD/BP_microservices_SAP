@@ -25,7 +25,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.5}Voorbeelden}{16}{subsection.2.1.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Amazon}{16}{section*.6}
+\contentsline {subsubsection}{Amazon}{17}{section*.6}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Apple}{17}{section*.7}
 \defcounter {refsection}{0}\relax 
