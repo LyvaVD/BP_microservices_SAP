@@ -48,12 +48,6 @@
   date    = {2014-11-05},
 }
 
-@Article{series2018,
-  author  = {Api u Series},
-  title   = {Microservices 101: Understanding and leveraging microservices},
-  journal = {https://www.programmableweb.com/api-university/microservices-101-understanding-and-leveraging-microservices},
-}
-
 @Article{Mauro2015,
   author  = {Tony Mauro},
   title   = {Adopting Microservices at Netflix: Lessons for Architectural Design},
@@ -86,7 +80,7 @@
   date    = {2017-07-18},
 }
 
-@Article{Fulton2015,
+@Article{ScottM.Fulton2015,
   author  = {Scott M. Fulton III},
   title   = {What led Amazon to its own microservices architecture},
   journal = {https://thenewstack.io/led-amazon-microservices-architecture/},
@@ -252,6 +246,27 @@
   author  = {QPR Blog},
   title   = {Process Mining on Order-to-Cash Process – Optimizing Cash Amount Derived From Orders},
   journal = {https://www.qpr.com/blog/process-mining-order-cash-process-%E2%80%93-optimizing-cash-amount-derived-orders},
+  year    = {2017},
+}
+
+@Article{cio2007,
+  author  = {CIO Staff},
+  title   = {When Bad things happen to good projects},
+  journal = {https://www.cio.com/article/2439385/when-bad-things-happen-to-good-projects.html},
+  year    = {2007},
+}
+
+@Article{lehto2017,
+  author  = {Teemu Lehto},
+  title   = {4 steps to reduce unwanted changes in Order to Cash process},
+  journal = {https://www.qpr.com/blog/4-steps-reduce-unwanted-changes-order-cash-process},
+  year    = {2017},
+}
+
+@Article{pearson2017,
+  author  = {SONIA PEARSON},
+  title   = {The Order to Cash (O2C) Process: Definition and Best-Practices},
+  journal = {https://tallyfy.com/order-to-cash/},
   year    = {2017},
 }
 

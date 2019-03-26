@@ -98,6 +98,35 @@
       \field{year}{2018}
       \field{dateera}{ce}
     \endentry
+    \entry{Benetis2016}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=3eb69ed74ee871d8d24bcde48e716171}{%
+           family={Benetis},
+           familyi={B\bibinitperiod},
+           given={Rimantas},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3eb69ed74ee871d8d24bcde48e716171}
+      \strng{fullhash}{3eb69ed74ee871d8d24bcde48e716171}
+      \strng{bibnamehash}{3eb69ed74ee871d8d24bcde48e716171}
+      \strng{authorbibnamehash}{3eb69ed74ee871d8d24bcde48e716171}
+      \strng{authornamehash}{3eb69ed74ee871d8d24bcde48e716171}
+      \strng{authorfullhash}{3eb69ed74ee871d8d24bcde48e716171}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{11}
+      \field{journaltitle}{https://www.devbridge.com/articles/a-6-point-plan-for-implementing-a-scalable-microservices-architecture/}
+      \field{month}{11}
+      \field{title}{A 6-point plan for implementing a scalable microservices architecture}
+      \field{year}{2016}
+      \field{dateera}{ce}
+    \endentry
     \entry{CiderBlog2018}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=958c265c1cd1824aa9044394070d581f}{%
@@ -169,6 +198,35 @@
       \field{journaltitle}{ContainerMind}
       \field{title}{Wiring Microservices, Integration Microservices \& APIs.}
       \field{year}{2018}
+    \endentry
+    \entry{Fulton2015}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=048efaeafdafcf09d17019aca614e213}{%
+           family={III},
+           familyi={I\bibinitperiod},
+           given={Scott\bibnamedelimb M.\bibnamedelimi Fulton},
+           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{048efaeafdafcf09d17019aca614e213}
+      \strng{fullhash}{048efaeafdafcf09d17019aca614e213}
+      \strng{bibnamehash}{048efaeafdafcf09d17019aca614e213}
+      \strng{authorbibnamehash}{048efaeafdafcf09d17019aca614e213}
+      \strng{authornamehash}{048efaeafdafcf09d17019aca614e213}
+      \strng{authorfullhash}{048efaeafdafcf09d17019aca614e213}
+      \field{sortinit}{I}
+      \field{sortinithash}{320bc8fe8101b9376f9f21cd507de0e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{8}
+      \field{journaltitle}{https://thenewstack.io/led-amazon-microservices-architecture/}
+      \field{month}{10}
+      \field{title}{What led Amazon to its own microservices architecture}
+      \field{year}{2015}
+      \field{dateera}{ce}
     \endentry
     \entry{Kyma2019}{article}{}
       \name{author}{1}{}{%
@@ -248,6 +306,32 @@
       \field{title}{Order-to-cash overview}
       \field{year}{2018}
     \endentry
+    \entry{RDX2016}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=43851ae6bcf8f6822ed0efc897f72f8f}{%
+           family={RDX},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{43851ae6bcf8f6822ed0efc897f72f8f}
+      \strng{fullhash}{43851ae6bcf8f6822ed0efc897f72f8f}
+      \strng{bibnamehash}{43851ae6bcf8f6822ed0efc897f72f8f}
+      \strng{authorbibnamehash}{43851ae6bcf8f6822ed0efc897f72f8f}
+      \strng{authornamehash}{43851ae6bcf8f6822ed0efc897f72f8f}
+      \strng{authorfullhash}{43851ae6bcf8f6822ed0efc897f72f8f}
+      \field{sortinit}{R}
+      \field{sortinithash}{da6b42bd3ab22fee61abed031ee405f7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{13}
+      \field{journaltitle}{https://medium.freecodecamp.org/rest-in-peace-to-microservices-or-not-6d097b6c8279}
+      \field{month}{12}
+      \field{title}{REST in Peace: Microservices vs monoliths in real-life examples}
+      \field{year}{2016}
+      \field{dateera}{ce}
+    \endentry
     \entry{Semerdzhiev2018}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=0b7f5ae345d980122e0b761fd84dc0f7}{%
@@ -276,6 +360,32 @@
       \field{title}{Introducing project Kyma}
       \field{year}{2018}
       \field{dateera}{ce}
+    \endentry
+    \entry{series2018}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=ecd77c90a0b5eeda8f863131c78192b0}{%
+           family={Series},
+           familyi={S\bibinitperiod},
+           given={Api},
+           giveni={A\bibinitperiod},
+           givenun=0,
+           prefix={u},
+           prefixi={u\bibinitperiod}}}%
+      }
+      \strng{namehash}{ecd77c90a0b5eeda8f863131c78192b0}
+      \strng{fullhash}{ecd77c90a0b5eeda8f863131c78192b0}
+      \strng{bibnamehash}{ecd77c90a0b5eeda8f863131c78192b0}
+      \strng{authorbibnamehash}{ecd77c90a0b5eeda8f863131c78192b0}
+      \strng{authornamehash}{ecd77c90a0b5eeda8f863131c78192b0}
+      \strng{authorfullhash}{ecd77c90a0b5eeda8f863131c78192b0}
+      \field{sortinit}{u}
+      \field{sortinithash}{36a2444f5238e0dcf4bb59704df6624d}
+      \field{labeldatesource}{nodate}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://www.programmableweb.com/api-university/microservices-101-understanding-and-leveraging-microservices}
+      \field{title}{Microservices 101: Understanding and leveraging microservices}
     \endentry
     \entry{VanBart2018}{article}{}
       \name{author}{1}{}{%
@@ -306,6 +416,7 @@
   \enddatalist
   \missing{Creeger2009}
   \missing{Knuth1998}
+  \missing{Obrien2017}
   \missing{Pollefliet2011}
 \endrefsection
 \endinput
