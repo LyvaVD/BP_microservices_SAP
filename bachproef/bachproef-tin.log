@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.20)  30 MAR 2019 18:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.20)  30 MAR 2019 20:02
 entering extended mode
 **./bachproef-tin.tex
 (bachproef-tin.tex
@@ -1888,11 +1888,7 @@ LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/pag/b/n' tried instead on input line 39.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
 (Font)              Font shape `T1/pag/db/n' tried instead on input line 39.
-
-Underfull \vbox (badness 3989) has occurred while \output is active []
-
- [17])
-(methodologie.tex [18]
+[17]) (methodologie.tex [18]
 Hoofdstuk 3.
 ) (conclusie.tex [19
 
@@ -1948,11 +1944,11 @@ Package logreq Info: Writing requests to 'bachproef-tin.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39831 strings out of 492970
- 747075 string characters out of 3127037
+ 39825 strings out of 492970
+ 747027 string characters out of 3127037
  1343867 words of memory out of 3000000
  42867 multiletter control sequences out of 15000+200000
- 579875 words of font info for 158 fonts, out of 3000000 for 9000
+ 579615 words of font info for 154 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,67p,1377b,3825s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}
@@ -1963,7 +1959,7 @@ urw/avantgar/uagk8a.pfb><C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fonts/
 type1/urw/times/utmb8a.pfb><C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fon
 ts/type1/urw/times/utmr8a.pfb><C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on bachproef-tin.pdf (30 pages, 659388 bytes).
+Output written on bachproef-tin.pdf (30 pages, 659533 bytes).
 PDF statistics:
  423 PDF objects out of 1000 (max. 8388607)
  88 named destinations out of 1000 (max. 500000)
