@@ -13,9 +13,9 @@ Dit hoofdstuk bevat je literatuurstudie. In dit onderdeel zal er diep in gegaan 
 \subsection{Definitie}
 Het artikel van \textcite{Mauersberger2017} gaat over hoe grotere bedrijven omschakelen naar microservices. Bij een verandering binnen een monolithic architectuur, werd er een heel nieuwe versie van de architectuur uitgebracht. Een verandering bracht een hoop extra werk mee. De definitie die te vinden is in dit artikel, gaat als volgt: "A method of developing software applications as a suite of independently deployable, small, modular services in which each service runs a unique process and communicates through a well-defined, lightweight mechanism to serve a business goals.". Als je de definitie leest, zie je drie onderdelen. Het eerste onderdeel vertelt hoe een microservice in elkaar zit. Het is een onafhankelijke, kleine, modulaire services. Deze service communiceert op een eenvoudige manier. Dit is een tweede eigenschap van een microservice. De derde eigenschap omvat dat een microservice wordt gemaakt in functie van een requirement uit de business. Het doel van microservices is de problemen die te vinden zijn bij een monolithic kunnen verholpen worden met microservices. De vorige definite legde uit wat microservices zijn. Dit artikel zegt waar men microservices kan plaatsen. Er is dus één groot framework. Daar zitten meerdere onafhankelijke services in.
 \begin{figure}[h]
-	\caption{Een monolithic architectuur naast een microservice architectuur.}
 	\includegraphics[width=10cm]{microservices-vs-monolithic.jpg}
 	\centering
+	\caption{Een monolithic architectuur naast een microservice architectuur.}
 \end{figure}
 Figuur 2.1 is afkomstig uit artikel \textcite{Watts2018}.
 Zoals te zien in figuur 2.1 is er een groot verschil tussen een monolithic architectuur en die van een microservice. Bij een monolithic communiceren alle deeltjes van een applicatie met een grote databank of datastore. Dit wordt goed weergegeven in de linkerkant van de foto. Aan de rechterkant van de foto is een voorbeeld te zien van een microservice architectuur. Daar is duidelijk te zien dat elke microservice een eigen databank/datastore heeft. Voor een functionaliteit wordt een microserives aangemaakt, die dan nog eens apart een databank voor zich krijgt. 
@@ -23,11 +23,59 @@ Zoals te zien in figuur 2.1 is er een groot verschil tussen een monolithic archi
 \subsection{Het belang van microservices}
 Er wordt vaak Agile gewerkt. Dat vraagt na twee weken een afgewerkt stukje software. Bij een monolithic kan het aanpassen van een deeltje, veel werk vragen. Microservices spelen daar gemakkelijk op in. Die technologie legt niet heel het framework plat als er deeltjes moeten bij gecodeerd worden. Microservices kunnen sneller inspelen op de Agile analyse/ontwikkel methode.
 \textcite{series2018} haalt aan dat microservices van belang zijn bij het scalen van software.
-In het artikel van \textcite{RDX2016} worden er verschillende eigenschappen aangekaart. Microservices moeten een doel in de business vervullen. Naast dit, zorgt microservices er ook voor dat bescherming eenvoudig wordt. Het is belangrijk om te zorgen dat er bescherming is per microservices. Dit gebeurt best op een uniforme manier. Er kan wel veel gezegd worden over hoe broodnodig microservices zijn maar ze laten deployen en dan er niet meer naar omkijken, zal zeker geen problemen oplossen. Ook na het opzetten en laten werken van een microservices moet er gemonitord worden wat er gebeurt. 
+In het artikel van \textcite{RDX2016} worden er verschillende eigenschappen aangekaart. Microservices moeten een doel in de business vervullen. Naast dit, zorgt microservices er ook voor dat bescherming eenvoudig wordt. 
 Het artikel van \textcite{Watts2018} geeft het belang van een microservice goed weer. Microservices beschermen het gehele systeem, bij een goede implementatie. Ze maken het gebruik van de Agile methode, ook eenvoudiger dan bij een monolithic. Met deze technologie is het eenvoudiger om een aanpassing te testen en te onderhouden. Niet de volledige architectuur moet opnieuw getest worden bij een aanpassing. Als team A een aanpassing doet aan hun microservice, zullen de andere teams geen hinder ondervinden. 
 \subsection{Algemene aanpak om microservices te implementeren}
 Het interessante artikel van \textcite{Benetis2016} over een 6-stappen plan om microservices te implementeren.
-De eerste stap is het bepalen van de business requirements die de microservices zal bedienen. Dit is ook een van de belangrijkste redenen om microservices te gaan gebruiken. Het voldoen aan de business requirements. 
+De eerste stap is het bepalen van de business requirements die de microservices zal bedienen.
+\begin{figure}[h]
+	\includegraphics[width=10cm]{1.png}
+	\caption{Een microservice dat voldoet aan een business requirement.}
+	\centering
+\end{figure} Dit is ook een van de belangrijkste redenen om microservices te gaan gebruiken. In figuur 2.2 zie je hoe een microservice kan worden voorgesteld. Het is belangrijk om te zorgen dat er bescherming is per microservices. Dit gebeurt best op een uniforme manier. Er kan wel veel gezegd worden over hoe broodnodig microservices zijn maar ze laten deployen en dan er niet meer naar omkijken, zal zeker geen problemen oplossen. Zoals te zien is in figuur 2.3.
+\begin{figure}[h]
+	\includegraphics[width=10cm]{2.png}
+	\caption{Een microservice waar bescherming aan is toegevoegd.}
+	\centering
+\end{figure} Ook na het opzetten en laten werken van een microservices moet er gemonitord worden wat er gebeurt. Dit wordt voorgesteld in figuur 2.4.
+\begin{figure}[h]
+	\includegraphics[width=10cm]{3.png}
+	\caption{Een microservice waar er monitoring is aan toegevoegd om chaos te voorkomen.}
+	\centering
+\end{figure}Naast het monitoren, scalen en opzetten van microservices is er ook nog een ander belangrijk aspect binnen deze technologie. Hoe de microservices met elkaar communiceren. In een monolithic kunnen alle connecties bijgehouden worden in files. Maar door de onafhankelijkheid van microservices is dit iet wat moeilijker. Daarom wordt er aangeraden om met service registry te werken. Dit is een soort authenticatie. Zoals te zien is in figuur 2.5.
+\begin{figure}[h]
+	\includegraphics[width=10cm]{4.png}
+	\caption{Een microservice dat authenticatie als bescherming toepast.}
+	\centering
+\end{figure}
+Als tip wordt er gegeven om abstractie te gebruiken. Dit is mogelijk door een microservice of compononent te creëeren. Na dat dit allemaal opstaat, is er nog iets waar men nood aan heeft. Een gateway gebruiken. Dit zorgt ervoor dat je implementatie 'weggestopt' zit. Een API gateway is een microservice. Deze zorgt ervoor dat de klant de juiste microservice te pakken krijgt. Je kan het zien als een soort winkelbediende die je helpt bij het vinden van een broek. Een opsomming welke functies een API gateway kan hebben:
+\begin{itemize}
+	\item Beveiliging van je architectuur,
+	\item de prestatie van alle aanvragen kunnen geregistreerd worden,
+	\item auditing, 
+	\item het transformeren van een of meerdere request naar een microservice,
+	\item het implementeren van dynamische requests en routing.
+\end{itemize}
+Hoe een gateway kan gebruikt worden bij microservices, is te zien op figuur 2.6.
+\begin{figure}[h]
+	\includegraphics[width=10cm]{5.png}
+	\caption{Een microservice dat een gateway gebruikt.}
+	\centering
+\end{figure}
+Als laatste puntje komt de asynchroniteit aan bod. Message queues zijn een oplossing. Om dit aan te pakken, kan je een microservice maken die voor deze taak zorgt. Op deze manier kan je:
+\begin{itemize}
+	\item Taken inplannen,
+	\item subscriben voor specifieke events,
+	\item je subscribe functie laten 'zien' aan externe klanten om notificaties aan te kunnen.
+\end{itemize}
+In figuur 2.7 is het eindresultaat te zien van alle zes de puntjes.
+\begin{figure}[h]
+	\includegraphics[width=10cm]{6.png}
+	\caption{Een microservice met asynchronisatie.}
+	\centering
+\end{figure}
+
+
 \subsection{De voordelen en nadelen van microserivces}
 In het artikel van \textcite{series2018} wordt er veel lofzang gedaan over microservices. Het gebruik van microservices zou ervoor zorgen dat de architectuur flexibeler wordt. Er kunnen microservices hergebruikt worden. Dankzij microservices is het hermodeleren, implementeren van nieuwe technologieën, ... 
 Kleinere deeltjes zijn gemakkelijker te documenteren. De snelheid van microservices zijn een groot pluspunt.

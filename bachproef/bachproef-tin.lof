@@ -7,6 +7,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Een monolithic architectuur naast een microservice architectuur.}}{16}{figure.2.1}
 \defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Een microservice dat voldoet aan een business requirement.}}{17}{figure.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Een microservice waar bescherming aan is toegevoegd.}}{17}{figure.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Een microservice waar er monitoring is aan toegevoegd om chaos te voorkomen.}}{18}{figure.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Een microservice dat authenticatie als bescherming toepast.}}{18}{figure.2.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Een microservice dat een gateway gebruikt.}}{19}{figure.2.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Een microservice met asynchronisatie.}}{19}{figure.2.7}
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
