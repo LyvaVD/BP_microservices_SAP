@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.20)  1 APR 2019 21:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.20)  2 APR 2019 22:52
 entering extended mode
 **./bachproef-tin.tex
 (bachproef-tin.tex
@@ -1938,12 +1938,23 @@ LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20])
-(methodologie.tex [21] [22
+ [20]
 
-]
+LaTeX Warning: Citation 'Kumaran2015' on page 21 undefined on input line 110.
+
+<img/Order-to-cash-cycle.jpg, id=260, 375.65344pt x 195.73125pt>
+File: img/Order-to-cash-cycle.jpg Graphic file (type jpg)
+<use img/Order-to-cash-cycle.jpg>
+Package pdftex.def Info: img/Order-to-cash-cycle.jpg  used on input line 112.
+(pdftex.def)             Requested size: 284.52756pt x 148.2615pt.
+
+LaTeX Warning: Citation 'Kumaran2015' on page 21 undefined on input line 113.
+
+[21 <./img/Order-to-cash-cycle.jpg>]) (methodologie.tex [22]
 Hoofdstuk 3.
-) (conclusie.tex [23] [24
+) (conclusie.tex [23
+
+] [24
 
 ]
 Hoofdstuk 4.
@@ -1995,11 +2006,11 @@ Package logreq Info: Writing requests to 'bachproef-tin.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39871 strings out of 492970
- 747526 string characters out of 3127037
+ 39880 strings out of 492970
+ 747710 string characters out of 3127037
  1344867 words of memory out of 3000000
- 42891 multiletter control sequences out of 15000+200000
- 580055 words of font info for 158 fonts, out of 3000000 for 9000
+ 42895 multiletter control sequences out of 15000+200000
+ 580185 words of font info for 160 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,67p,1377b,3825s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}
@@ -2010,9 +2021,9 @@ urw/avantgar/uagk8a.pfb><C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fonts/
 type1/urw/times/utmb8a.pfb><C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fon
 ts/type1/urw/times/utmr8a.pfb><C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on bachproef-tin.pdf (34 pages, 784689 bytes).
+Output written on bachproef-tin.pdf (34 pages, 812842 bytes).
 PDF statistics:
- 473 PDF objects out of 1000 (max. 8388607)
- 98 named destinations out of 1000 (max. 500000)
- 26933 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 475 PDF objects out of 1000 (max. 8388607)
+ 99 named destinations out of 1000 (max. 500000)
+ 26938 words of extra memory for PDF output out of 29859 (max. 10000000)
 
