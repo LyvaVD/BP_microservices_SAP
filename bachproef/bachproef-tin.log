@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.20)  9 APR 2019 22:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.20)  12 APR 2019 11:20
 entering extended mode
 **./bachproef-tin.tex
 (bachproef-tin.tex
@@ -1889,87 +1889,75 @@ LaTeX Warning: Citation 'Troisi2019' on page 17 undefined on input line 36.
 
 LaTeX Warning: Citation 'Watts2018' on page 17 undefined on input line 37.
 
-<img/1.png, id=240, 963.6pt x 425.59pt>
+[17]
+<img/1.png, id=246, 963.6pt x 425.59pt>
 File: img/1.png Graphic file (type png)
 <use img/1.png>
-Package pdftex.def Info: img/1.png  used on input line 42.
+Package pdftex.def Info: img/1.png  used on input line 51.
 (pdftex.def)             Requested size: 284.52756pt x 125.66484pt.
-<img/2.png, id=242, 963.6pt x 425.59pt>
+<img/2.png, id=248, 963.6pt x 425.59pt>
 File: img/2.png Graphic file (type png)
 <use img/2.png>
-Package pdftex.def Info: img/2.png  used on input line 47.
+Package pdftex.def Info: img/2.png  used on input line 58.
 (pdftex.def)             Requested size: 284.52756pt x 125.66484pt.
-<img/3.png, id=244, 963.6pt x 552.0625pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<img/3.png, id=250, 963.6pt x 552.0625pt>
 File: img/3.png Graphic file (type png)
 <use img/3.png>
-Package pdftex.def Info: img/3.png  used on input line 52.
+Package pdftex.def Info: img/3.png  used on input line 66.
 (pdftex.def)             Requested size: 284.52756pt x 163.00865pt.
-<img/4.png, id=247, 963.6pt x 626.34pt>
+[18 <./img/1.png>]
+<img/4.png, id=258, 963.6pt x 626.34pt>
 File: img/4.png Graphic file (type png)
 <use img/4.png>
-Package pdftex.def Info: img/4.png  used on input line 57.
+Package pdftex.def Info: img/4.png  used on input line 75.
 (pdftex.def)             Requested size: 284.52756pt x 184.94072pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[17]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<img/5.png, id=255, 963.6pt x 626.34pt>
+[19 <./img/2.png> <./img/3.png>]
+<img/5.png, id=266, 963.6pt x 626.34pt>
 File: img/5.png Graphic file (type png)
 <use img/5.png>
-Package pdftex.def Info: img/5.png  used on input line 71.
+Package pdftex.def Info: img/5.png  used on input line 89.
 (pdftex.def)             Requested size: 284.52756pt x 184.94072pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 1946) has occurred while \output is active []
-
- [18 <./img/1.png> <./img/2.png>]
-<img/6.png, id=263, 963.6pt x 708.6475pt>
+<img/6.png, id=268, 963.6pt x 708.6475pt>
 File: img/6.png Graphic file (type png)
 <use img/6.png>
-Package pdftex.def Info: img/6.png  used on input line 83.
+Package pdftex.def Info: img/6.png  used on input line 101.
 (pdftex.def)             Requested size: 284.52756pt x 209.24384pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Citation 'Watts2018' on page 19 undefined on input line 92.
+LaTeX Warning: Citation 'Watts2018' on page 20 undefined on input line 110.
 
-[19 <./img/3.png> <./img/4.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20 <./img/5.png> <./img/6.png>]
+Underfull \vbox (badness 1342) has occurred while \output is active []
+
+ [20 <./img/4.png> <./img/5.png>] [21 <./img/6.png>]
 LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/pag/b/n' tried instead on input line 97.
+(Font)              Font shape `T1/pag/b/n' tried instead on input line 115.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 97.
- [21]
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 115.
 
-LaTeX Warning: Citation 'Kumaran2015' on page 22 undefined on input line 120.
 
-<img/Order-to-cash-cycle.jpg, id=290, 375.65344pt x 195.73125pt>
+LaTeX Warning: Citation 'Kumaran2015' on page 22 undefined on input line 138.
+
+<img/Order-to-cash-cycle.jpg, id=284, 375.65344pt x 195.73125pt>
 File: img/Order-to-cash-cycle.jpg Graphic file (type jpg)
 <use img/Order-to-cash-cycle.jpg>
-Package pdftex.def Info: img/Order-to-cash-cycle.jpg  used on input line 122.
+Package pdftex.def Info: img/Order-to-cash-cycle.jpg  used on input line 140.
 (pdftex.def)             Requested size: 284.52756pt x 148.2615pt.
 
-LaTeX Warning: Citation 'Kumaran2015' on page 22 undefined on input line 123.
+LaTeX Warning: Citation 'Kumaran2015' on page 22 undefined on input line 141.
 
-) (methodologie.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [22 <./img/Order-to-cash-cycle.jpg>] [23] [24
+[22]) (methodologie.tex [23 <./img/Order-to-cash-cycle.jpg>] [24
 
 ]
 Hoofdstuk 3.
@@ -2025,10 +2013,10 @@ Package logreq Info: Writing requests to 'bachproef-tin.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39884 strings out of 492970
- 747751 string characters out of 3127037
+ 39891 strings out of 492970
+ 747845 string characters out of 3127037
  1347037 words of memory out of 3000000
- 42895 multiletter control sequences out of 15000+200000
+ 42902 multiletter control sequences out of 15000+200000
  580851 words of font info for 162 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,67p,1971b,3825s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2040,7 +2028,7 @@ urw/avantgar/uagk8a.pfb><C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fonts/
 type1/urw/times/utmb8a.pfb><C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fon
 ts/type1/urw/times/utmr8a.pfb><C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on bachproef-tin.pdf (36 pages, 820639 bytes).
+Output written on bachproef-tin.pdf (36 pages, 823029 bytes).
 PDF statistics:
  507 PDF objects out of 1000 (max. 8388607)
  101 named destinations out of 1000 (max. 500000)

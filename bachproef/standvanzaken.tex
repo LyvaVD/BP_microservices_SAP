@@ -36,23 +36,41 @@ In het artikel van \textcite{RDX2016} worden er verschillende eigenschappen aang
 Zoals te vinden is in het artikel van \textcite{Troisi2019} zijn er acht manieren hoe microservices bescherming bieden. NOG VERDER UITSCHRIJVEN.
 Het artikel van \textcite{Watts2018} geeft het belang van een microservice goed weer. Microservices beschermen het gehele systeem, bij een goede implementatie. Het toepassen van de agile methode is eenvoudiger bij microservices dan bij een monolithic. Met deze technologie is het eenvoudiger om een aanpassing te testen en te onderhouden. Niet de volledige architectuur moet opnieuw getest worden bij een aanpassing. Als team A een aanpassing doet aan hun microservice, zullen de andere teams geen hinder ondervinden. 
 \subsection{Algemene aanpak om microservices te implementeren}
-Het interessante artikel van \textcite{Benetis2016} over een 6-stappen plan om microservices te implementeren.
-De eerste stap is het bepalen van de business requirements die de microservices zal bedienen.
+Het interessante artikel van \textcite{Benetis2016} over een 6-stappen plan om microservices te implementeren. Een paar woorden die meer verklaring nodig hebben voordat we verder gaan. Een gateway is een netwerkpunt dat dient als toegang tot een ander netwerk. Een gateway is een soort toegangspoort. Implementatie is een procesmatige invoering van een verandering of vernieuwing. Iets implementeren of vernieuwen. 
+--------------------- Nieuw
+In grote lijnen is dit het zes-stappen plan. Als eerste komt aan bod "serve a business purpose". Hierna komt "protect your stuff". Eens dat gebeurt is, zegt het artikel "see no evil, hear no evil". Dan komt "find your stuff" aan bod. Hierna wordt de volgende stap "create a gateway" aangehaald. Als laatste komt "construct events" aan de beurt. 
+Bij eerste stap, "Serve a business purpose", zegt de titel al veel van wat er verwacht wordt. Een microservices is gebaseerd op een business requirement. En niet het doel dat het IT-team voor ogen heeft. Een voorbeeld van een business requirement is het ophalen van data om die dan te analyseren om daar later dan conclusies uit te trekken. Dit kan in een microservices gegoten worden. Eens het doel voor ogen is bij een microservices, moet er ook gekeken worden naar wat de microservices moet kunnen. Zo lang het bij enkele microservices blijft, is automated deployement etc. niet zo belangrijk. Maar eens we gaan scalen en meerdere microservices in één systeem steken zouden volgende puntjes toch self-sufficient moeten zijn:
+\begin{itemize}
+	\item Geautomatiseerde implementatie
+	\item Blootstelling aan andere systemen, toegankelijk eindpunt
+	\item Opslag van data
+	\item Schaalbaarheid en belasting
+\end{itemize}
+Zoals te zien is op figuur 2.3, is een microservices één klein deeltje in een groot geheel. Later in dit stappenplan zal de figuur ook uitgebreidt worden en zal het geheel duidelijk worden. 
 \begin{figure}[h]
 	\includegraphics[width=10cm]{1.png}
 	\caption{Een microservice dat voldoet aan een business requirement. \textcite{Benetis2016}}
 	\centering
-\end{figure} Dit is ook een van de belangrijkste redenen om microservices te gaan gebruiken. In figuur 2.2 zie je hoe een microservice kan worden voorgesteld. Het is belangrijk om te zorgen dat er bescherming is per microservices. Dit gebeurt best op een uniforme manier. Er kan wel veel gezegd worden over hoe broodnodig microservices zijn maar ze laten deployen en dan er niet meer naar omkijken, zal zeker geen problemen oplossen. Zoals te zien is in figuur 2.3.
+\end{figure}
+
+Na "Serve a business purpose" komt "Protect your stuff". Dit gaat over de bescherming van een microservices. Als het gaat over bescherming moet dit op elk moment gebeuren. Ookal heb je maar één à twee microservices, of honderden, bescherming is belangrijk. Het is belangrijk op over al de microservices een uniforme manier te vinden om ze te beschermen. De bescherming kan een requirement op zich zijn, dus ook dit kan in een microservices worden gestoken. Bescherming is een vage term daarom een korte uitleg van hoe een bescherming er zou kunnen uitzien. De meest bekende manier is natuurlijk authorisatie en authenticatie. Authorisatie is het verkrijgen van rechten om bijvoorbeeld een product toe te voegen op een site. Authenticatie is het aanmelden op facebook bijvoorbeeld. De controle of jij het wel echt bent. Een manier op de microservices te beschermen is gecentraliseerde session opslag. Hier zal verder in de thesis nog dieper op worden ingegaan. Kort uitgelegd betekend gecnetraliseerde session opslag dat de data van de user centraal opgeslagen staat. Zodat alle microservices de zelfde session data lezen en gebruiken. 
 \begin{figure}[h]
 	\includegraphics[width=10cm]{2.png}
 	\caption{Een microservice waar bescherming aan is toegevoegd. \textcite{Benetis2016}}
 	\centering
-\end{figure} Ook na het opzetten en laten werken van een microservices moet er gemonitord worden wat er gebeurt. Dit wordt voorgesteld in figuur 2.4.
+\end{figure}
+In figuur 2.4 is de authenticatie in een microservices gestoken. 
+
+Na de eerste twee stappen komt "See no evil, hear no evil". Eens de microservice is opgezet en gedeployed, moet er gemonitord worden. Daarmee wordt bedoeld dat hoe de microserivces zich gedraagd goed moet bijgehouden worden. Alles zou goed moeten gelogd worden, zodat bij een probleem het geen moeite is om te vinden waar het probleem zich voordeed. Ook hier is het aangeraden om doorheen het hele systeem een uniforme manier van loggen aan te houden. Ook kan men hiervan een microservice maken. Dit wordt ook afgebeeld in figuur 2.5.
 \begin{figure}[h]
 	\includegraphics[width=10cm]{3.png}
 	\caption{Een microservice waar er monitoring is aan toegevoegd om chaos te voorkomen. \textcite{Benetis2016}}
 	\centering
-\end{figure}Naast het monitoren, scalen en opzetten van microservices is er ook nog een ander belangrijk aspect binnen deze technologie. Hoe de microservices met elkaar communiceren. In een monolithic kunnen alle connecties bijgehouden worden in files. Maar door de onafhankelijkheid van microservices is dit iet wat moeilijker. Daarom wordt er aangeraden om met service registry te werken. Dit is een soort authenticatie. Zoals te zien is in figuur 2.5.
+\end{figure}
+
+
+---------------------oud
+
 \begin{figure}[h]
 	\includegraphics[width=10cm]{4.png}
 	\caption{Een microservice dat authenticatie als bescherming toepast. \textcite{Benetis2016}}
