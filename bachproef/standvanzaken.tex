@@ -37,7 +37,7 @@ Zoals te vinden is in het artikel van \textcite{Troisi2019} zijn er acht maniere
 Het artikel van \textcite{Watts2018} geeft het belang van een microservice goed weer. Microservices beschermen het gehele systeem, bij een goede implementatie. Het toepassen van de agile methode is eenvoudiger bij microservices dan bij een monolithic. Met deze technologie is het eenvoudiger om een aanpassing te testen en te onderhouden. Niet de volledige architectuur moet opnieuw getest worden bij een aanpassing. Als team A een aanpassing doet aan hun microservice, zullen de andere teams geen hinder ondervinden. 
 \subsection{Algemene aanpak om microservices te implementeren}
 Het interessante artikel van \textcite{Benetis2016} over een 6-stappen plan om microservices te implementeren. Een paar woorden die meer verklaring nodig hebben voordat we verder gaan. Een gateway is een netwerkpunt dat dient als toegang tot een ander netwerk. Een gateway is een soort toegangspoort. Implementatie is een procesmatige invoering van een verandering of vernieuwing. Iets implementeren of vernieuwen. 
---------------------- Nieuw
+
 In grote lijnen is dit het zes-stappen plan. Als eerste komt aan bod "serve a business purpose". Hierna komt "protect your stuff". Eens dat gebeurt is, zegt het artikel "see no evil, hear no evil". Dan komt "find your stuff" aan bod. Hierna wordt de volgende stap "create a gateway" aangehaald. Als laatste komt "construct events" aan de beurt. 
 Bij eerste stap, "Serve a business purpose", zegt de titel al veel van wat er verwacht wordt. Een microservices is gebaseerd op een business requirement. En niet het doel dat het IT-team voor ogen heeft. Een voorbeeld van een business requirement is het ophalen van data om die dan te analyseren om daar later dan conclusies uit te trekken. Dit kan in een microservices gegoten worden. Eens het doel voor ogen is bij een microservices, moet er ook gekeken worden naar wat de microservices moet kunnen. Zo lang het bij enkele microservices blijft, is automated deployement etc. niet zo belangrijk. Maar eens we gaan scalen en meerdere microservices in één systeem steken zouden volgende puntjes toch self-sufficient moeten zijn:
 \begin{itemize}
@@ -46,7 +46,7 @@ Bij eerste stap, "Serve a business purpose", zegt de titel al veel van wat er ve
 	\item Opslag van data
 	\item Schaalbaarheid en belasting
 \end{itemize}
-Zoals te zien is op figuur 2.3, is een microservices één klein deeltje in een groot geheel. Later in dit stappenplan zal de figuur ook uitgebreidt worden en zal het geheel duidelijk worden. 
+Zoals te zien is op figuur 2.2, is een microservices één klein deeltje in een groot geheel. Later in dit stappenplan zal de figuur ook uitgebreidt worden en zal het geheel duidelijk worden. 
 \begin{figure}[h]
 	\includegraphics[width=10cm]{1.png}
 	\caption{Een microservice dat voldoet aan een business requirement. \textcite{Benetis2016}}
@@ -59,44 +59,44 @@ Na "Serve a business purpose" komt "Protect your stuff". Dit gaat over de besche
 	\caption{Een microservice waar bescherming aan is toegevoegd. \textcite{Benetis2016}}
 	\centering
 \end{figure}
-In figuur 2.4 is de authenticatie in een microservices gestoken. 
+In figuur 2.3 is de authenticatie in een microservices gestoken. 
 
-Na de eerste twee stappen komt "See no evil, hear no evil". Eens de microservice is opgezet en gedeployed, moet er gemonitord worden. Daarmee wordt bedoeld dat hoe de microserivces zich gedraagd goed moet bijgehouden worden. Alles zou goed moeten gelogd worden, zodat bij een probleem het geen moeite is om te vinden waar het probleem zich voordeed. Ook hier is het aangeraden om doorheen het hele systeem een uniforme manier van loggen aan te houden. Ook kan men hiervan een microservice maken. Dit wordt ook afgebeeld in figuur 2.5.
+Na de eerste twee stappen komt "See no evil, hear no evil". Eens de microservice is opgezet en gedeployed, moet er gemonitord worden. Daarmee wordt bedoeld dat hoe de microserivces zich gedraagd goed moet bijgehouden worden. Alles zou goed moeten gelogd worden, zodat bij een probleem het geen moeite is om te vinden waar het probleem zich voordeed. Ook hier is het aangeraden om doorheen het hele systeem een uniforme manier van loggen aan te houden. Ook kan men hiervan een microservice maken. Dit wordt ook afgebeeld in figuur 2.4.
 \begin{figure}[h]
 	\includegraphics[width=10cm]{3.png}
 	\caption{Een microservice waar er monitoring is aan toegevoegd om chaos te voorkomen. \textcite{Benetis2016}}
 	\centering
 \end{figure}
 
-
----------------------oud
-
+Als vierde stap komt er "Find your stuff". In deze stap wordt er gezocht naar een manier om de microservices met elkaar te communiceren. Hiermee wordt bedoelt hoe dat microservices A gegevens vraag aan microservices B. Die dat dan ook vraagt van een andere microservice. Een veel gebruikte techniek hiervoor is "service registry". Een service registry is een databank waar alle services met hun instanties en locatie woren opgeslaan. Daar worden dan ook connecties in opgeslaan. Ook hier wordt er aangeraden om dat in een microservices te gieten. Zodat ook hiervan het gedrag kan gemonitord worden. In figuur 2.5 zie je hoe de service registry kan toegevoegd worden. In de figuur is die terug te vinden onder de naam "service discorvery".
 \begin{figure}[h]
 	\includegraphics[width=10cm]{4.png}
 	\caption{Een microservice dat authenticatie als bescherming toepast. \textcite{Benetis2016}}
 	\centering
 \end{figure}
-Als tip wordt er gegeven om abstractie te gebruiken. Dit is mogelijk door een microservice of compononent te creëeren. Na dat dit allemaal opstaat, is er nog iets waar men nood aan heeft. Een gateway gebruiken. Dit zorgt ervoor dat je implementatie 'weggestopt' zit. Een API gateway is een microservice. Deze zorgt ervoor dat de klant de juiste microservice te pakken krijgt. Je kan het zien als een soort winkelbediende die je helpt bij het vinden van een broek. Een opsomming welke functies een API gateway kan hebben:
+
+Nu is er een service, bestaande uit microservices, dat beschermd is en kan doen wat het zou moeten doen. Maar niet de  volledige service moet open en bloot gelegd worden. En daar zorgt stap 5, "Create a gateway", voor. Een API gateway kan een scherm zijn waar je gegevens op invult en mogelijke acties op doet en die spreken dan de correcte microservices aan. De taak van een gateway is voornamelijk zorgen dat request/aanvragen naar de juiste microservice worden doorgestuurd. Andere taken van een API gateway kunnen volgende zijn
 \begin{itemize}
-	\item Beveiliging van je architectuur,
-	\item de prestatie van alle aanvragen kunnen geregistreerd worden,
-	\item auditing, 
-	\item het transformeren van een of meerdere request naar een microservice,
-	\item het implementeren van dynamische requests en routing.
+	\item Beveiliging: een API gateway kan de binnenkomende aanvragen valideren. 
+	\item Prestatiegegevens kunnen geregistreerd worden.
+	\item Omzetten van aanvragen in enkele of meerdere microservices.
+	\item Abstractie van de clientinterface. Wanneer er van microservice verandert wordt, moet er niet van interface/scherm verandert worden. 
 \end{itemize}
-Hoe een gateway kan gebruikt worden bij microservices, is te zien op figuur 2.6.
+
+In figuur 2.6 is te zien hoe zo een API gateway kan worden toegepast. Zo is ok te zien dat de authenticatie microservice er niet inzit. Die wordt apart gehouden. De request naar de authenticatie mogen niet langs de API gateway gaan. Omdat ze dan zo meteen 'binnen' zitten. Pas na authenticatie mag men request sturen naar de API gateway.
 \begin{figure}[h]
 	\includegraphics[width=10cm]{5.png}
 	\caption{Een microservice dat een gateway gebruikt. \textcite{Benetis2016}}
 	\centering
 \end{figure}
-Als laatste puntje komt de asynchroniteit aan bod. Message queues zijn een oplossing. Om dit aan te pakken, kan je een microservice maken die voor deze taak zorgt. Op deze manier kan je:
+
+Nu is er al een deftige architectuur aanwezig. Stap 6, "construct events", zal het plaatje dan ook compleet maken. De meeste microservices vragen aan asynchrone oplossing. Een niet-gelijktijdige verwerking van aanvragen. Een manier om asynchroon te werken, is werken met een queue of wachtrij. Een bekende manier om asynchroniteit toe te passen is publish/subscribe pattroon. Dit wil zeggen dat microservice A zijn berichten of data op een wachtrij gaat zetten. De microservices die data of berichten van microservice A moeten ontvangen, gaan zich abonneren op die wachtrij. Dus vanaf het moment dat microservice A iets op die wachtrij plaatst, krijgen de geabonneerden een melding en kunnen ze het bericht of de data gaan ophalen. Enkele voordelen van dit als asynchrone oplossing te gebruiken:
 \begin{itemize}
-	\item Taken inplannen,
-	\item subscriben voor specifieke events,
-	\item je subscribe functie laten 'zien' aan externe klanten om notificaties aan te kunnen.
+	\item Taken inplannen. Dit kan door deze gewoon op de wachtrij te plaatsen met een timestamp van wanneer deze moet gebeuren of door een wachtrij te maken voor geplande events.
+	\item Abonneren op bepaalde events.
+	\item Het asynchrone systeem laten bloot leggen zodat externe klanten verschillende notificaties kunnen handelen.
 \end{itemize}
-In figuur 2.7 is het eindresultaat te zien van alle zes de puntjes.
+In figuur 2.7 wordt de volledige architectuur weergegeven. Daar wordt er ook mooi afgebeeld hoe men events pland. Als event A voor event B moet gebeuren dan zetten ze die zo op de wachtrij event A voor event B. Want een wachtrij werkt volgens het FIFO (first in first out) principe.
 \begin{figure}[h]
 	\includegraphics[width=10cm]{6.png}
 	\caption{Een microservice met asynchronisatie. \textcite{Benetis2016}}

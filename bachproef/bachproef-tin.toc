@@ -21,33 +21,33 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.3}Algemene aanpak om microservices te implementeren}{17}{subsection.2.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.4}De voordelen en nadelen van microserivces}{21}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.4}De voordelen en nadelen van microserivces}{22}{subsection.2.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.5}Voorbeelden}{21}{subsection.2.1.5}
+\contentsline {subsection}{\numberline {2.1.5}Voorbeelden}{22}{subsection.2.1.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Amazon}{22}{section*.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Apple}{22}{section*.7}
+\contentsline {subsubsection}{Apple}{23}{section*.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Facebook}{22}{section*.8}
+\contentsline {subsubsection}{Facebook}{23}{section*.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Netflix}{22}{section*.9}
+\contentsline {subsubsection}{Netflix}{23}{section*.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Order-to-cash proces in SAP}{22}{section.2.2}
+\contentsline {section}{\numberline {2.2}Order-to-cash proces in SAP}{23}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Definite}{22}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.1}Definite}{23}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Technologie}{22}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.2}Technologie}{23}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Onderdelen van een order-to-cash proces}{22}{section*.10}
+\contentsline {subsubsection}{Onderdelen van een order-to-cash proces}{23}{section*.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Wat biedt SAP zelf aan voor microservices}{23}{section*.11}
+\contentsline {subsubsection}{Wat biedt SAP zelf aan voor microservices}{24}{section*.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.3}Een order-to-cash proces vanuit de business}{23}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.3}Een order-to-cash proces vanuit de business}{24}{subsection.2.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.4}Het proces afstemmen met de business}{23}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.4}Het proces afstemmen met de business}{24}{subsection.2.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Requirements van de business}{23}{section.2.3}
+\contentsline {section}{\numberline {2.3}Requirements van de business}{24}{section.2.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Methodologie}{25}{chapter.3}
 \defcounter {refsection}{0}\relax 
