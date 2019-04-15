@@ -21,6 +21,7 @@ Het artikel van \textcite{Mauersberger2017} geeft meer uitleg over microservices
 	\item Bij een fout in een proces, kan de volledige architectuur falen.
 \end{itemize}
 De definitie die te vinden is in dit artikel, gaat als volgt: "A method of developing software applications as a suite of independently deployable, small, modular services in which each service runs a unique process and communicates through a well-defined, lightweight mechanism to serve a business goals.". Als je de definitie leest, zie je drie onderdelen. Het eerste onderdeel vertelt hoe een microservice in elkaar zit. Het is een onafhankelijke, kleine, modulaire services. Modulaire services zijn services waarbij veel delen uitwisselbaar zijn met diverse services. De services staan los van elkaar. Ze hebben geen invloed op elkaar. Daarom zijn ze ook onafhankelijk. Wordt er info gestuurd of gevraagd van services A dan zal dit geen invloed hebben op de andere services. De eenvoudige communicatie is een tweede eigenschap van microservices. Er is nood aan communicatie omdat sommige services wel data moeten uitwisselen om hun 'job' te kunnen doen. De communicatie kan gebeuren op verschillende manier. De manier die gekender is, is 'Messaging via a Message Broker'. Dit wil zeggen dat microservice A een bericht plaats op de wachtrij bij microservice B wanneer die data wil doorsturen. Dan Kan microservices B aan die data wanneer hij die nodig heeft. Ze zullen soms moeten wachten op elkaar maar ze zijn zo goed als onafhankelijk van elkaar. De derde eigenschap omvat dat een microservice wordt gemaakt in functie van een requirement uit de business. Elk product in de business heeft een doel dat moet voldoen aan eisen. Het unieke aan microservices is dat we ze gaan bekijken vanuit de eisen binnen de business. Het doel van microservices is, de problemen die te vinden zijn bij een monolithic, verhelpen. De vorige definite legde uit wat microservices zijn. Dit artikel zegt waar men microservices kan plaatsen. Er is dus één groot framework. Daar zitten meerdere onafhankelijke services in.
+
 \begin{figure}[h]
 	\includegraphics[width=10cm]{microservices-vs-monolithic.jpg}
 	\centering
@@ -29,6 +30,14 @@ De definitie die te vinden is in dit artikel, gaat als volgt: "A method of devel
 Figuur 2.1 is afkomstig uit artikel \textcite{Watts2018}.
 Zoals te zien in figuur 2.1 is er een groot verschil tussen een monolithic architectuur en die van een microservice. De monolithic wordt weergegeven in de linkerkant van de foto. Aan de rechterkant van de foto is een voorbeeld te zien van een microservice architectuur. Daar is duidelijk te zien dat elke microservice een eigen databank/datastore heeft. Voor elke functionaliteit wordt een microserives aangemaakt, die dan nog eens apart een databank voor zich krijgt. Als bij microservice A een probleem is dan heeft dit niet meteen impact op de andere services. De communicatie tussen microservice A en de anderen zal wel hinder ondervinden. Maar de andere microservices kunnen wel nog steeds onafhankelijk verder. 
 Het artikel van \textcite{series2018} bestaat uit elf verschillende onderdelen. Eerst wordt er uitleg gegeven over wat microservices zijn. Dit is hun definitie van microservices: "A software architecting pattern that allows software to be developed into relatively small, distinct components. Each of the components is abstracted by an API(s) and provides a distinct subset of the functionality of the entire application". Ook hier zien we weer het puntje passeren dat een microservice een klein componentje is van een groter geheel. Die eigenschap wordt heel hard benadrukt. Na het uitleggen van microservices, schrijven ze ook over hoe microservices zo scalable zijn. Met scalable bedoelen ze schaalbaarheid. De mogelijkheid van software om mee te groeien als het aantal gebruikers vermeerderd. Dus eigenlijk dat de software nog steeds even goed presteerd bij 10 gebruikers als bij 2 000 gebruikers. Ook lichten ze toe hoe belangrijk API's zijn binnen een microservice architectuur. API's zijn een set van definities die ervoor zorgen dat deeltjes in een programma met elkaar kunnen communcieren. Een voordeel van API's is dat je niet moet weten hoe de andere code werkt. Verder wordt er ook gepraat over de verschillen tussen een monolithic architectuur en een microservice architectuur. 
+
+
+\textcite{Benetis2016a} vertelt dat microservices uit dezelfde ideologie kotmt als Agile en DevOps. DevOps is een samenvoegsel van development en operations. Bij deze methode ligt de nadruk op de samenwerking en communicatie tussen verschillende partijen. Hier zijn de partijen de software engineers en andere IT specialisten. Deze ideologie omvat het volgende: het afbreken van kleine, traag evoluerende architectuur of monolithic en deze in microservices steken. Zoals te zien is in figuur X. We zien dat de monolithic alle puntjes in een kader heeft. Dit staat symbolisch voor het grote geheel dat eigen is aan een monolithic. Alles zit samen in één grote doos. Maar bij microservices is dit niet zo, daar zit elk deeltje/requirement in een aparte doos. 
+\begin{figure}[h]
+	\includegraphics[width=10cm]{Mono_Micro.png}
+	\centering
+	\caption{Een monolithic vergeleken met een microservice. \textcite{Benetis2016a}}
+\end{figure}
 \subsection{Het belang van microservices}
 Bij een monolithic kan het aanpassen van een deeltje, veel werk vragen. Dit werd meer uitgelegd bij de definite van microservices. Microservices spelen gemakkelijker in op het periodieke opleveren van delen software. Deze technologie legt niet heel het framework plat als er deeltjes moeten bij gecodeerd worden. Microservices kunnen sneller inspelen op de Agile analyse/ontwikkel methode. Dit is ook een reden waarom microservices zo een opkomst kent. De analyse methode Agile werkt met periodieke opleveringen die kunnen gaan van twee weken tot een maand. In de periode wordt er gewerkt aan een functionaliteit of een eis van de klant. 
 \textcite{series2018} haalt aan dat microservices van belang zijn bij het scalen van software.
@@ -103,11 +112,39 @@ In figuur 2.7 wordt de volledige architectuur weergegeven. Daar wordt er ook moo
 	\centering
 \end{figure}
 
-
+\textcite{Benetis2016a} beschrijft dat over volgende puntjes goed moet worden nagedacht voordat men de overschakeling maakt naar microservices:
+\begin{itemize}
+	\item Heeft de organisatie de microservice architectuur wel nodig?
+	\item Zijn de juiste competenties aanwezig? Microservices zijn in het algemeen complexer dan een monolithic. Zeker omdat dit iets nieuws is. 
+	\item  Staat iedereen achter deze verandering?
+\end{itemize}
+Eens de beslissing gevallen is om over te schakelen, moet er beslist worden hoeveel de infrastructurele vernadringen van de scope inpalmen. Het verloop om microservices te creëeren gaat als volgt in dit artikel. Eerst het uit elkaar trekken van het bestaande systeem, om het dan in microservices te steken, is een goed begin. Zo moet er constant nagedacht worden over de algemene infrastructuur. Een groot valluik in het begin van het proces is een proof of concept maken. Dit eindigt meestal in een infrastructuur dat niet overeenkomt met de waarden van microservices. Het probleem ligt dan meestal bij een onduidelijke scope. De business requirements zijn meestal wel duidelijk, dit geldt dan meestal niet voor niet-functionele requirements. Daarnaast moeten ook nog volgende stappen gerealiseerd worden:
+\begin{itemize}
+	\item Bescherming.
+	\item Deployment automatisatie.
+	\item Loggen en monitoren van microservices hun gedrag.
+\end{itemize}
+Velen komen niet tot deze stap, door de onderschatting van de overschakeling naar microservices.
 \subsection{De voordelen en nadelen van microserivces}
 In het artikel van \textcite{series2018} wordt er veel lofzang gedaan over microservices. Het gebruik van microservices zou ervoor zorgen dat de architectuur flexibeler wordt. Met flexibeler wordt bedoelt dat de architectuur zich kan 'aanpassen' of kan inspelen op verschillende situaties. Er kunnen microservices hergebruikt worden. Dankzij microservices is het hermodeleren, implementeren van nieuwe technologieën, ... 
 Kleinere deeltjes zijn gemakkelijker te documenteren. De snelheid van microservices zijn een groot pluspunt. Hiermee wordt er geprobeert om aan te halen dat microservices sneller reageren omdat zo kleine, onafhankelijke services zijn. Ze moeten geen 'onnodige' stappen maken om de wens van de klant te vervullen. 
 \textcite{Watts2018} geeft enkele voordelen van een microservice. Een developer is onafhankelijk. Ze hebben vrijheid. Ook het scalen van een microservice is veel eenvoudiger. Dit komt door dat microservices minder resources nodig hebben dan een volledige monolithic. Resources zijn hulpbronnen. Zoals al vaak aangehaald in deze bachelorproef, zijn microservices onafhankelijk en zouden ze daarom ook geen hulpbronnen nodig mogen hebben. Binnen een monolithic zijn deeltjes afhankelijk van elkaar en hebben elkaar dus nodig om goed te kunnen functioneren. De deeltjes binnen de monolithic hebben elkaar dus nodig en mogelijk als hulpbron. Een ander voordeel is bij het falen van een microservices, de andere microservices er geen last van zullen hebben. Dit komt door hun onafhankelijkheid. 
+\textcite{Benetis2016} geeft aan dat volgende puntjes voordelen zijn van microservices:
+\begin{itemize}
+	\item Sneller en gemakkelijker developen.
+	\item Het refactoren van deeltjes is eenvoudiger door de onafhankelijkheid van de services. 
+	\item De schaalbaarheid is eenvoudiger dan bij een monolithic. We kunnen microservices gewoon 'klonen' of kopieëren. 
+	\item Het deployen van een onderdeel gaat sneller omdat het team gespecialiseerd is in die bepaalde service.
+	\item Als er iets faalt dan is de impact veel kleiner dan bij een monolithic. Dit komt ook door de onafhankelijkheid van de services. 
+\end{itemize}
+Maar om ervoor te zorgen dat dit allemaal vlot verloopt moeten er ook aanpassingen binnen in het bedrijf/ de organisatie gebeuren. 
+\begin{itemize}
+	\item Een project zal ingedeeld moeten worden in kleine requirements. De scope zal gedetailleerder moeten zijn.
+	\item De teams zullen kleiner moeten worden gemaakt. Zodat er meer op de Agile methode kan gewerkt worden. 
+	\item Er zal een sterke band komen met DevOps. Dit komt omdat veel services volledige automatische deployment vragen.
+	\item Ook de communicatie tussen de services zal beter moeten worden uitgedacht.
+	\item Documenteren is belangrijk. Dit is niet enkel het geval voor microservices maar ook voor elk project.
+\end{itemize}
 \subsection{Voorbeelden}
 In dit deeltje zal je meer te weten komen over hoe grote technologische bedrijven microservices toepassen en hoe ze naar deze technologie zijn overgeschakeld.
 Een term die hier vaak zal gebruikt worden, is een monolithic. Dit is de tegenhanger van microservices. Sommige zweren bij monolithic en anderen hebben gouden woorden voor microservices. De beslissing om één van de twee technieken te kiezen, ligt bij wat je precies nodig hebt. Wat de business nodig heeft. 
