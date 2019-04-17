@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.20)  15 APR 2019 23:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.20)  17 APR 2019 22:57
 entering extended mode
 **./bachproef-tin.tex
 (bachproef-tin.tex
@@ -1544,21 +1544,21 @@ Package csquotes Info: Redefining alias 'default' -> 'dutch'.
  (bachproef-tin.aux)
 \openout1 = `bachproef-tin.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
-LaTeX Font Info:    ... okay on input line 46.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 46.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 48.
 
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -1630,7 +1630,7 @@ G,.JBIG2,.JB2,.eps]
 )
 \c@lstlisting=\count470
  ABD: EveryShipout initializing macros
-LaTeX Info: Redefining \microtypecontext on input line 46.
+LaTeX Info: Redefining \microtypecontext on input line 48.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1646,7 +1646,7 @@ g"
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 \AtBeginShipoutBox=\box68
-Package hyperref Info: Link coloring OFF on input line 46.
+Package hyperref Info: Link coloring OFF on input line 48.
 
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.st
 y"
@@ -1658,9 +1658,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count471
 )
-LaTeX Info: Redefining \ref on input line 46.
-LaTeX Info: Redefining \pageref on input line 46.
-LaTeX Info: Redefining \nameref on input line 46.
+LaTeX Info: Redefining \ref on input line 48.
+LaTeX Info: Redefining \pageref on input line 48.
+LaTeX Info: Redefining \nameref on input line 48.
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -1672,21 +1672,7 @@ Package biblatex Info: ... file 'bachproef-tin.bbl' found.
 
 Package biblatex Warning: The following entry could not be found
 (biblatex)                in the database:
-(biblatex)                Creeger2009
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Knuth1998
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Obrien2017
+(biblatex)                Fulton2015
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
@@ -1697,9 +1683,16 @@ Package biblatex Warning: The following entry could not be found
 (biblatex)                Please verify the spelling and rerun
 (biblatex)                LaTeX afterwards.
 
+
+Package biblatex Warning: The following entry could not be found
+(biblatex)                in the database:
+(biblatex)                series2018
+(biblatex)                Please verify the spelling and rerun
+(biblatex)                LaTeX afterwards.
+
 )
-Package biblatex Info: Reference section=0 on input line 46.
-Package biblatex Info: Reference segment=0 on input line 46.
+Package biblatex Info: Reference section=0 on input line 48.
+Package biblatex Info: Reference segment=0 on input line 48.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -1735,7 +1728,7 @@ Package biblatex Info: Reference segment=0 on input line 46.
 <img/HOGENT_Logo_Pos_rgb.png, id=6, 3503.0875pt x 1975.38pt>
 File: img/HOGENT_Logo_Pos_rgb.png Graphic file (type png)
 <use img/HOGENT_Logo_Pos_rgb.png>
-Package pdftex.def Info: img/HOGENT_Logo_Pos_rgb.png  used on input line 56.
+Package pdftex.def Info: img/HOGENT_Logo_Pos_rgb.png  used on input line 58.
 (pdftex.def)             Requested size: 71.13188pt x 40.08864pt.
  [1
 
@@ -1781,7 +1774,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.56 \inserttitlepage
+l.58 \inserttitlepage
                       [1
 
 
@@ -1834,12 +1827,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [8] (bachproef-tin.lof
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 8.
-
-Overfull \hbox (23.0069pt too wide) in paragraph at lines 8--8
+Overfull \hbox (0.38434pt too wide) in paragraph at lines 8--8
 |\T1/pag/m/n/12 (-20) 2.1| []Een mo-no-li-thic ar-chi-tec-tuur naast een mi-cro
--ser-vice ar-chi-tec-tuur. [][]|
+-ser-vice ar-chi-tec-tuur. Watts
  []
 
 )
@@ -1859,6 +1849,8 @@ Overfull \hbox (23.0069pt too wide) in paragraph at lines 8--8
 
 ]
 Hoofdstuk 1.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 8.
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 11.
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
@@ -1871,180 +1863,162 @@ Hoofdstuk 2.
 [15
 
 ]
-<img/microservices-vs-monolithic.jpg, id=233, 1830.84pt x 885.3075pt>
+<img/microservices-vs-monolithic.jpg, id=249, 1830.84pt x 885.3075pt>
 File: img/microservices-vs-monolithic.jpg Graphic file (type jpg)
 <use img/microservices-vs-monolithic.jpg>
 Package pdftex.def Info: img/microservices-vs-monolithic.jpg  used on input lin
 e 26.
 (pdftex.def)             Requested size: 284.52756pt x 137.57246pt.
-
-
-LaTeX Warning: Citation 'Watts2018' on page 16 undefined on input line 28.
-
-
-LaTeX Warning: Citation 'Watts2018' on page 16 undefined on input line 30.
-
-[16 <./img/microservices-vs-monolithic.jpg>]
-
-LaTeX Warning: Citation 'Benetis2016a' on page 17 undefined on input line 35.
-
-<img/Mono_Micro.png, id=240, 963.6pt x 345.29pt>
+ [16 <./img/microservices-vs-monolithic.jpg>]
+<img/Mono_Micro.png, id=258, 963.6pt x 345.29pt>
 File: img/Mono_Micro.png Graphic file (type png)
 <use img/Mono_Micro.png>
 Package pdftex.def Info: img/Mono_Micro.png  used on input line 37.
 (pdftex.def)             Requested size: 284.52756pt x 101.9545pt.
+ [17 <./img/Mono_Micro.png>]
+<img/monolithic_auth.png, id=271, 606.265pt x 462.72874pt>
+File: img/monolithic_auth.png Graphic file (type png)
+<use img/monolithic_auth.png>
+Package pdftex.def Info: img/monolithic_auth.png  used on input line 52.
+(pdftex.def)             Requested size: 284.52756pt x 217.16481pt.
 
-LaTeX Warning: Citation 'Benetis2016a' on page 17 undefined on input line 39.
+[18 <./img/monolithic_auth.png (PNG copy)>]
+Underfull \vbox (badness 5787) has occurred while \output is active []
 
-
-LaTeX Warning: Citation 'Troisi2019' on page 17 undefined on input line 45.
-
-
-LaTeX Warning: Citation 'Watts2018' on page 17 undefined on input line 46.
-
-[17 <./img/Mono_Micro.png>]
-<img/1.png, id=251, 963.6pt x 425.59pt>
+ [19]
+<img/1.png, id=283, 963.6pt x 425.59pt>
 File: img/1.png Graphic file (type png)
 <use img/1.png>
-Package pdftex.def Info: img/1.png  used on input line 60.
+Package pdftex.def Info: img/1.png  used on input line 88.
 (pdftex.def)             Requested size: 284.52756pt x 125.66484pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<img/2.png, id=253, 963.6pt x 425.59pt>
+<img/2.png, id=285, 963.6pt x 425.59pt>
 File: img/2.png Graphic file (type png)
 <use img/2.png>
-Package pdftex.def Info: img/2.png  used on input line 67.
+Package pdftex.def Info: img/2.png  used on input line 95.
 (pdftex.def)             Requested size: 284.52756pt x 125.66484pt.
 
-Underfull \vbox (badness 6792) has occurred while \output is active []
 
- [18]
-<img/3.png, id=259, 963.6pt x 552.0625pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[20 <./img/1.png>]
+<img/3.png, id=292, 963.6pt x 552.0625pt>
 File: img/3.png Graphic file (type png)
 <use img/3.png>
-Package pdftex.def Info: img/3.png  used on input line 75.
+Package pdftex.def Info: img/3.png  used on input line 103.
 (pdftex.def)             Requested size: 284.52756pt x 163.00865pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<img/4.png, id=262, 963.6pt x 626.34pt>
+<img/4.png, id=295, 963.6pt x 626.34pt>
 File: img/4.png Graphic file (type png)
 <use img/4.png>
-Package pdftex.def Info: img/4.png  used on input line 82.
+Package pdftex.def Info: img/4.png  used on input line 110.
 (pdftex.def)             Requested size: 284.52756pt x 184.94072pt.
-[19 <./img/1.png> <./img/2.png>] [20 <./img/3.png> <./img/4.png>]
-<img/5.png, id=276, 963.6pt x 626.34pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[21 <./img/2.png> <./img/3.png>]
+<img/5.png, id=303, 963.6pt x 626.34pt>
 File: img/5.png Graphic file (type png)
 <use img/5.png>
-Package pdftex.def Info: img/5.png  used on input line 97.
+Package pdftex.def Info: img/5.png  used on input line 125.
 (pdftex.def)             Requested size: 284.52756pt x 184.94072pt.
-<img/6.png, id=278, 963.6pt x 708.6475pt>
-File: img/6.png Graphic file (type png)
-<use img/6.png>
-Package pdftex.def Info: img/6.png  used on input line 110.
-(pdftex.def)             Requested size: 284.52756pt x 209.24384pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Citation 'Benetis2016a' on page 21 undefined on input line 115.
+Underfull \vbox (badness 2042) has occurred while \output is active []
 
-[21 <./img/5.png>]
+ [22 <./img/4.png>]
+<img/6.png, id=310, 963.6pt x 708.6475pt>
+File: img/6.png Graphic file (type png)
+<use img/6.png>
+Package pdftex.def Info: img/6.png  used on input line 138.
+(pdftex.def)             Requested size: 284.52756pt x 209.24384pt.
+ [23 <./img/5.png> <./img/6.png>]
+Underfull \vbox (badness 4967) has occurred while \output is active []
 
-LaTeX Warning: Citation 'Watts2018' on page 22 undefined on input line 131.
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [22 <./img/6.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [23]
+ [24]
 LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/pag/b/n' tried instead on input line 152.
+(Font)              Font shape `T1/pag/b/n' tried instead on input line 180.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 152.
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 180.
 
-[24]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Citation 'Kumaran2015' on page 25 undefined on input line 175.
-
-<img/Order-to-cash-cycle.jpg, id=309, 375.65344pt x 195.73125pt>
+ [25]
+<img/Order-to-cash-cycle.jpg, id=334, 375.65344pt x 195.73125pt>
 File: img/Order-to-cash-cycle.jpg Graphic file (type jpg)
 <use img/Order-to-cash-cycle.jpg>
-Package pdftex.def Info: img/Order-to-cash-cycle.jpg  used on input line 177.
+Package pdftex.def Info: img/Order-to-cash-cycle.jpg  used on input line 205.
 (pdftex.def)             Requested size: 284.52756pt x 148.2615pt.
 
-LaTeX Warning: Citation 'Kumaran2015' on page 25 undefined on input line 178.
 
-) (methodologie.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
- [25 <./img/Order-to-cash-cycle.jpg>] [26]
+[26]) (methodologie.tex [27 <./img/Order-to-cash-cycle.jpg>] [28
+
+]
 Hoofdstuk 3.
-) (conclusie.tex [27
-
-] [28
+) (conclusie.tex [29] [30
 
 ]
 Hoofdstuk 4.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [29])
-[30]
+ [31])
+[32]
 B"ylage A.
-(../voorstel/voorstel-inhoud.tex [31
+(../voorstel/voorstel-inhoud.tex [33
 
-] [32] [33]) [34]
-Overfull \hbox (6.55476pt too wide) in paragraph at lines 130--130
+] [34] [35]) [36]
+Overfull \hbox (30.06398pt too wide) in paragraph at lines 132--132
+\T1/ptm/m/it/12 (-20) https://medium.com/tech-tajawal/microservice-authenticati
+on-and-authorization-solutions-
+ []
+
+
+Overfull \hbox (6.26927pt too wide) in paragraph at lines 132--132
+\T1/ptm/m/n/12 (-20) ces ar-chi-tec-ture. \T1/ptm/m/it/12 (-20) https://www.dev
+bridge.com/articles/a-6-point-plan-for-implementing-
+ []
+
+
+Overfull \hbox (8.56482pt too wide) in paragraph at lines 132--132
+\T1/ptm/m/n/12 (-20) tec-ture in fi-nan-cial ser-vi-ces. \T1/ptm/m/it/12 (-20) 
+https://www.devbridge.com/articles/path-to-microservices-
+ []
+
+
+Overfull \hbox (6.55476pt too wide) in paragraph at lines 132--132
 [][]\T1/ptm/m/n/12 (-20) Ciber. (2018). Mi-cro-ser-vi-ces: het einde van de SAP
  spa-ghetti? \T1/ptm/m/it/12 (-20) https://www.ciber.nl/blog/deel-
  []
 
+[37
 
-Overfull \hbox (40.14156pt too wide) in paragraph at lines 130--130
+]
+Overfull \hbox (40.14156pt too wide) in paragraph at lines 132--132
 [][]\T1/ptm/m/n/12 (-20) Semerdzhiev, K. (2018, juli 24). In-tro-du-cing pro-je
 ct Kyma. \T1/ptm/m/it/12 (-20) https://kyma-project.io/blog/introducing-
  []
 
-
-Overfull \hbox (3.10901pt too wide) in paragraph at lines 130--130
-\T1/ptm/m/it/12 (-20) https://www.programmableweb.com/api-university/microservi
-ces-101-understanding-
- []
-
-[35
-
-] [36]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 132.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 132.
+[38]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 134.
  (bachproef-tin.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 132.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 132.
-
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                bachproef-tin
-(biblatex)                and rerun LaTeX afterwards.
-
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 134.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 134.
 Package logreq Info: Writing requests to 'bachproef-tin.run.xml'.
 \openout1 = `bachproef-tin.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 39902 strings out of 492970
- 748008 string characters out of 3127037
- 1344113 words of memory out of 3000000
- 42909 multiletter control sequences out of 15000+200000
- 580851 words of font info for 162 fonts, out of 3000000 for 9000
+ 39946 strings out of 492970
+ 748865 string characters out of 3127037
+ 1344622 words of memory out of 3000000
+ 42936 multiletter control sequences out of 15000+200000
+ 581336 words of font info for 168 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,67p,1971b,3825s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}
@@ -2055,9 +2029,9 @@ urw/avantgar/uagk8a.pfb><C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fonts/
 type1/urw/times/utmb8a.pfb><C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fon
 ts/type1/urw/times/utmr8a.pfb><C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on bachproef-tin.pdf (38 pages, 840586 bytes).
+Output written on bachproef-tin.pdf (40 pages, 874013 bytes).
 PDF statistics:
- 525 PDF objects out of 1000 (max. 8388607)
- 104 named destinations out of 1000 (max. 500000)
- 26943 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 562 PDF objects out of 1000 (max. 8388607)
+ 111 named destinations out of 1000 (max. 500000)
+ 26948 words of extra memory for PDF output out of 29859 (max. 10000000)
 

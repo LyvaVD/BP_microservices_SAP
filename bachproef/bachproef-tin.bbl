@@ -98,6 +98,35 @@
       \field{year}{2018}
       \field{dateera}{ce}
     \endentry
+    \entry{Ayoub2018}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=df66d4325992383cbc75f5387abd7737}{%
+           family={Ayoub},
+           familyi={A\bibinitperiod},
+           given={Mina},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{df66d4325992383cbc75f5387abd7737}
+      \strng{fullhash}{df66d4325992383cbc75f5387abd7737}
+      \strng{bibnamehash}{df66d4325992383cbc75f5387abd7737}
+      \strng{authorbibnamehash}{df66d4325992383cbc75f5387abd7737}
+      \strng{authornamehash}{df66d4325992383cbc75f5387abd7737}
+      \strng{authorfullhash}{df66d4325992383cbc75f5387abd7737}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{24}
+      \field{journaltitle}{https://medium.com/tech-tajawal/microservice-authentication-and-authorization-solutions-e0e5e74b248a}
+      \field{month}{4}
+      \field{title}{Microservices authentication and authorization solutions}
+      \field{year}{2018}
+      \field{dateera}{ce}
+    \endentry
     \entry{Benetis2016}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=3eb69ed74ee871d8d24bcde48e716171}{%
@@ -115,15 +144,44 @@
       \strng{authorfullhash}{3eb69ed74ee871d8d24bcde48e716171}
       \field{sortinit}{B}
       \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradate}{1}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{11}
       \field{journaltitle}{https://www.devbridge.com/articles/a-6-point-plan-for-implementing-a-scalable-microservices-architecture/}
       \field{month}{11}
       \field{title}{A 6-point plan for implementing a scalable microservices architecture}
+      \field{year}{2016}
+      \field{dateera}{ce}
+    \endentry
+    \entry{Benetis2016a}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=3eb69ed74ee871d8d24bcde48e716171}{%
+           family={Benetis},
+           familyi={B\bibinitperiod},
+           given={Rimantas},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3eb69ed74ee871d8d24bcde48e716171}
+      \strng{fullhash}{3eb69ed74ee871d8d24bcde48e716171}
+      \strng{bibnamehash}{3eb69ed74ee871d8d24bcde48e716171}
+      \strng{authorbibnamehash}{3eb69ed74ee871d8d24bcde48e716171}
+      \strng{authornamehash}{3eb69ed74ee871d8d24bcde48e716171}
+      \strng{authorfullhash}{3eb69ed74ee871d8d24bcde48e716171}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradate}{2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{journaltitle}{https://www.devbridge.com/articles/path-to-microservices-in-financial-services/}
+      \field{month}{1}
+      \field{title}{Path to microservices: Moving away from monolithic architecture in financial services}
       \field{year}{2016}
       \field{dateera}{ce}
     \endentry
@@ -199,32 +257,30 @@
       \field{title}{Wiring Microservices, Integration Microservices \& APIs.}
       \field{year}{2018}
     \endentry
-    \entry{Fulton2015}{article}{}
+    \entry{Kumaran2015}{article}{}
       \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=048efaeafdafcf09d17019aca614e213}{%
-           family={III},
-           familyi={I\bibinitperiod},
-           given={Scott\bibnamedelimb M.\bibnamedelimi Fulton},
-           giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim F\bibinitperiod},
+        {{uniquename=0,uniquepart=base,hash=5ea1e48e7a5eee2e95c49141b42aa8cf}{%
+           family={Kumaran},
+           familyi={K\bibinitperiod},
+           given={Senthil},
+           giveni={S\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{048efaeafdafcf09d17019aca614e213}
-      \strng{fullhash}{048efaeafdafcf09d17019aca614e213}
-      \strng{bibnamehash}{048efaeafdafcf09d17019aca614e213}
-      \strng{authorbibnamehash}{048efaeafdafcf09d17019aca614e213}
-      \strng{authornamehash}{048efaeafdafcf09d17019aca614e213}
-      \strng{authorfullhash}{048efaeafdafcf09d17019aca614e213}
-      \field{sortinit}{I}
-      \field{sortinithash}{320bc8fe8101b9376f9f21cd507de0e8}
+      \strng{namehash}{5ea1e48e7a5eee2e95c49141b42aa8cf}
+      \strng{fullhash}{5ea1e48e7a5eee2e95c49141b42aa8cf}
+      \strng{bibnamehash}{5ea1e48e7a5eee2e95c49141b42aa8cf}
+      \strng{authorbibnamehash}{5ea1e48e7a5eee2e95c49141b42aa8cf}
+      \strng{authornamehash}{5ea1e48e7a5eee2e95c49141b42aa8cf}
+      \strng{authorfullhash}{5ea1e48e7a5eee2e95c49141b42aa8cf}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{day}{8}
-      \field{journaltitle}{https://thenewstack.io/led-amazon-microservices-architecture/}
-      \field{month}{10}
-      \field{title}{What led Amazon to its own microservices architecture}
+      \field{journaltitle}{https://www.invensis.net/blog/finance-and-accounting/what-is-order-to-cash-cycle/}
+      \field{title}{What is Order to Cash Cycle}
       \field{year}{2015}
       \field{dateera}{ce}
     \endentry
@@ -280,6 +336,33 @@
       \field{journaltitle}{https://blog.leanix.net/en/why-netflix-amazon-and-apple-care-about-microservices}
       \field{month}{7}
       \field{title}{Why Netflix, Amazon, and Apple Care about microservices}
+      \field{year}{2017}
+      \field{dateera}{ce}
+    \endentry
+    \entry{OBrien2017}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=03bcbcad3bdd121aede7115f7b77dfe0}{%
+           family={O'Brien},
+           familyi={O\bibinitperiod},
+           given={Lindsey},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{03bcbcad3bdd121aede7115f7b77dfe0}
+      \strng{fullhash}{03bcbcad3bdd121aede7115f7b77dfe0}
+      \strng{bibnamehash}{03bcbcad3bdd121aede7115f7b77dfe0}
+      \strng{authorbibnamehash}{03bcbcad3bdd121aede7115f7b77dfe0}
+      \strng{authornamehash}{03bcbcad3bdd121aede7115f7b77dfe0}
+      \strng{authorfullhash}{03bcbcad3bdd121aede7115f7b77dfe0}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://anytimecollect.com/the-order-to-cash-cycle/}
+      \field{title}{THE ORDER TO CASH CYCLE}
       \field{year}{2017}
       \field{dateera}{ce}
     \endentry
@@ -361,31 +444,32 @@
       \field{year}{2018}
       \field{dateera}{ce}
     \endentry
-    \entry{series2018}{article}{}
+    \entry{Troisi2019}{article}{}
       \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=ecd77c90a0b5eeda8f863131c78192b0}{%
-           family={Series},
-           familyi={S\bibinitperiod},
-           given={Api},
-           giveni={A\bibinitperiod},
-           givenun=0,
-           prefix={u},
-           prefixi={u\bibinitperiod}}}%
+        {{uniquename=0,uniquepart=base,hash=e58e1635f1c9994f9b6a33a8b9723373}{%
+           family={Troisi},
+           familyi={T\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
       }
-      \strng{namehash}{ecd77c90a0b5eeda8f863131c78192b0}
-      \strng{fullhash}{ecd77c90a0b5eeda8f863131c78192b0}
-      \strng{bibnamehash}{ecd77c90a0b5eeda8f863131c78192b0}
-      \strng{authorbibnamehash}{ecd77c90a0b5eeda8f863131c78192b0}
-      \strng{authornamehash}{ecd77c90a0b5eeda8f863131c78192b0}
-      \strng{authorfullhash}{ecd77c90a0b5eeda8f863131c78192b0}
-      \field{sortinit}{u}
-      \field{sortinithash}{36a2444f5238e0dcf4bb59704df6624d}
-      \field{labeldatesource}{nodate}
+      \strng{namehash}{e58e1635f1c9994f9b6a33a8b9723373}
+      \strng{fullhash}{e58e1635f1c9994f9b6a33a8b9723373}
+      \strng{bibnamehash}{e58e1635f1c9994f9b6a33a8b9723373}
+      \strng{authorbibnamehash}{e58e1635f1c9994f9b6a33a8b9723373}
+      \strng{authornamehash}{e58e1635f1c9994f9b6a33a8b9723373}
+      \strng{authorfullhash}{e58e1635f1c9994f9b6a33a8b9723373}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{https://www.programmableweb.com/api-university/microservices-101-understanding-and-leveraging-microservices}
-      \field{title}{Microservices 101: Understanding and leveraging microservices}
+      \field{journaltitle}{https://techbeacon.com/app-dev-testing/8-best-practices-microservices-app-sec}
+      \field{title}{8 best practices for microservices app sec}
+      \field{year}{2019}
+      \field{dateera}{ce}
     \endentry
     \entry{VanBart2018}{article}{}
       \name{author}{1}{}{%
@@ -413,11 +497,37 @@
       \field{title}{Microservices and integration: Doing IT rigth?}
       \field{year}{2018}
     \endentry
+    \entry{Watts2018}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=f13895f156d61ffcd99528f9542c11dd}{%
+           family={Watts},
+           familyi={W\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f13895f156d61ffcd99528f9542c11dd}
+      \strng{fullhash}{f13895f156d61ffcd99528f9542c11dd}
+      \strng{bibnamehash}{f13895f156d61ffcd99528f9542c11dd}
+      \strng{authorbibnamehash}{f13895f156d61ffcd99528f9542c11dd}
+      \strng{authornamehash}{f13895f156d61ffcd99528f9542c11dd}
+      \strng{authorfullhash}{f13895f156d61ffcd99528f9542c11dd}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://www.bmc.com/blogs/microservices-architecture/}
+      \field{title}{Microservices: An Introduction to Monolithic vs Microservices Architecture (MSA)}
+      \field{year}{2018}
+      \field{dateera}{ce}
+    \endentry
   \enddatalist
-  \missing{Creeger2009}
-  \missing{Knuth1998}
-  \missing{Obrien2017}
+  \missing{Fulton2015}
   \missing{Pollefliet2011}
+  \missing{series2018}
 \endrefsection
 \endinput
 
