@@ -44,7 +44,26 @@ Het artikel van \textcite{series2018} bestaat uit elf verschillende onderdelen. 
 Bij een monolithic kan het aanpassen van een deeltje, veel werk vragen. Dit werd meer uitgelegd bij de definite van microservices. Microservices spelen gemakkelijker in op het periodieke opleveren van delen software. Deze technologie legt niet heel het framework plat als er deeltjes moeten bij gecodeerd worden. Microservices kunnen sneller inspelen op de Agile analyse/ontwikkel methode. Dit is ook een reden waarom microservices zo een opkomst kent. De analyse methode Agile werkt met periodieke opleveringen die kunnen gaan van twee weken tot een maand. In de periode wordt er gewerkt aan een functionaliteit of een eis van de klant. 
 \textcite{series2018} haalt aan dat microservices van belang zijn bij het scalen van software.
 In het artikel van \textcite{RDX2016} worden er verschillende eigenschappen aangekaart. Microservices moeten een doel in de business vervullen. Naast dit, zorgt microservices er ook voor dat bescherming eenvoudig wordt. 
-Zoals te vinden is in het artikel van \textcite{Troisi2019} zijn er acht manieren hoe microservices bescherming bieden. NOG VERDER UITSCHRIJVEN.
+Zoals te vinden is in het artikel van \textcite{Troisi2019} zijn er acht manieren hoe microservices bescherming bieden. 
+De verschillende manieren zijn:
+\begin{itemize}
+	\item Het gebruik van OAuth voor gebruikers identificatie en wat de gebruiker kan.
+	\item Gebruik bescherming in de diepte om een prioriteit toe te kennen aan service keys.
+	\item Schrijf zelf geen krypto code.
+	\item Update je bescherming tijdig.
+	\item Maak gebruik van een firewaal met gecentraliseerde controle.
+	\item Zorg dat je 'onctainers' niet in een publiek netwerk te vinden is. 
+	\item Maak gebruik van software om virussen te vinden.
+	\item Monitor alles.
+\end{itemize}
+Als eerste puntje is er 'het gebruik van OAuth voor gebruikers identificatie en wat de gebruiker kan.'.  OAuth/OAuth2 is een protocol voor authorisatie. Het is een gemak om gebruik te maken van een protocol. 
+Een andere manier is om in de diepte bescherming te voorzien. Dit kan verwoord worden als bescherming steken in verschillende lagen van een systeem. Er moet worden nagegaan welke deeltjes het kwetsbaarst zijn en daar dan op verschillende lagen van beveiliging op toepassen. 
+Microservices maken het toepassen van deze methode, eenvoudiger. Doordat er gefocust kan worden op beveiliging. Het framework maakt het gemakkelijker om de verschillende lagen vast te stellen. Als ze binnen zijn bij een van de microservices zijn ze niet binnen in het volledige systeem. 
+Een manier dat wordt afgeraden is om je eigen crypto code te schrijven. Er zijn genoeg open source alternatieven. Enkel bij heel uitzonderlijke redenen wordt een eigen crypot code geschreven. 
+Een belangrijk punt is het automatisch regelmatig updaten van de beveiliging. Als er updates komen in de software van beveiliging, moeten die ook uitgevoerd worden. Het automatiseren van die updates, kan veel werk besparen achteraf. Dit wordt dan ook best gedaan bij het begin van microservices. Bescherming binnen software is niet meer een nice to have maar een must. Ook een firewal is deze dagen een must. Het biedt ook meer controle aan aan de gebruiker. 
+Een andere manier van bescherming is om je containers ui het publieke netwerk te halen. Dit is eigenlijk zorgen dat gebruikers je achterliggende architectuuur niet kunnen zien. Ervoor zorgen dat ern maat één toegangspoort is.  Hier kan een vorige manier ook bijgestoken worden. Microservices kunnen achter een firewall gestoken worden als bescherming. 
+Als er met containers wordt gewerkt, moet er ook beschemring aanwezig zijn. Een container is een plek waar kleine deeltjes code kunnen op gedeployed worden. 
+De laatste manier spreekt voor zich verder in deze thesis. Monitor alles, komt nog aan bod.
 Het artikel van \textcite{Watts2018} geeft het belang van een microservice goed weer. Microservices beschermen het gehele systeem, bij een goede implementatie. Het toepassen van de agile methode is eenvoudiger bij microservices dan bij een monolithic. Met deze technologie is het eenvoudiger om een aanpassing te testen en te onderhouden. Niet de volledige architectuur moet opnieuw getest worden bij een aanpassing. Als team A een aanpassing doet aan hun microservice, zullen de andere teams geen hinder ondervinden. 
 
 Een belangrijk aspect van microservices is de authenticatie en de authorisatie. In het artikel van  \textcite{Ayoub2018} worden beide aspecten goed aangehaald. Het is een moeilijkheid om op een uniforme manier veiligheid, bescherming, authorisatie en authenticatie toe te passen op microservices. Authenticatie is bevestigen dat jij het bent. Dit wordt gedaan via een gebruikersnaam en een wachtwoord. Authorisatie is wat je kan doen met een programma. Bijvoorbeeld een beheerder van een site kan meer dan een bezoeker. 
