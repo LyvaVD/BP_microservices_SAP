@@ -339,33 +339,6 @@
       \field{year}{2017}
       \field{dateera}{ce}
     \endentry
-    \entry{OBrien2017}{article}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=03bcbcad3bdd121aede7115f7b77dfe0}{%
-           family={O'Brien},
-           familyi={O\bibinitperiod},
-           given={Lindsey},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{03bcbcad3bdd121aede7115f7b77dfe0}
-      \strng{fullhash}{03bcbcad3bdd121aede7115f7b77dfe0}
-      \strng{bibnamehash}{03bcbcad3bdd121aede7115f7b77dfe0}
-      \strng{authorbibnamehash}{03bcbcad3bdd121aede7115f7b77dfe0}
-      \strng{authornamehash}{03bcbcad3bdd121aede7115f7b77dfe0}
-      \strng{authorfullhash}{03bcbcad3bdd121aede7115f7b77dfe0}
-      \field{sortinit}{O}
-      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{https://anytimecollect.com/the-order-to-cash-cycle/}
-      \field{title}{THE ORDER TO CASH CYCLE}
-      \field{year}{2017}
-      \field{dateera}{ce}
-    \endentry
     \entry{OpenSap2018}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=d356182c5713a25d6c26ab0fe0184301}{%
@@ -521,6 +494,33 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{https://www.bmc.com/blogs/microservices-architecture/}
       \field{title}{Microservices: An Introduction to Monolithic vs Microservices Architecture (MSA)}
+      \field{year}{2018}
+      \field{dateera}{ce}
+    \endentry
+    \entry{Wong2018}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=b69d542fa4a5f677dac15cf59e639248}{%
+           family={Wong},
+           familyi={W\bibinitperiod},
+           given={Danny},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b69d542fa4a5f677dac15cf59e639248}
+      \strng{fullhash}{b69d542fa4a5f677dac15cf59e639248}
+      \strng{bibnamehash}{b69d542fa4a5f677dac15cf59e639248}
+      \strng{authorbibnamehash}{b69d542fa4a5f677dac15cf59e639248}
+      \strng{authornamehash}{b69d542fa4a5f677dac15cf59e639248}
+      \strng{authorfullhash}{b69d542fa4a5f677dac15cf59e639248}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://www.salesforce.com/products/cpq/resources/what-to-know-about-order-to-cash-process/}
+      \field{title}{Step by Step: What you Should Know About the Order-to-Cash Process}
       \field{year}{2018}
       \field{dateera}{ce}
     \endentry
