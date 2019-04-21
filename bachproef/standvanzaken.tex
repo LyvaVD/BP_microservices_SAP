@@ -325,7 +325,58 @@ Het managen van een OTC proces is even belangrijk als de andere aspecten. Een sl
 
 \textcite{PEARSON2017} vindt dat een OTC proces bestaat uit twee subprocessen. Het order managmenet proces en het bill-to-cash proces. Het laatst vernoemde proces gaat over de facturatie en de inning van het geld.
 
+\textcite{2019} geeft meer uitleg bij enkele termen die in SAP voorkomen. Bij het proces is er een sales team aanwezig. Die spreken met de klant en maken afspraken. Zij zorgen ook voor een deal met de klant. Zij hebben toegang tot informatie over de klant, producten, kwaliteit, prijzen, etc. 
+Om ervoor te zorgen dat een order kan verzonden worden, moeten de goederen  opgehaald worden. Die goederen worden opgeslaan in een magazijn. Daar wordt aan order picking en packing gedaan. Bij picking gaat men gaan kijken naar de voorraad om de order te kunnen opvullen. Packing gaat over het inpakken van de goederen tegen beschadigingen. Dit kan door allemaal dozen op een pallet te zetten. Eens de goederen door de fase picking en packing zijn geweest, komt het laden voor transport. De goederen worden dan in containers geladen om dan te verzenden via vrachtwagen of per boot. Hierna komt de facturatie. Dan moet er gewacht worden op de betaling van de klant. Bij laattijdige betaling worden er aanmaningen gestuurd. 
+\begin{table}[]
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|l|p{10cm}|}
+				\hline Delivery document & Dit is het leveringsdocument dat gekoppeld is aan een order. Dit wordt uitgestuurd om te bewijzen dat het order geleverd is. \\ \hline
+			Picking & Het nagaan of de goederen in de voorraad zitten en ze ook gaan ophalen uit het magazijn. \\ \hline
+			Packing & Het inpakken van goederen in dozen, containers, palletten. \\ \hline
+			Loading & De goederen inladen in de vrachtwagen of de container. \\ \hline
+			Shipment document & Dit document wordt mee afgeleverd met de goederen. Het kan als een soort checklist dienen om na te gaan of alles wel in het afgeleverd pakket zit. \\ \hline
+			Shipment cost document & Hierop is de kost terug te vinden van het transport. \\ \hline
+			Customer billing document & Dit is een verkoopsdocument, dus dit moet de klant niet betalen. Dit document refereerd naar het delivery document. \\ \hline
+			Customer invoice & Dit is de factuur die de klant opgestuurd krijgt. \\ \hline
+		\end{tabular}%
+	}
+	\caption{Tabel met uitleg over termen. \textcite{2019}}
+\end{table}
+
+
 \subsubsection{Wat biedt SAP zelf aan voor microservices}
+\textcite{Kyma2019} verteld hoe Kyma in elkaar zit. Dit is een recent project van SAP om toenadering te geven toto microserivces. Kyma is een open-source project gemaakt om Kubernetes. Kubernetes wordt gebruikt om applicaties op verschillende machines te managen. Je kan hiermee cloud-based applicaties en on-premise applicaties omzetten naar een microservice architectuur of naar serverless computing. Cloud-based applicaties zijn applicaties die hun data gaan ophalen over het internet in de plaats van op de harde schijf van de computer. On-premise applicaties zijn de tegenhangers van cloud-based. On-premise is lokaal op de computer, op de harde schijf. Serverless computing gebeurt in de cloud. Dit zorgt ervoor dat er op een dynamische manier de resources van een machine kan aangepast worden. 
+Kyma zorgt voor betere end-to-end ervarings scenario's. Die volgen een best-practices voor performance, schaalbaarheid, efficentie en beveiliging. 
+
+\textcite{Semerdzhiev2018} geeft een introductie in het project Kyma van SAP. Binnen SAP wordt er omgegaan met software van verschillende leveranciers. SAP probeert om hun software te customizen naar de wensen van de klant. Dit vraagt meer openheid en een modernere architectuur. 
+Het idee achter Kyma is het creëeren van serverless applicaties, mashups en microservices. Ook kan het gebruikt worden om snel kleine, gecustomizede modules te developen. Die modules zijn dan verworven met business logica. 
+Er werd iets zoals Knative gemaakt. Knative is een platform dat developers ondersteund om serverless applicaties te maken op Kubernetes. Dit zorgde voor groot enthousiasme bij SAP omdat hun Kyma project een soort van bevesteging keer. Al snel werd Kyma gerefactored om samen te kunnen werken met Knative. Er werden overlappende componenten weggelaten, wat Kyma slanker en gestroomlijnder maakt. Dankzij Knative kan Kyma zich richten op higer-level enterprise applications en service consumption scenario's. En gebruik maken van Knative voor de infrastructuur en development scenario's. 
+
+\textcite{Hofmann2018} geeft het update over de integratie tussen Kyma en Knative. Een toch redelijk belangrijke samenwerking. Beide bieden een complete set van bouwblokken aan. Beiden zijn ook een sterk framework. Bij het gebruik van beide kunnen er could-native oplossingen gebouwd worden op Kubernetes met een sterk framework. Op figuur X is te wat Kyma en wat Knative aanbiedt. 
+\begin{figure}[h]
+	\includegraphics[width=10cm]{1-kyma-knative.png}
+	\caption{Wat Kyma, boven de lijn, aanbiedt en wat Knative, onder de lijn, aanbiedt \textcite{Hofmann2018}.}
+	\centering
+\end{figure}
+De laatste maanden werden de repositories gereconstrueerd en daarom zijn er geen tot weinig referenties naar Knative. Naast die grote verandering werd er gewerkt aan een proof-of-concept cloud-native oplossing door het gebruik van Knative en Kyma te samen. 
+
+\textcite{Kannappan2018} schreef een artikel over hoe innovatief izjn met Kyma. Het artikel begint met een eye-opener over Tesla. Hoe innovatief zij wel niet izjn met hun mogelijkheid om de auto's te updaten over-the-air. Tesla heeft bewezen dat innovatie, zelfs in oude branches, nodig is. 
+Bij het doormaken van innovatie, zijn er verschillende moeilijkheden die opkomen bij het proces naar digitalisering:
+\begin{itemize}
+	\item Hetrogene product portfolio: Het aanbieden van één product is verleden tijd. Zeker software bedrijven moeten accepteren dat er diversiteit is en meer nodig is dan één product.
+	\item Monolithic deployment: Monolithic applicaties zijn goed maar eens schaalbaarheid erbij komt, worden ze vaak complex. Dit zorgt voor minder vlotte innovatie. 
+	\item Cloud-native: Veel bedrijven schakelen over naar "de cloud". Het is geen gemakkelijke stap om alles naar de cloud over te zetten. Het vraagt voor meerdere onderdelen betere oplossingen. Zoals voor de inter-service communicatie, transacties tussen oplossingen, logging over het volledige system.
+	\item The need for speed: Het is algemeen geweten dat de snelheid van bijvoorbeeld leveringen een grote rol spelen deze dagen. Ook geldt dit voor software bedrijven. De snelheid waarmee oplossingen kunnen gemaakt worden is belangrijk.
+\end{itemize}
+Kyma heeft hard gewerkt om deze problemen/uitdagingen te proberen wegwerken. Kyma heeft ook geprobeerd om bedrijven te helpen met de transformatie naar digitalisatie. Kyma geeft bedrijven de mogelijkheid tot:
+\begin{itemize}
+	\item Be open and extendable: Kyma maakt gebruik van Open Service Broker API specificaties. Dit is een "plug and play" die de mogelijkheid geeft om code te hergebruiken. Ook code van andere partijen te gebruiken. 
+	\item Be seamlessly connected: Een eenvoudige manier om een beveiligde connectie te hebben tussen systemen. Deze kunnen gemanaged worden binnen de huidige applicatie om oplossingen te maken in hetrogene landschappen. Eén connectie geeft veel mogelijkheden.
+	\item Use any programming language: Developers kunnen in hun geweste programmeertaal coderen.
+	\item Bring speed and agility: Er moet niet maanden gewacht worden om use cases of functionaliteiten op te leveren. 
+	\item Accelerate innovation: Meestal start dit als een test of een trail. Bij zulke scenario's zijn de kost en de snelheid van zeer groot belang. Dankzij Kyma kunnen bedrijven meteen beginnen werken aan een oplossingen en moet er geen tijd besteed worden aan het zoeken van de best mogelijke oplossing. 
+\end{itemize}
+
 \subsection{Een order-to-cash proces vanuit de business}
 \subsection{Het proces afstemmen met de business}
 

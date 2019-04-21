@@ -208,6 +208,35 @@
       \field{title}{Microservices: het einde van de SAP spaghetti?}
       \field{year}{2018}
     \endentry
+    \entry{2019}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=c1073bcebc27d5c931d7b4def4596c2e}{%
+           family={hub},
+           familyi={h\bibinitperiod},
+           given={SAP},
+           giveni={S\bibinitperiod},
+           givenun=0,
+           prefix={concept},
+           prefixi={c\bibinitperiod}}}%
+      }
+      \strng{namehash}{c1073bcebc27d5c931d7b4def4596c2e}
+      \strng{fullhash}{c1073bcebc27d5c931d7b4def4596c2e}
+      \strng{bibnamehash}{c1073bcebc27d5c931d7b4def4596c2e}
+      \strng{authorbibnamehash}{c1073bcebc27d5c931d7b4def4596c2e}
+      \strng{authornamehash}{c1073bcebc27d5c931d7b4def4596c2e}
+      \strng{authorfullhash}{c1073bcebc27d5c931d7b4def4596c2e}
+      \field{sortinit}{c}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{http://sapconcepthub.com/order-to-cash-cycle/}
+      \field{title}{Understanding order to cash cycle in sap.}
+      \field{year}{2019}
+      \field{dateera}{ce}
+    \endentry
     \entry{devoteam2018}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=37d8bd72c4e69744cedd7f11ca2da987}{%
@@ -257,6 +286,64 @@
       \field{title}{Wiring Microservices, Integration Microservices \& APIs.}
       \field{year}{2018}
     \endentry
+    \entry{Hofmann2018}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=f969a0c7cb3b0cd99a75ea7c1d90c1b5}{%
+           family={Hofmann},
+           familyi={H\bibinitperiod},
+           given={Ralf},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f969a0c7cb3b0cd99a75ea7c1d90c1b5}
+      \strng{fullhash}{f969a0c7cb3b0cd99a75ea7c1d90c1b5}
+      \strng{bibnamehash}{f969a0c7cb3b0cd99a75ea7c1d90c1b5}
+      \strng{authorbibnamehash}{f969a0c7cb3b0cd99a75ea7c1d90c1b5}
+      \strng{authornamehash}{f969a0c7cb3b0cd99a75ea7c1d90c1b5}
+      \strng{authorfullhash}{f969a0c7cb3b0cd99a75ea7c1d90c1b5}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{10}
+      \field{journaltitle}{https://kyma-project.io/blog/2018/8/10/kyma-knative-progress-report}
+      \field{month}{8}
+      \field{title}{Kyma and Knative Integration - Progress Update}
+      \field{year}{2018}
+      \field{dateera}{ce}
+    \endentry
+    \entry{Kannappan2018}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=f2c05b99af3092c52d38a9983772c6b9}{%
+           family={Kannappan},
+           familyi={K\bibinitperiod},
+           given={Gopi},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f2c05b99af3092c52d38a9983772c6b9}
+      \strng{fullhash}{f2c05b99af3092c52d38a9983772c6b9}
+      \strng{bibnamehash}{f2c05b99af3092c52d38a9983772c6b9}
+      \strng{authorbibnamehash}{f2c05b99af3092c52d38a9983772c6b9}
+      \strng{authornamehash}{f2c05b99af3092c52d38a9983772c6b9}
+      \strng{authorfullhash}{f2c05b99af3092c52d38a9983772c6b9}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{18}
+      \field{journaltitle}{https://kyma-project.io/blog/2018/10/18/accelerate-innovation-with-kyma}
+      \field{month}{10}
+      \field{title}{Accelerate innovation with Kyma}
+      \field{year}{2018}
+      \field{dateera}{ce}
+    \endentry
     \entry{Kumaran2015}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=5ea1e48e7a5eee2e95c49141b42aa8cf}{%
@@ -299,16 +386,13 @@
       \field{sortinit}{K}
       \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
       \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
+      \field{labeldatesource}{year}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{day}{13}
       \field{journaltitle}{https://kyma-project.io/}
-      \field{month}{2}
-      \field{title}{What is kyma?}
+      \field{title}{What is Kyma?}
       \field{year}{2019}
-      \field{dateera}{ce}
     \endentry
     \entry{Mauersberger2017}{article}{}
       \name{author}{1}{}{%
@@ -417,19 +501,19 @@
     \endentry
     \entry{Semerdzhiev2018}{article}{}
       \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=0b7f5ae345d980122e0b761fd84dc0f7}{%
+        {{uniquename=0,uniquepart=base,hash=0e9b19e2acfeec0b1e5976318d967074}{%
            family={Semerdzhiev},
            familyi={S\bibinitperiod},
-           given={Karsimir},
+           given={Krasimir},
            giveni={K\bibinitperiod},
            givenun=0}}%
       }
-      \strng{namehash}{0b7f5ae345d980122e0b761fd84dc0f7}
-      \strng{fullhash}{0b7f5ae345d980122e0b761fd84dc0f7}
-      \strng{bibnamehash}{0b7f5ae345d980122e0b761fd84dc0f7}
-      \strng{authorbibnamehash}{0b7f5ae345d980122e0b761fd84dc0f7}
-      \strng{authornamehash}{0b7f5ae345d980122e0b761fd84dc0f7}
-      \strng{authorfullhash}{0b7f5ae345d980122e0b761fd84dc0f7}
+      \strng{namehash}{0e9b19e2acfeec0b1e5976318d967074}
+      \strng{fullhash}{0e9b19e2acfeec0b1e5976318d967074}
+      \strng{bibnamehash}{0e9b19e2acfeec0b1e5976318d967074}
+      \strng{authorbibnamehash}{0e9b19e2acfeec0b1e5976318d967074}
+      \strng{authornamehash}{0e9b19e2acfeec0b1e5976318d967074}
+      \strng{authorfullhash}{0e9b19e2acfeec0b1e5976318d967074}
       \field{sortinit}{S}
       \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
       \field{extradatescope}{labelyear}
@@ -438,8 +522,8 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{day}{24}
-      \field{journaltitle}{https://kyma-project.io/blog/introducing-project-kyma/}
-      \field{month}{7}
+      \field{journaltitle}{https://kyma-project.io/blog/2018/7/24/introduction-project-kyma/}
+      \field{month}{6}
       \field{title}{Introducing project Kyma}
       \field{year}{2018}
       \field{dateera}{ce}

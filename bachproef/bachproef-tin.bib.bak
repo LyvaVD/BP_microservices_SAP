@@ -180,7 +180,7 @@
 @Article{2019,
   author       = {SAP concept hub},
   title        = {Understanding order to cash cycle in sap.},
-  journal      = {sapconcepthub},
+  journal      = {http://sapconcepthub.com/order-to-cash-cycle/},
   journaltitle = {http://sapconcepthub.com/order-to-cash-cycle/},
   year         = {2019},
   date         = {2019},
@@ -198,6 +198,7 @@
 @Article{Wikipedia2019,
   author       = {Wikipedia},
   title        = {Order to cash},
+  journal      = {https://en.wikipedia.org/wiki/Order_to_cash},
   journaltitle = {https://en.wikipedia.org/wiki/Order_to_cash},
   year         = {2019},
   date         = {2019},
@@ -306,6 +307,14 @@
   journal = {https://www.devbridge.com/articles/path-to-microservices-in-financial-services/},
   year    = {2016},
   date    = {2016-01-01},
+}
+
+@Article{Ayoub2018,
+  author  = {Mina Ayoub},
+  title   = {Microservices authentication and authorization solutions},
+  journal = {https://medium.com/tech-tajawal/microservice-authentication-and-authorization-solutions-e0e5e74b248a},
+  year    = {2018},
+  date    = {2018-04-24},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}
