@@ -23,27 +23,17 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.4}De voordelen en nadelen van microserivces}{25}{subsection.2.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.5}Voorbeelden}{26}{subsection.2.1.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Amazon}{26}{section*.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Apple}{26}{section*.7}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Facebook}{26}{section*.8}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Netflix}{26}{section*.9}
-\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Order-to-cash proces in SAP}{26}{section.2.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.1}Definite}{26}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Technologie}{30}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.2}Technologie}{29}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Onderdelen van een order-to-cash proces}{30}{section*.10}
+\contentsline {subsubsection}{Onderdelen van een order-to-cash proces}{29}{section*.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Wat biedt SAP zelf aan voor microservices}{32}{section*.11}
+\contentsline {subsubsection}{Wat biedt SAP zelf aan voor microservices}{30}{section*.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Requirements van de business}{33}{section.2.3}
+\contentsline {section}{\numberline {2.3}Requirements van de business}{32}{section.2.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Methodologie}{37}{chapter.3}
 \defcounter {refsection}{0}\relax 
@@ -71,5 +61,5 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {A.5}Verwachte conclusies}{44}{section.A.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografie}{45}{appendix*.12}
+\contentsline {chapter}{Bibliografie}{45}{appendix*.8}
 \contentsfinish 

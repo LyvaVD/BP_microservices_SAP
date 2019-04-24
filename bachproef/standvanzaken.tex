@@ -191,16 +191,6 @@ Maar om ervoor te zorgen dat dit allemaal vlot verloopt moeten er ook aanpassing
 	\item Ook de communicatie tussen de services zal beter moeten worden uitgedacht.
 	\item Documenteren is belangrijk. Dit is niet enkel het geval voor microservices maar ook voor elk project.
 \end{itemize}
-\subsection{Voorbeelden}
-In dit deeltje zal je meer te weten komen over hoe grote technologische bedrijven microservices toepassen en hoe ze naar deze technologie zijn overgeschakeld.
-Een term die hier vaak zal gebruikt worden, is een monolithic. Dit is de tegenhanger van microservices. Sommige zweren bij monolithic en anderen hebben gouden woorden voor microservices. De beslissing om één van de twee technieken te kiezen, ligt bij wat je precies nodig hebt. Wat de business nodig heeft. 
-
-\subsubsection{Amazon}
-\textcite{Mauersberger2017} gaf een voorbeeld waarom Amazon overstapte. Zoals veel grote bedrijven is Amazon begonnen met een grote monolithic. Een van de nadelen die Amazon ondervond aan deze technologie is de moeilijkheid van het inschatten van de zwaarte op de servers. Daardoor verloor Amazon veel geld en was er nood aan herstructurering.
-\textcite{Fulton2015} legt ook uit waarom Amazon is overgeschakeld. Het blijkt dat Amazon in 2001 de grootste monolithic was in de retail business. Doordat Amazon een snel groeiende onderneming was, werd de monolithic architectuur heel ingewikkeld. Amazon hun aanpak was, gooi wat je hebt niet weg maar maak het eenvoudiger. 
-\subsubsection{Apple}
-\subsubsection{Facebook}
-\subsubsection{Netflix}
 
 \section{Order-to-cash proces in SAP}
 \subsection{Definite}
@@ -378,4 +368,23 @@ Kyma heeft hard gewerkt om deze problemen/uitdagingen te proberen wegwerken. Kym
 
 
 \section{Requirements van de business}
-
+\textcite{Biedron2018} legt uit wat een order to cash proces is. Daaruit kunnen we volgende requirements uit afleiden:
+\begin{itemize}
+	\item De klant moet een order of meerdere orders kunnen plaatsen. Een goed werkend order-systeem is een must.
+	\item De order ophalen uit de voorraad. Er moet een goed voorraad beheer aanwezig zijn. Dit moet ervoor zorgen dat het aantal laattijdige leveringen geminimaliseerd wordt. Samen met het goede voorraadbeheer wordt ook best bijgehouden waar je je goederen geplaatst hebt in je magazijn.
+	\item De levering moet goed gepland worden. Dit zou voor het grootste deel al geautomatiseerd moeten zijn. Een email met informatie over de levering is een must. 
+	\item Aanmaken van een factuur op basis van het geplaatst order met de juiste klantgegevens zou een geautmatiseerd onderdeel moeten zijn. 
+	\item De betaling van de factuur komt toe in de financiele afdeling. Automatische afhandeling is een must.
+\end{itemize}
+Bij een order plaatsen komen volgende elementen aanbod:
+\begin{itemize}
+	\item Er moet een lijst met producten beschikbaar zijn.
+	\item De klant zijn gegevens moeten gekend zijn bij het bedrijf.
+	\item Het systeem bij het bedrijf moet beschikbaar zijn.
+\end{itemize}
+Na het plaatsen van de order moet die ook klaargezet worden om te leveren. Daar zijn volgende elementen van belang:
+\begin{itemize}
+	\item Een goed voorraadbeheer is de eerste must.
+	\item Een overzicht van waar alles staat, geeft ook een meerwaarde.
+	\item Bij het ophalen van een product om bij een order te plaatsen, moet de hoeveelheid in de voorraad verminderen.
+\end{itemize}

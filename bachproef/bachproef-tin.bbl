@@ -185,6 +185,32 @@
       \field{year}{2016}
       \field{dateera}{ce}
     \endentry
+    \entry{Biedron2018}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=d9ca1a62f13583a489c674dd8711f2af}{%
+           family={Biedron},
+           familyi={B\bibinitperiod},
+           given={Rob},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d9ca1a62f13583a489c674dd8711f2af}
+      \strng{fullhash}{d9ca1a62f13583a489c674dd8711f2af}
+      \strng{bibnamehash}{d9ca1a62f13583a489c674dd8711f2af}
+      \strng{authorbibnamehash}{d9ca1a62f13583a489c674dd8711f2af}
+      \strng{authornamehash}{d9ca1a62f13583a489c674dd8711f2af}
+      \strng{authorfullhash}{d9ca1a62f13583a489c674dd8711f2af}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://www.purchasecontrol.com/uk/blog/order-to-cash-process/}
+      \field{title}{A walk through the order to cash cycle}
+      \field{year}{2018}
+    \endentry
     \entry{CiderBlog2018}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=958c265c1cd1824aa9044394070d581f}{%
@@ -636,7 +662,6 @@
       \field{dateera}{ce}
     \endentry
   \enddatalist
-  \missing{Fulton2015}
   \missing{Pollefliet2011}
   \missing{series2018}
 \endrefsection
