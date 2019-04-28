@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.20)  24 APR 2019 23:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.20)  28 APR 2019 12:55
 entering extended mode
 **./bachproef-tin.tex
 (bachproef-tin.tex
@@ -1825,17 +1825,17 @@ Overfull \hbox (0.38434pt too wide) in paragraph at lines 8--8
 -ser-vice ar-chi-tec-tuur. Watts
  []
 
-)
-\tf@lof=\write8
-\openout8 = `bachproef-tin.lof'.
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [9
 
 
-]
+])
+\tf@lof=\write8
+\openout8 = `bachproef-tin.lof'.
+
+
 [10] (bachproef-tin.lot)
 \tf@lot=\write9
 \openout9 = `bachproef-tin.lot'.
@@ -1846,101 +1846,117 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 Hoofdstuk 1.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 8.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 11.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 18.
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 11.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 18.
 
 [13]) (standvanzaken.tex [14]
 Hoofdstuk 2.
 [15
 
 ]
-<img/microservices-vs-monolithic.jpg, id=265, 1830.84pt x 885.3075pt>
+<img/microservices-vs-monolithic.jpg, id=277, 1830.84pt x 885.3075pt>
 File: img/microservices-vs-monolithic.jpg Graphic file (type jpg)
 <use img/microservices-vs-monolithic.jpg>
 Package pdftex.def Info: img/microservices-vs-monolithic.jpg  used on input lin
 e 26.
 (pdftex.def)             Requested size: 284.52756pt x 137.57246pt.
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 31.
  [16 <./img/microservices-vs-monolithic.jpg>]
-<img/Mono_Micro.png, id=274, 963.6pt x 345.29pt>
+<img/Mono_Micro.png, id=286, 963.6pt x 345.29pt>
 File: img/Mono_Micro.png Graphic file (type png)
 <use img/Mono_Micro.png>
-Package pdftex.def Info: img/Mono_Micro.png  used on input line 37.
+Package pdftex.def Info: img/Mono_Micro.png  used on input line 36.
 (pdftex.def)             Requested size: 284.52756pt x 101.9545pt.
- [17 <./img/Mono_Micro.png>]
-<img/monolithic_auth.png, id=287, 606.265pt x 462.72874pt>
+<img/microservicesWebsite.png, id=288, 1380.15625pt x 586.19pt>
+File: img/microservicesWebsite.png Graphic file (type png)
+<use img/microservicesWebsite.png>
+Package pdftex.def Info: img/microservicesWebsite.png  used on input line 43.
+(pdftex.def)             Requested size: 284.52756pt x 120.84056pt.
+ [17 <./img/Mono_Micro.png> <./img/microservicesWebsite.png (PNG copy)>]
+<img/algArch.png, id=298, 1111.15125pt x 626.34pt>
+File: img/algArch.png Graphic file (type png)
+<use img/algArch.png>
+Package pdftex.def Info: img/algArch.png  used on input line 51.
+(pdftex.def)             Requested size: 284.52756pt x 160.3788pt.
+ [18 <./img/algArch.png (PNG copy)>]
+Underfull \vbox (badness 7151) has occurred while \output is active []
+
+ [19]
+LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/pag/b/n' tried instead on input line 93.
+LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 93.
+<img/monolithic_auth.png, id=312, 606.265pt x 462.72874pt>
 File: img/monolithic_auth.png Graphic file (type png)
 <use img/monolithic_auth.png>
-Package pdftex.def Info: img/monolithic_auth.png  used on input line 71.
+Package pdftex.def Info: img/monolithic_auth.png  used on input line 96.
 (pdftex.def)             Requested size: 284.52756pt x 217.16481pt.
 
+[20 <./img/monolithic_auth.png (PNG copy)>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18]
-[19 <./img/monolithic_auth.png (PNG copy)>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [20]
-<img/1.png, id=303, 963.6pt x 425.59pt>
+ [21]
+<img/1.png, id=326, 963.6pt x 425.59pt>
 File: img/1.png Graphic file (type png)
 <use img/1.png>
-Package pdftex.def Info: img/1.png  used on input line 106.
+Package pdftex.def Info: img/1.png  used on input line 147.
 (pdftex.def)             Requested size: 284.52756pt x 125.66484pt.
-<img/2.png, id=305, 963.6pt x 425.59pt>
+
+[22]
+<img/2.png, id=337, 963.6pt x 425.59pt>
 File: img/2.png Graphic file (type png)
 <use img/2.png>
-Package pdftex.def Info: img/2.png  used on input line 113.
+Package pdftex.def Info: img/2.png  used on input line 154.
 (pdftex.def)             Requested size: 284.52756pt x 125.66484pt.
-<img/3.png, id=307, 963.6pt x 552.0625pt>
+<img/3.png, id=339, 963.6pt x 552.0625pt>
 File: img/3.png Graphic file (type png)
 <use img/3.png>
-Package pdftex.def Info: img/3.png  used on input line 121.
+Package pdftex.def Info: img/3.png  used on input line 162.
 (pdftex.def)             Requested size: 284.52756pt x 163.00865pt.
-
-[21 <./img/1.png> <./img/2.png>]
-<img/4.png, id=316, 963.6pt x 626.34pt>
+ [23 <./img/1.png> <./img/2.png>]
+<img/4.png, id=349, 963.6pt x 626.34pt>
 File: img/4.png Graphic file (type png)
 <use img/4.png>
-Package pdftex.def Info: img/4.png  used on input line 128.
+Package pdftex.def Info: img/4.png  used on input line 169.
 (pdftex.def)             Requested size: 284.52756pt x 184.94072pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<img/5.png, id=318, 963.6pt x 626.34pt>
+ [24 <./img/3.png> <./img/4.png>]
+<img/5.png, id=357, 963.6pt x 626.34pt>
 File: img/5.png Graphic file (type png)
 <use img/5.png>
-Package pdftex.def Info: img/5.png  used on input line 143.
+Package pdftex.def Info: img/5.png  used on input line 184.
 (pdftex.def)             Requested size: 284.52756pt x 184.94072pt.
-[22 <./img/3.png>] [23 <./img/4.png> <./img/5.png>]
-<img/6.png, id=332, 963.6pt x 708.6475pt>
+ [25 <./img/5.png>]
+<img/6.png, id=364, 963.6pt x 708.6475pt>
 File: img/6.png Graphic file (type png)
 <use img/6.png>
-Package pdftex.def Info: img/6.png  used on input line 156.
+Package pdftex.def Info: img/6.png  used on input line 197.
 (pdftex.def)             Requested size: 284.52756pt x 209.24384pt.
- [24 <./img/6.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ [26 <./img/6.png>]
+Underfull \vbox (badness 4967) has occurred while \output is active []
 
- [25]
-<img/wong.png, id=347, 948.54375pt x 1448.41125pt>
+ [27]
+<img/wong.png, id=380, 948.54375pt x 1448.41125pt>
 File: img/wong.png Graphic file (type png)
 <use img/wong.png>
-Package pdftex.def Info: img/wong.png  used on input line 201.
+Package pdftex.def Info: img/wong.png  used on input line 252.
 (pdftex.def)             Requested size: 284.52756pt x 434.46043pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[26]
-<img/wong2.png, id=354, 948.54375pt x 1575.8875pt>
+
+Underfull \vbox (badness 2142) has occurred while \output is active []
+
+ [28]
+<img/wong2.png, id=387, 948.54375pt x 1575.8875pt>
 File: img/wong2.png Graphic file (type png)
 <use img/wong2.png>
-Package pdftex.def Info: img/wong2.png  used on input line 235.
+Package pdftex.def Info: img/wong2.png  used on input line 286.
 (pdftex.def)             Requested size: 284.52756pt x 472.69777pt.
 
 
@@ -1949,30 +1965,24 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [27]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [28]
-LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/pag/b/n' tried instead on input line 289.
-LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 289.
-<img/Order-to-cash-cycle.jpg, id=367, 375.65344pt x 195.73125pt>
+ [29]
+[30]
+<img/Order-to-cash-cycle.jpg, id=401, 375.65344pt x 195.73125pt>
 File: img/Order-to-cash-cycle.jpg Graphic file (type jpg)
 <use img/Order-to-cash-cycle.jpg>
-Package pdftex.def Info: img/Order-to-cash-cycle.jpg  used on input line 302.
+Package pdftex.def Info: img/Order-to-cash-cycle.jpg  used on input line 353.
 (pdftex.def)             Requested size: 284.52756pt x 148.2615pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[29]
+[31]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 319.
+               Default added (so using `tbp') on input line 370.
 
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 33
-1.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 38
+2.
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ztmcm.fd"
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
@@ -1980,20 +1990,20 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `ztmcm' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 33
-1.
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 38
+2.
  ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omlztmcm.fd
 "
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 33
-1.
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 38
+2.
 
 ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsztmcm.fd"
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 33
-1.
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 38
+2.
  ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omxztmcm.fd
 "
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
@@ -2006,22 +2016,25 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 g"
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 331.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 382.
 
  ("C:\Users\Lyva\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 331.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 382.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 331.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 382.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 331.
- [30]
-<img/1-kyma-knative.png, id=388, 709.14937pt x 366.61969pt>
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 382.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32]
+<img/1-kyma-knative.png, id=418, 709.14937pt x 366.61969pt>
 File: img/1-kyma-knative.png Graphic file (type png)
 <use img/1-kyma-knative.png>
-Package pdftex.def Info: img/1-kyma-knative.png  used on input line 346.
+Package pdftex.def Info: img/1-kyma-knative.png  used on input line 397.
 (pdftex.def)             Requested size: 284.52756pt x 147.0984pt.
 
 
@@ -2030,25 +2043,25 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [31])
-(methodologie.tex [32] [33 <./img/wong.png>] [34 <./img/wong2.png>] [35 <./img/
-Order-to-cash-cycle.jpg> <./img/1-kyma-knative.png>] [36
-
-]
+ [33]
+[34]) (methodologie.tex [35] [36 <./img/wong.png>] [37 <./img/wong2.png>]
+[38 <./img/Order-to-cash-cycle.jpg> <./img/1-kyma-knative.png>]
 Hoofdstuk 3.
-) (conclusie.tex [37] [38
+) (conclusie.tex [39
+
+] [40
 
 ]
 Hoofdstuk 4.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [39])
-[40]
+ [41])
+[42]
 B"ylage A.
-(../voorstel/voorstel-inhoud.tex [41
+(../voorstel/voorstel-inhoud.tex [43
 
-] [42] [43]) [44]
+] [44] [45]) [46]
 Overfull \hbox (30.06398pt too wide) in paragraph at lines 132--132
 \T1/ptm/m/it/12 (-20) https://medium.com/tech-tajawal/microservice-authenticati
 on-and-authorization-solutions-
@@ -2084,7 +2097,7 @@ Overfull \hbox (27.72105pt too wide) in paragraph at lines 132--132
 h cy-cle in sap. \T1/ptm/m/it/12 (-20) http://sapconcepthub.com/order-
  []
 
-[45
+[47
 
 ]
 Overfull \hbox (96.98909pt too wide) in paragraph at lines 132--132
@@ -2093,22 +2106,33 @@ ct Kyma. \T1/ptm/m/it/12 (-20) https://kyma-project.io/blog/2018/7/24/introduct
 ion-
  []
 
-[46]
+
+Overfull \hbox (23.02646pt too wide) in paragraph at lines 132--132
+[][]\T1/ptm/m/n/12 (-20) Wigmore, I. (2016). Mo-no-li-thic ar-chi-tec-ture. \T1
+/ptm/m/it/12 (-20) https://whatis.techtarget.com/definition/monolithic-
+ []
+
+[48]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 134.
  (bachproef-tin.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 134.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 134.
+
+
+Package biblatex Warning: Please rerun LaTeX.
+(biblatex)                Page breaks have changed.
+
 Package logreq Info: Writing requests to 'bachproef-tin.run.xml'.
 \openout1 = `bachproef-tin.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40134 strings out of 492970
- 752828 string characters out of 3127037
- 1347041 words of memory out of 3000000
- 43074 multiletter control sequences out of 15000+200000
- 590990 words of font info for 196 fonts, out of 3000000 for 9000
+ 40170 strings out of 492970
+ 753522 string characters out of 3127037
+ 1348212 words of memory out of 3000000
+ 43094 multiletter control sequences out of 15000+200000
+ 591215 words of font info for 198 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,67p,1961b,3825s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}
@@ -2119,9 +2143,9 @@ urw/avantgar/uagk8a.pfb><C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fonts/
 type1/urw/times/utmb8a.pfb><C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fon
 ts/type1/urw/times/utmr8a.pfb><C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on bachproef-tin.pdf (48 pages, 1068438 bytes).
+Output written on bachproef-tin.pdf (50 pages, 1505466 bytes).
 PDF statistics:
- 620 PDF objects out of 1000 (max. 8388607)
- 121 named destinations out of 1000 (max. 500000)
- 33083 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 655 PDF objects out of 1000 (max. 8388607)
+ 132 named destinations out of 1000 (max. 500000)
+ 33093 words of extra memory for PDF output out of 35830 (max. 10000000)
 

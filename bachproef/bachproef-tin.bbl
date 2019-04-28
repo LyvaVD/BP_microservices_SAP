@@ -370,6 +370,32 @@
       \field{year}{2018}
       \field{dateera}{ce}
     \endentry
+    \entry{Koukia2018}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=f52a5a440b0738c126b1f821e35c1434}{%
+           family={Koukia},
+           familyi={K\bibinitperiod},
+           given={Aram},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f52a5a440b0738c126b1f821e35c1434}
+      \strng{fullhash}{f52a5a440b0738c126b1f821e35c1434}
+      \strng{bibnamehash}{f52a5a440b0738c126b1f821e35c1434}
+      \strng{authorbibnamehash}{f52a5a440b0738c126b1f821e35c1434}
+      \strng{authornamehash}{f52a5a440b0738c126b1f821e35c1434}
+      \strng{authorfullhash}{f52a5a440b0738c126b1f821e35c1434}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://koukia.ca/a-microservices-implementation-journey-part-1-9f6471fe917}
+      \field{title}{A microservices implementation journey - Part 1}
+      \field{year}{2018}
+    \endentry
     \entry{Kumaran2015}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=5ea1e48e7a5eee2e95c49141b42aa8cf}{%
@@ -633,6 +659,32 @@
       \field{title}{Microservices: An Introduction to Monolithic vs Microservices Architecture (MSA)}
       \field{year}{2018}
       \field{dateera}{ce}
+    \endentry
+    \entry{Wigmore2016}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=02c0313e18de880dce116f36ff3f0a9b}{%
+           family={Wigmore},
+           familyi={W\bibinitperiod},
+           given={Ivy},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{02c0313e18de880dce116f36ff3f0a9b}
+      \strng{fullhash}{02c0313e18de880dce116f36ff3f0a9b}
+      \strng{bibnamehash}{02c0313e18de880dce116f36ff3f0a9b}
+      \strng{authorbibnamehash}{02c0313e18de880dce116f36ff3f0a9b}
+      \strng{authornamehash}{02c0313e18de880dce116f36ff3f0a9b}
+      \strng{authorfullhash}{02c0313e18de880dce116f36ff3f0a9b}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://whatis.techtarget.com/definition/monolithic-architecture}
+      \field{title}{Monolithic architecture}
+      \field{year}{2016}
     \endentry
     \entry{Wong2018}{article}{}
       \name{author}{1}{}{%

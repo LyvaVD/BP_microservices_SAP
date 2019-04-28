@@ -363,4 +363,18 @@
   year    = {2018},
 }
 
+@Article{Leung2018,
+  author  = {Sarah Leung},
+  title   = {Order to Cash: What it is \& Why you should care},
+  journal = {https://www.handshake.com/blog/order-to-cash-wholesale-metrics},
+  year    = {2018},
+}
+
+@Article{Wigmore2016,
+  author  = {Ivy Wigmore},
+  title   = {Monolithic architecture},
+  journal = {https://whatis.techtarget.com/definition/monolithic-architecture},
+  year    = {2016},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
