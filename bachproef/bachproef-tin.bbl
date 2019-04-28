@@ -45,6 +45,32 @@
       \field{title}{What order-to-cash cycle controls in SAP ensure compliance?}
       \field{year}{2018}
     \endentry
+    \entry{Ananthasubramanian2018}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=3c3092c2475c1cf63b6350e1d7a54923}{%
+           family={Ananthasubramanian},
+           familyi={A\bibinitperiod},
+           given={Hariram},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{3c3092c2475c1cf63b6350e1d7a54923}
+      \strng{fullhash}{3c3092c2475c1cf63b6350e1d7a54923}
+      \strng{bibnamehash}{3c3092c2475c1cf63b6350e1d7a54923}
+      \strng{authorbibnamehash}{3c3092c2475c1cf63b6350e1d7a54923}
+      \strng{authornamehash}{3c3092c2475c1cf63b6350e1d7a54923}
+      \strng{authorfullhash}{3c3092c2475c1cf63b6350e1d7a54923}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://dzone.com/articles/challenges-in-implementing-microservices}
+      \field{title}{Challenges in implemeting microservices}
+      \field{year}{2018}
+    \endentry
     \entry{Aradheye2018}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=a73ea16bc54ddf84622534a8feadd731}{%
@@ -446,6 +472,32 @@
       \field{title}{What is Kyma?}
       \field{year}{2019}
     \endentry
+    \entry{Matteson2017}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=a14476ee7b89e08e7db3054f19461db3}{%
+           family={Matteson},
+           familyi={M\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a14476ee7b89e08e7db3054f19461db3}
+      \strng{fullhash}{a14476ee7b89e08e7db3054f19461db3}
+      \strng{bibnamehash}{a14476ee7b89e08e7db3054f19461db3}
+      \strng{authorbibnamehash}{a14476ee7b89e08e7db3054f19461db3}
+      \strng{authornamehash}{a14476ee7b89e08e7db3054f19461db3}
+      \strng{authorfullhash}{a14476ee7b89e08e7db3054f19461db3}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://www.techrepublic.com/article/10-tips-for-securing-microservice-architecture/}
+      \field{title}{10 tips for securing microservice architecture}
+      \field{year}{2017}
+    \endentry
     \entry{Mauersberger2017}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=bdf53eeae13caf5e419353bdb2f50f61}{%
@@ -714,7 +766,6 @@
       \field{dateera}{ce}
     \endentry
   \enddatalist
-  \missing{Pollefliet2011}
   \missing{series2018}
 \endrefsection
 \endinput

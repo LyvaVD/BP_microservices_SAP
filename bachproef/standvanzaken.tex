@@ -31,7 +31,7 @@ Zoals te zien in figuur 2.1, \textcite{Watts2018}, is er een groot verschil tuss
 Een andere definitie van microservices is: "A software architecting pattern that allows software to be developed into relatively small, distinct components. Each of the components is abstracted by an API(s) and provides a distinct subset of the functionality of the entire application". Ook hier zien we weer het puntje passeren dat een microservice een klein componentje is van een groter geheel. Die eigenschap wordt heel hard benadrukt. Na het uitleggen van microservices, schrijven ze ook over hoe microservices zo scalable zijn. Met scalable bedoelen ze schaalbaarheid. De mogelijkheid van software om mee te groeien als het aantal gebruikers vermeerderd. Dus eigenlijk dat de software nog steeds even goed presteerd bij 10 gebruikers als bij 2 000 gebruikers. Ook lichten ze toe hoe belangrijk API's zijn binnen een microservice architectuur. API's zijn een set van definities die ervoor zorgen dat deeltjes in een programma met elkaar kunnen communcieren. Een voordeel van API's is dat je niet moet weten hoe de andere code werkt. Verder wordt er ook gepraat over de verschillen tussen een monolithic architectuur en een microservice architectuur \textcite{series2018}.
 
 
-Microservices komen uit dezelfde ideologie als Agile en DevOps. DevOps is een samenvoegsel van development en operations. Bij deze methode ligt de nadruk op de samenwerking en communicatie tussen verschillende partijen. Hier zijn de partijen de software engineers en andere IT specialisten. Deze ideologie omvat het volgende: het afbreken van kleine, traag evoluerende architectuur of monolithic en deze in microservices steken. Zoals te zien is in figuur 2.2. We zien dat de monolithic alle puntjes in een kader heeft. Dit staat symbolisch voor het grote geheel dat eigen is aan een monolithic. Alles zit samen in één grote doos. Maar bij microservices is dit niet zo, daar zit elk deeltje/requirement in een aparte doos \textcite{Benetis2016a} . 
+ Zoals te zien is in figuur 2.2. We zien dat de monolithic alle puntjes in een kader heeft. Dit staat symbolisch voor het grote geheel dat eigen is aan een monolithic. Alles zit samen in één grote doos. Maar bij microservices is dit niet zo, daar zit elk deeltje/requirement in een aparte doos \textcite{Benetis2016a} . 
 \begin{figure}[h]
 	\includegraphics[width=10cm]{Mono_Micro.png}
 	\centering
@@ -117,11 +117,23 @@ Naast de Distributed session management en client token is er ook nog single sig
 Een andere manier is een client token wiht API gateway. Deze manier is gebaseerd op de client token. Maar nu is er een API gateway toegevoegd aan het begin van een externe request. Dit zorgt ervoor dat het framework niet zichtbaar is aan de buitenwereld. 
 
 \subsubsection{Verband met Agile en DevOps}
+Microservices komen uit dezelfde ideologie als Agile en DevOps. DevOps is een samenvoegsel van development en operations. Bij deze methode ligt de nadruk op de samenwerking en communicatie tussen verschillende partijen. Hier zijn de partijen de software engineers en andere IT specialisten. Deze ideologie omvat het volgende: het afbreken van kleine, traag evoluerende architectuur of monolithic en deze in microservices steken.
 
 \subsubsection{De verschillende manieren van bescherming}
 Microservices moeten een doel in de business vervullen. Naast dit, zorgen microservices er ook voor dat de bescherming eenvoudiger wordt, \textcite{RDX2016}.
 
+Enkele tips om de bescherming van microservices aan te pakken, \textcite{Matteson2017}:
+\begin{itemize}
+	\item Zorg bij het ontwikkelen van microservices voor coderingsstandaarden die kunnen herbruikt worden. Door eenmaal een goede code te voorzien wordt de kans op kwetsbaarheden en gaten in de bescherming kleiner.
+	\item Ga na welke schade er kan toegebracht worden aan een microservice als die zonder bescherming zou worden geupload.
+	\item Maak gebruik van toegangscontroles. Zorg ervoor dat er gewerkt wordt met leesrechten. Een microservice dat de aankooporders ophaalt moet niet aan de verkooporders kunnen.
+	\item Ga geen beveiligingsprincipes gebruiken van externen, implementeer die in de code van de microservice.
+	\item Zorg voor goede documentatie van elke microservice. Dit kan handig zijn bij het ontdekken van een zwak punt in de bescherming. De documentatie kan mogelijke problemen verduidelijken.
+\end{itemize}
+
 \subsubsection{Het monitoren van microservices}
+Het monitoren of loggen van microservices houdt in dat er wordt bijgehouden hoe een microservice zich gedraagt. Er wordt bijgehouden hoe snel de data wordt opgehaald uit de databank. Ook voor het vinden van problemen is monitoren een belangrijk onderdeel. Dankzij monitoring kan een fout sneller gevonden worden. Er kan worden nagegaan hoelang het duurde om een bepaalde request te maken. Van die gegevens kunnen er dan conclusies getrokken worden, \textcite{Ananthasubramanian2018}.
+
 
 \subsubsection{Het debuggen en troubleshooten bij microservices}
 

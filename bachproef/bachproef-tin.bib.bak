@@ -377,4 +377,25 @@
   year    = {2016},
 }
 
+@Article{Koukia2018,
+  author  = {Aram Koukia},
+  title   = {A microservices implementation journey - Part 1},
+  journal = {https://koukia.ca/a-microservices-implementation-journey-part-1-9f6471fe917},
+  year    = {2018},
+}
+
+@Article{Kappagantula2018,
+  author  = {Sahiti Kappagantula},
+  title   = {Microservice Architecture - Learn, Build, and deploy applications},
+  journal = {https://dzone.com/articles/microservice-architecture-learn-build-and-deploy-a},
+  year    = {2018},
+}
+
+@Article{Ananthasubramanian2018,
+  author  = {Hariram Ananthasubramanian},
+  title   = {Challenges in implemeting microservices},
+  journal = {https://dzone.com/articles/challenges-in-implementing-microservices},
+  year    = {2018},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
