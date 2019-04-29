@@ -21,55 +21,55 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Authenticatie en authorisatie}{20}{section*.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Verband met Agile en DevOps}{21}{section*.7}
+\contentsline {subsubsection}{Verband met Agile en DevOps}{22}{section*.7}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{De verschillende manieren van bescherming}{22}{section*.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Het monitoren van microservices}{22}{section*.9}
+\contentsline {subsubsection}{Het monitoren van microservices}{23}{section*.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Het debuggen en troubleshooten bij microservices}{22}{section*.10}
+\contentsline {subsubsection}{Het debuggen en troubleshooten bij microservices}{23}{section*.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.3}Algemene aanpak om microservices te implementeren}{22}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.3}Algemene aanpak om microservices te implementeren}{23}{subsection.2.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.4}De voordelen en nadelen van microserivces}{27}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.4}De voordelen en nadelen van microserivces}{28}{subsection.2.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Order-to-cash proces in SAP}{29}{section.2.2}
+\contentsline {section}{\numberline {2.2}Order-to-cash proces in SAP}{30}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Definite}{29}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.1}Definite}{30}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Technologie}{32}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.2}Technologie}{33}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Onderdelen van een order-to-cash proces}{32}{section*.11}
+\contentsline {subsubsection}{Onderdelen van een order-to-cash proces}{33}{section*.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Wat biedt SAP zelf aan voor microservices}{33}{section*.12}
+\contentsline {subsubsection}{Wat biedt SAP zelf aan voor microservices}{34}{section*.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Requirements van de business}{35}{section.2.3}
+\contentsline {section}{\numberline {2.3}Requirements van de business}{36}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Methodologie}{39}{chapter.3}
+\contentsline {chapter}{\numberline {3}Methodologie}{41}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Conclusie}{41}{chapter.4}
+\contentsline {chapter}{\numberline {4}Conclusie}{43}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{43}{appendix.A}
+\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{45}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Introductie}{43}{section.A.1}
+\contentsline {section}{\numberline {A.1}Introductie}{45}{section.A.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Literatuurstudie}{43}{section.A.2}
+\contentsline {section}{\numberline {A.2}Literatuurstudie}{45}{section.A.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.1}Wat zijn microservices?}{44}{subsection.A.2.1}
+\contentsline {subsection}{\numberline {A.2.1}Wat zijn microservices?}{46}{subsection.A.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.2}Waarom microservices gebruiken}{44}{subsection.A.2.2}
+\contentsline {subsection}{\numberline {A.2.2}Waarom microservices gebruiken}{46}{subsection.A.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.3}Principes voor Microservices Integration}{44}{subsection.A.2.3}
+\contentsline {subsection}{\numberline {A.2.3}Principes voor Microservices Integration}{46}{subsection.A.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.4}Order-to-cash in SAP}{45}{subsection.A.2.4}
+\contentsline {subsection}{\numberline {A.2.4}Order-to-cash in SAP}{47}{subsection.A.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.5}Kyma}{45}{subsection.A.2.5}
+\contentsline {subsection}{\numberline {A.2.5}Kyma}{47}{subsection.A.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Methodologie}{45}{section.A.3}
+\contentsline {section}{\numberline {A.3}Methodologie}{47}{section.A.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}Verwachte resultaten}{46}{section.A.4}
+\contentsline {section}{\numberline {A.4}Verwachte resultaten}{48}{section.A.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.5}Verwachte conclusies}{46}{section.A.5}
+\contentsline {section}{\numberline {A.5}Verwachte conclusies}{48}{section.A.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografie}{47}{appendix*.13}
+\contentsline {chapter}{Bibliografie}{49}{appendix*.13}
 \contentsfinish 
