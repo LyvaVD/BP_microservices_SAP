@@ -433,4 +433,67 @@
   year    = {2018},
 }
 
+@Article{Aggarwal2019,
+  author  = {Bhavya Aggarwal},
+  title   = {Authentication and authorization in microservices},
+  journal = {https://dzone.com/articles/authentication-and-authorization-in-microservices},
+  year    = {2019},
+}
+
+@Article{Siraj2017,
+  author  = {Mostafa Siraj},
+  title   = {Securing microservices: The API gateway, authentication and authorization},
+  journal = {https://sdtimes.com/apis/securing-microservices-the-api-gateway-authentication-and-authorization/},
+  year    = {2017},
+}
+
+@Article{Stecky-Efantis2016,
+  author  = {Mikey Stecky-Efantis},
+  title   = {5 Esay steps to understanding JSON Web Tokens},
+  journal = {https://medium.com/vandium-software/5-easy-steps-to-understanding-json-web-tokens-jwt-1164c0adfcec},
+  year    = {2016},
+}
+
+@Article{Sandoval2018,
+  author  = {Kristopher Sandoval},
+  title   = {3 common methods of API Authentication explained},
+  journal = {https://nordicapis.com/3-common-methods-api-authentication-explained/},
+  year    = {2018},
+}
+
+@Article{Silva2017,
+  author  = {Rodrigo Candido da Silva},
+  title   = {Best practices to protect your microservices architecture},
+  journal = {https://medium.com/@rcandidosilva/best-practices-to-protect-your-microservices-architecture-541e7cf7637f},
+  year    = {2017},
+}
+
+@Article{Useckas2018,
+  author  = {Andrew Useckas},
+  title   = {Using \& protecting microservices - a double edged sword},
+  journal = {https://blog.threatxlabs.com/using-and-protecting-microservices-double-edged-sword},
+  year    = {2018},
+}
+
+@Article{Jacobson2019,
+  author  = {Mackenzie Jacobson},
+  title   = {How to secure APIS \& microservices qith a next-gen waf},
+  journal = {https://blog.threatxlabs.com/how-to-secure-apis-microservices-with-a-next-gen-waf},
+  year    = {2019},
+}
+
+@Article{Summers2015,
+  author  = {Brent Summers},
+  title   = {Improving security in your microservices architecture},
+  journal = {https://www.sumologic.com/insight/microservices-architecture-security/},
+  year    = {2015},
+}
+
+@Article{Mulesoft2019,
+  author  = {Mulesoft},
+  title   = {Microservices and DevOps: better together},
+  journal = {https://www.mulesoft.com/resources/api/microservices-devops-better-together},
+  year    = {2019},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}

@@ -19,32 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{apa/global//global/global}
-    \entry{Aggarwal2019}{article}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=de297b8c6eee20251bbbd05819428cef}{%
-           family={Aggarwal},
-           familyi={A\bibinitperiod},
-           given={Bhavya},
-           giveni={B\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{de297b8c6eee20251bbbd05819428cef}
-      \strng{fullhash}{de297b8c6eee20251bbbd05819428cef}
-      \strng{bibnamehash}{de297b8c6eee20251bbbd05819428cef}
-      \strng{authorbibnamehash}{de297b8c6eee20251bbbd05819428cef}
-      \strng{authornamehash}{de297b8c6eee20251bbbd05819428cef}
-      \strng{authorfullhash}{de297b8c6eee20251bbbd05819428cef}
-      \field{sortinit}{A}
-      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{https://dzone.com/articles/authentication-and-authorization-in-microservices}
-      \field{title}{Authentication and authorization in microservices}
-      \field{year}{2019}
-    \endentry
     \entry{Akthar2018}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=0966291689836de194eef5131134d0b9}{%
@@ -341,6 +315,34 @@
       \field{year}{2019}
       \field{dateera}{ce}
     \endentry
+    \entry{Silva2017}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=22a03fc4628dc6542a58a50f51523e61}{%
+           family={Silva},
+           familyi={S\bibinitperiod},
+           given={Rodrigo\bibnamedelima Candido},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0,
+           prefix={da},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \strng{namehash}{22a03fc4628dc6542a58a50f51523e61}
+      \strng{fullhash}{22a03fc4628dc6542a58a50f51523e61}
+      \strng{bibnamehash}{22a03fc4628dc6542a58a50f51523e61}
+      \strng{authorbibnamehash}{22a03fc4628dc6542a58a50f51523e61}
+      \strng{authornamehash}{22a03fc4628dc6542a58a50f51523e61}
+      \strng{authorfullhash}{22a03fc4628dc6542a58a50f51523e61}
+      \field{sortinit}{d}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://medium.com/@rcandidosilva/best-practices-to-protect-your-microservices-architecture-541e7cf7637f}
+      \field{title}{Best practices to protect your microservices architecture}
+      \field{year}{2017}
+    \endentry
     \entry{devoteam2018}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=37d8bd72c4e69744cedd7f11ca2da987}{%
@@ -362,32 +364,6 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{Devoteam}
       \field{title}{Microservices: just another word fo 'tiny-SOA'?}
-      \field{year}{2018}
-    \endentry
-    \entry{Douglass2018}{article}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,uniquepart=base,hash=9cb211314213afaa483dd770536f4f4d}{%
-           family={Douglass},
-           familyi={D\bibinitperiod},
-           given={Michael},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{9cb211314213afaa483dd770536f4f4d}
-      \strng{fullhash}{9cb211314213afaa483dd770536f4f4d}
-      \strng{bibnamehash}{9cb211314213afaa483dd770536f4f4d}
-      \strng{authorbibnamehash}{9cb211314213afaa483dd770536f4f4d}
-      \strng{authornamehash}{9cb211314213afaa483dd770536f4f4d}
-      \strng{authorfullhash}{9cb211314213afaa483dd770536f4f4d}
-      \field{sortinit}{D}
-      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{https://codeburst.io/i-believe-it-really-depends-on-your-environment-and-how-well-protected-the-different-pieces-are-7919bfa6bc86}
-      \field{title}{Microservices authentication \& authorization best practice}
       \field{year}{2018}
     \endentry
     \entry{Everard2017}{article}{}
@@ -631,6 +607,55 @@
       \field{year}{2017}
       \field{dateera}{ce}
     \endentry
+    \entry{Morgan2019}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=b569bb5cc8c4cccba593d7335c471166}{%
+           family={Morgan},
+           familyi={M\bibinitperiod},
+           given={Lisa},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b569bb5cc8c4cccba593d7335c471166}
+      \strng{fullhash}{b569bb5cc8c4cccba593d7335c471166}
+      \strng{bibnamehash}{b569bb5cc8c4cccba593d7335c471166}
+      \strng{authorbibnamehash}{b569bb5cc8c4cccba593d7335c471166}
+      \strng{authornamehash}{b569bb5cc8c4cccba593d7335c471166}
+      \strng{authorfullhash}{b569bb5cc8c4cccba593d7335c471166}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://www.datamation.com/applications/devops-and-microservices.html}
+      \field{title}{DevOps and Microservices}
+      \field{year}{2019}
+    \endentry
+    \entry{Mulesoft2019}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=c61924567a0e1810564f8c134fa81b4c}{%
+           family={Mulesoft},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{c61924567a0e1810564f8c134fa81b4c}
+      \strng{fullhash}{c61924567a0e1810564f8c134fa81b4c}
+      \strng{bibnamehash}{c61924567a0e1810564f8c134fa81b4c}
+      \strng{authorbibnamehash}{c61924567a0e1810564f8c134fa81b4c}
+      \strng{authornamehash}{c61924567a0e1810564f8c134fa81b4c}
+      \strng{authorfullhash}{c61924567a0e1810564f8c134fa81b4c}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://www.mulesoft.com/resources/api/microservices-devops-better-together}
+      \field{title}{Microservices and DevOps: better together}
+      \field{year}{2019}
+    \endentry
     \entry{OpenSap2018}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=d356182c5713a25d6c26ab0fe0184301}{%
@@ -707,6 +732,32 @@
       \field{year}{2016}
       \field{dateera}{ce}
     \endentry
+    \entry{Sandoval2018}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=fd6fd385de67e5136f4348a13cf000dd}{%
+           family={Sandoval},
+           familyi={S\bibinitperiod},
+           given={Kristopher},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{fd6fd385de67e5136f4348a13cf000dd}
+      \strng{fullhash}{fd6fd385de67e5136f4348a13cf000dd}
+      \strng{bibnamehash}{fd6fd385de67e5136f4348a13cf000dd}
+      \strng{authorbibnamehash}{fd6fd385de67e5136f4348a13cf000dd}
+      \strng{authornamehash}{fd6fd385de67e5136f4348a13cf000dd}
+      \strng{authorfullhash}{fd6fd385de67e5136f4348a13cf000dd}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://nordicapis.com/3-common-methods-api-authentication-explained/}
+      \field{title}{3 common methods of API Authentication explained}
+      \field{year}{2018}
+    \endentry
     \entry{Semerdzhiev2018}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=0e9b19e2acfeec0b1e5976318d967074}{%
@@ -735,6 +786,58 @@
       \field{title}{Introducing project Kyma}
       \field{year}{2018}
       \field{dateera}{ce}
+    \endentry
+    \entry{Siraj2017}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=092a15758d68d6e01588572189f707ab}{%
+           family={Siraj},
+           familyi={S\bibinitperiod},
+           given={Mostafa},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{092a15758d68d6e01588572189f707ab}
+      \strng{fullhash}{092a15758d68d6e01588572189f707ab}
+      \strng{bibnamehash}{092a15758d68d6e01588572189f707ab}
+      \strng{authorbibnamehash}{092a15758d68d6e01588572189f707ab}
+      \strng{authornamehash}{092a15758d68d6e01588572189f707ab}
+      \strng{authorfullhash}{092a15758d68d6e01588572189f707ab}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://sdtimes.com/apis/securing-microservices-the-api-gateway-authentication-and-authorization/}
+      \field{title}{Securing microservices: The API gateway, authentication and authorization}
+      \field{year}{2017}
+    \endentry
+    \entry{Stecky-Efantis2016}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=de2594d75943056ecbc958305b80037e}{%
+           family={Stecky-Efantis},
+           familyi={S\bibinithyphendelim E\bibinitperiod},
+           given={Mikey},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{de2594d75943056ecbc958305b80037e}
+      \strng{fullhash}{de2594d75943056ecbc958305b80037e}
+      \strng{bibnamehash}{de2594d75943056ecbc958305b80037e}
+      \strng{authorbibnamehash}{de2594d75943056ecbc958305b80037e}
+      \strng{authornamehash}{de2594d75943056ecbc958305b80037e}
+      \strng{authorfullhash}{de2594d75943056ecbc958305b80037e}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://medium.com/vandium-software/5-easy-steps-to-understanding-json-web-tokens-jwt-1164c0adfcec}
+      \field{title}{5 Esay steps to understanding JSON Web Tokens}
+      \field{year}{2016}
     \endentry
     \entry{Troisi2019}{article}{}
       \name{author}{1}{}{%
