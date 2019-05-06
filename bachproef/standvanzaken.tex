@@ -266,7 +266,55 @@ Microservices en DevOps vullen elkaar aan op volgende vlakken, \textcite{Mulesof
 
 
 \subsubsection{Het monitoren van microservices}
+Logs zijn records binnen een databank waar naar weggeschreven wordt terwijl de applicatie draait. Metrics zijn numerieke waarden die kunnen geanalyseerd worden. Metrics zijn terug te vinden op volgende niveau's van een applicatie, \textcite{Wasson2018}:
+\begin{itemize}
+	\item Node-level: Dit houdt in de gegevens van de CPU, het geheugen, netwerk en de harde schijf. 
+	\item Container: Draait de service binnen een container dan moeten er ook metrics bijgehouden worden van die container. 
+	\item Applicatie: Hier kunnen metrics bijgehouden worden om het gedrag van de service te begrijpen. Gegevens die kunnen bijgehouden worden zijn het aantal HTTP requests, de vertraging en de lengte van een bericht.
+	\item Dependent service: Bij interactie met een externe service, hoelang deze duurt voordat de externe service reageert. 
+\end{itemize}
+
+
 Het monitoren of loggen van microservices houdt in dat er wordt bijgehouden hoe een microservice zich gedraagt. Er wordt bijgehouden hoe snel de data wordt opgehaald uit de databank. Ook voor het vinden van problemen is monitoren een belangrijk onderdeel. Dankzij monitoring kan een fout sneller gevonden worden. Er kan worden nagegaan hoelang het duurde om een bepaalde request te maken. Van die gegevens kunnen er dan conclusies getrokken worden, \textcite{Ananthasubramanian2018}.
+
+Loggen is belangrijk omdat bij meedere services het moeilijk kan zijn om het traject binnen de services te volgen, \textcite{Saldanha2016}.
+
+De verschillende tools om te debuggen, \textcite{Swersky2019}:
+\begin{itemize}
+	\item Logging frameworks: Het is een open-source oplossing. Er zijn verschillende opties, bij het kiezen wordt er best rekening gehouden met volgende puntjes:
+		\begin{itemize}
+			\item De netheid van de code. Is de logging code gemakkelijk te lezen?
+			\item Wordt de performance beeïnvloedt?
+			\item Is het framework voor logging al gekend onder het team?
+		\end{itemize}
+	\item Logging databases: Log data wordt gebruikt voor het captueren van events. Logs worden nooit aangepast. Logs worden ook gesorteerd op datum en tijd. 
+\end{itemize}
+
+
+
+Bij microservices wordt elke microservice gelogd. Bij een fout moet er gekeken worden naar alle betrokken microservices. Er moet gekeken worden naar alle logs van de services. Om logging toe te passen wordt er aangeraden om libraries te gebruiken. Enkele best practices, \textcite{Melendez2018}, \textcite{Eyee2018}, \textcite{Timms2018}:
+\begin{itemize}
+	\item Probeer te vermijden dat logs in bestanden worden opgeslaan. Logs zijn streams van een flow. Het geeft weer wat er juist gebeurt is in een flow.
+	\item Microservices moeten niet weten waar de logs naartoe gaan. Zo kan de bestemming van het wegschrijven van de logs veranderd worden zonder dat elke microservice ervoor moet aangepast worden.
+	\item De logging zou moeten werken voor alle verschillende codeertalen. Er zou niets moeten worden aangepast bij de configuratie files van het logging systeem.
+	\item Geef elke request een uniek ID. Zo kan de request snel teruggevonden worden bij falen. Of bij het zien van een fout kan er snel achterhaald worden welke request er in fout is gegaan. 
+	\item Laat het antwoord ook een uniek ID meesturen. Als de gebruiker dan een fout krijgt, kan er achterhaald worden vanwaar de teruggestuurde fout komt. De administrators kunnen dan de details van de fout bekijken.
+	\item Een oplossing is om alle logs weg te schrijven naar een centrale databank. Zo kan het hele pad van de fout snel en eenvoudig teruggevonden worden. Het duurt langer om verschillende fouten aan elkaar te linken als de logs in de datastore van de microservice worden opgeslaan. Bij het opslaan op één plaats, worden fouten sneller aan elkaar gelinkt. Het wegschrijven naar een plaats is tegen het principe van microservices. Elke microservice op zichzelf. Binnen die enkele database met alle logs kan er gezocht worden op fout, microservice, tijdstip, .... Ook het volgen van een gebruiker zijn traject binnen de applicatie is eenvoudiger. Bij een fout kan er gekeken worden naar de acties die er op voorhand zijn gemaakt. 
+	\item Zorg voor structuur in de log data. Een algemene format zoals JSON of XML om een structuur te steken in je logs. 
+	\item Geef elke request een context. Weten wat gezorgt heeft voor de fout, is belangrijk om ervoor te zorgen dat de fout niet nog eens voorkomt. Volgende velden zouden zeker in de log terug te moeten vinden zijn:
+		\begin{itemize}
+			\item Dag en tijd.
+			\item Stack errors.
+			\item De naam van de service, om de logs te linken aan microservices.
+			\item In welke functie de fout is ontstaan.
+			\item De naam van de externe service waar er interactie mee is geweest.
+			\item Het IP adres van de server en van de gebruiker zijn requests. 
+			\item De browser waaruit de gebruiker de request stuurde.
+			\item De HTTP code om later alerts te creëren. 
+		\end{itemize}
+	\item Overweeg om de logs naar een lokale databank weg te schrijven. Elke oplossing heeft zijn voordelen en nadelen. Het wegschrijven over HTTP naar de cloud kan zorgen voor meer verkeer op het netwerk. Dus er kan bandbreedte weggenomen worden van belangrijkere microservices. 
+	\item Kijk na wat er gelogd wordt, is het niet nodig om iets te loggen, laat het achterwege. Maar bij de start van loggen, wordt er best te veel gelogd. Zodat er eerst teveel info is en dan kan er gesneden worden in de inhoud van het loggen.
+\end{itemize}
 
 
 
@@ -545,14 +593,6 @@ Er werd iets zoals Knative gemaakt. Knative is een platform dat developers onder
 \end{figure}
 De laatste maanden werden de repositories gereconstrueerd en daarom zijn er geen tot weinig referenties naar Knative. Naast die grote verandering werd er gewerkt aan een proof-of-concept cloud-native oplossing door het gebruik van Knative en Kyma te samen. 
 
-\textcite{Kannappan2018} schreef een artikel over hoe innovatief izjn met Kyma. Het artikel begint met een eye-opener over Tesla. Hoe innovatief zij wel niet izjn met hun mogelijkheid om de auto's te updaten over-the-air. Tesla heeft bewezen dat innovatie, zelfs in oude branches, nodig is. 
-Bij het doormaken van innovatie, zijn er verschillende moeilijkheden die opkomen bij het proces naar digitalisering:
-\begin{itemize}
-	\item Hetrogene product portfolio: Het aanbieden van één product is verleden tijd. Zeker software bedrijven moeten accepteren dat er diversiteit is en meer nodig is dan één product.
-	\item Monolithic deployment: Monolithic applicaties zijn goed maar eens schaalbaarheid erbij komt, worden ze vaak complex. Dit zorgt voor minder vlotte innovatie. 
-	\item Cloud-native: Veel bedrijven schakelen over naar "de cloud". Het is geen gemakkelijke stap om alles naar de cloud over te zetten. Het vraagt voor meerdere onderdelen betere oplossingen. Zoals voor de inter-service communicatie, transacties tussen oplossingen, logging over het volledige system.
-	\item The need for speed: Het is algemeen geweten dat de snelheid van bijvoorbeeld leveringen een grote rol spelen deze dagen. Ook geldt dit voor software bedrijven. De snelheid waarmee oplossingen kunnen gemaakt worden is belangrijk.
-\end{itemize}
 Kyma heeft hard gewerkt om deze problemen/uitdagingen te proberen wegwerken. Kyma heeft ook geprobeerd om bedrijven te helpen met de transformatie naar digitalisatie. Kyma geeft bedrijven de mogelijkheid tot:
 \begin{itemize}
 	\item Be open and extendable: Kyma maakt gebruik van Open Service Broker API specificaties. Dit is een "plug and play" die de mogelijkheid geeft om code te hergebruiken. Ook code van andere partijen te gebruiken. 

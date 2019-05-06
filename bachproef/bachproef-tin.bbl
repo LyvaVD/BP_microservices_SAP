@@ -392,6 +392,32 @@
       \field{title}{API Gateway definition}
       \field{year}{2017}
     \endentry
+    \entry{Eyee2018}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=0722e4a4de5ca3f57aa6765f2c8676c4}{%
+           family={Eyee},
+           familyi={E\bibinitperiod},
+           given={Uzziah},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0722e4a4de5ca3f57aa6765f2c8676c4}
+      \strng{fullhash}{0722e4a4de5ca3f57aa6765f2c8676c4}
+      \strng{bibnamehash}{0722e4a4de5ca3f57aa6765f2c8676c4}
+      \strng{authorbibnamehash}{0722e4a4de5ca3f57aa6765f2c8676c4}
+      \strng{authornamehash}{0722e4a4de5ca3f57aa6765f2c8676c4}
+      \strng{authorfullhash}{0722e4a4de5ca3f57aa6765f2c8676c4}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://hackernoon.com/monitoring-containerized-microservices-with-a-centralized-logging-architecture-ba6771c1971a}
+      \field{title}{Monitoring containerized microservices with a centrlaized logging architecture}
+      \field{year}{2018}
+    \endentry
     \entry{Gunaratne2018}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=5ff4f9c5d9bd11808479bf03dc621fc4}{%
@@ -607,6 +633,32 @@
       \field{year}{2017}
       \field{dateera}{ce}
     \endentry
+    \entry{Melendez2018}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=703ea5c20c36c15ebacd293d034f75a2}{%
+           family={Melendez},
+           familyi={M\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{703ea5c20c36c15ebacd293d034f75a2}
+      \strng{fullhash}{703ea5c20c36c15ebacd293d034f75a2}
+      \strng{bibnamehash}{703ea5c20c36c15ebacd293d034f75a2}
+      \strng{authorbibnamehash}{703ea5c20c36c15ebacd293d034f75a2}
+      \strng{authornamehash}{703ea5c20c36c15ebacd293d034f75a2}
+      \strng{authorfullhash}{703ea5c20c36c15ebacd293d034f75a2}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://dzone.com/articles/microservices-logging-best-practices}
+      \field{title}{Microservices Logging best practices}
+      \field{year}{2018}
+    \endentry
     \entry{Morgan2019}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=b569bb5cc8c4cccba593d7335c471166}{%
@@ -732,6 +784,32 @@
       \field{year}{2016}
       \field{dateera}{ce}
     \endentry
+    \entry{Saldanha2016}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=f692603c7fccec31da4dae631ad98e1c}{%
+           family={Saldanha},
+           familyi={S\bibinitperiod},
+           given={Lucas},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f692603c7fccec31da4dae631ad98e1c}
+      \strng{fullhash}{f692603c7fccec31da4dae631ad98e1c}
+      \strng{bibnamehash}{f692603c7fccec31da4dae631ad98e1c}
+      \strng{authorbibnamehash}{f692603c7fccec31da4dae631ad98e1c}
+      \strng{authornamehash}{f692603c7fccec31da4dae631ad98e1c}
+      \strng{authorfullhash}{f692603c7fccec31da4dae631ad98e1c}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://logz.io/blog/logging-microservices/}
+      \field{title}{Tips on logging microservices}
+      \field{year}{2016}
+    \endentry
     \entry{Sandoval2018}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=fd6fd385de67e5136f4348a13cf000dd}{%
@@ -839,6 +917,58 @@
       \field{title}{5 Esay steps to understanding JSON Web Tokens}
       \field{year}{2016}
     \endentry
+    \entry{Swersky2019}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=7a6394739ab279d58544915981364f6b}{%
+           family={Swersky},
+           familyi={S\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7a6394739ab279d58544915981364f6b}
+      \strng{fullhash}{7a6394739ab279d58544915981364f6b}
+      \strng{bibnamehash}{7a6394739ab279d58544915981364f6b}
+      \strng{authorbibnamehash}{7a6394739ab279d58544915981364f6b}
+      \strng{authornamehash}{7a6394739ab279d58544915981364f6b}
+      \strng{authorfullhash}{7a6394739ab279d58544915981364f6b}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://raygun.com/blog/best-practices-microservices/}
+      \field{title}{Best practices for tracing and debugging microservices}
+      \field{year}{2019}
+    \endentry
+    \entry{Timms2018}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=ec7c226e29eaee7db654a7cb92ace479}{%
+           family={Timms},
+           familyi={T\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ec7c226e29eaee7db654a7cb92ace479}
+      \strng{fullhash}{ec7c226e29eaee7db654a7cb92ace479}
+      \strng{bibnamehash}{ec7c226e29eaee7db654a7cb92ace479}
+      \strng{authorbibnamehash}{ec7c226e29eaee7db654a7cb92ace479}
+      \strng{authornamehash}{ec7c226e29eaee7db654a7cb92ace479}
+      \strng{authorfullhash}{ec7c226e29eaee7db654a7cb92ace479}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://stackify.com/microservice-logging/}
+      \field{title}{Microservice Logging: challenges, advantages, and handling failures}
+      \field{year}{2018}
+    \endentry
     \entry{Troisi2019}{article}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=e58e1635f1c9994f9b6a33a8b9723373}{%
@@ -890,6 +1020,32 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{devoteam}
       \field{title}{Microservices and integration: Doing IT rigth?}
+      \field{year}{2018}
+    \endentry
+    \entry{Wasson2018}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=cfa82a9c01c9970289ae66dd5f2b9251}{%
+           family={Wasson},
+           familyi={W\bibinitperiod},
+           given={Mike},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{cfa82a9c01c9970289ae66dd5f2b9251}
+      \strng{fullhash}{cfa82a9c01c9970289ae66dd5f2b9251}
+      \strng{bibnamehash}{cfa82a9c01c9970289ae66dd5f2b9251}
+      \strng{authorbibnamehash}{cfa82a9c01c9970289ae66dd5f2b9251}
+      \strng{authornamehash}{cfa82a9c01c9970289ae66dd5f2b9251}
+      \strng{authorfullhash}{cfa82a9c01c9970289ae66dd5f2b9251}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{https://docs.microsoft.com/en-us/azure/architecture/microservices/logging-monitoring}
+      \field{title}{Designing microservices: logging and monitoring}
       \field{year}{2018}
     \endentry
     \entry{Watts2018}{article}{}

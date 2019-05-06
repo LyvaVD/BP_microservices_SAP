@@ -5,7 +5,79 @@
 \chapter{\IfLanguageName{dutch}{Methodologie}{Methodology}}
 \label{ch:methodologie}
 
-TODO: Hoe ben je te werk gegaan? Verdeel je onderzoek in grote fasen, en licht in elke fase toe welke stappen je gevolgd hebt. Verantwoord waarom je op deze manier te werk gegaan bent. Je moet kunnen aantonen dat je de best mogelijke manier toegepast hebt om een antwoord te vinden op de onderzoeksvraag.
+\section{Uitleg termen}
+Al deze termen krijgen meer context bij het verderlezen van dit hoofdstuk.
+Onder andere wat voor communicatie methode
+
+\section{Communicatie methode}
+Enterprise messaging.
+
+\section{De databank structuur}
+Wat er allemaal wordt weggeschreven naar de databank.
+
+\section{De verschillende microservices}
+Welke heb ik uit de huidige architectuur kunnen halen.
+\begin{itemize}
+	\item Wat kunnen ze
+	\item Hoe de db eruitziet
+	\item welk deeltje van de databank spreken ze aan
+	\item Waar kunnen ze gebruikt worden
+	\item Waarom werd hiervan een microservice gemaakt.
+\end{itemize}
+
+De tot nu toe gevonden microservices
+\begin{itemize}
+	\item Klant gegevens ophalen
+		\begin{itemize}
+			\item Databank met alle klantgegevens
+			\item Order management
+			\item Credit management
+			\item Klant management
+			\item Facturatie
+			\item Accounts receivables
+		\end{itemize}
+	\item Orders plaatsen, ophalen, verwijderen
+		\begin{itemize}
+			\item Databank met alle orders
+			\item elk order heeft klantnummer
+			\item Timestamp
+			\item Databank voor orderlijnen om order samen te kunnen stellen
+			\item Order management
+			\item Order fullfilment
+			\item Facturatie
+		\end{itemize}
+	\item Producten ophalen en aantal veranderen
+		\begin{itemize}
+			\item nog niks
+			\item Order management
+			\item order fullfilment
+		\end{itemize}
+	\item Facturatie maken, ophalen
+		\begin{itemize}
+			\item Klantnr.
+			\item OrderNr.
+			\item timestamp
+			\item vlag betaald
+			\item Aantal dagen overdue
+		\end{itemize}
+	\item Shipment doc opstellen
+		\begin{itemize}
+			\item Order ophalen
+			\item order shipment
+		\end{itemize}
+	\item Aanmaning opmaken, verwijderen
+		\begin{itemize}
+			\item Accounts receivables
+		\end{itemize}
+\end{itemize}
+
+
+\section{De complete architectuur opbouwen}
+Stap per stap in het proces alles aanhalen
+\begin{itemize}
+	\item welke microservices aanspreken
+	\item waarom?
+\end{itemize}
 
 
 
