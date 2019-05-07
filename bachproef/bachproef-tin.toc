@@ -49,35 +49,35 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}Communicatie methode}{45}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}De databank structuur}{45}{section.3.3}
+\contentsline {section}{\numberline {3.3}De databank structuur}{46}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}De verschillende microservices}{45}{section.3.4}
+\contentsline {section}{\numberline {3.4}De verschillende microservices}{47}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}De complete architectuur opbouwen}{46}{section.3.5}
+\contentsline {section}{\numberline {3.5}De complete architectuur opbouwen}{48}{section.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Conclusie}{47}{chapter.4}
+\contentsline {chapter}{\numberline {4}Conclusie}{49}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{49}{appendix.A}
+\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{51}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Introductie}{49}{section.A.1}
+\contentsline {section}{\numberline {A.1}Introductie}{51}{section.A.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Literatuurstudie}{49}{section.A.2}
+\contentsline {section}{\numberline {A.2}Literatuurstudie}{51}{section.A.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.1}Wat zijn microservices?}{50}{subsection.A.2.1}
+\contentsline {subsection}{\numberline {A.2.1}Wat zijn microservices?}{52}{subsection.A.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.2}Waarom microservices gebruiken}{50}{subsection.A.2.2}
+\contentsline {subsection}{\numberline {A.2.2}Waarom microservices gebruiken}{52}{subsection.A.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.3}Principes voor Microservices Integration}{50}{subsection.A.2.3}
+\contentsline {subsection}{\numberline {A.2.3}Principes voor Microservices Integration}{52}{subsection.A.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.4}Order-to-cash in SAP}{51}{subsection.A.2.4}
+\contentsline {subsection}{\numberline {A.2.4}Order-to-cash in SAP}{53}{subsection.A.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.5}Kyma}{51}{subsection.A.2.5}
+\contentsline {subsection}{\numberline {A.2.5}Kyma}{53}{subsection.A.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Methodologie}{51}{section.A.3}
+\contentsline {section}{\numberline {A.3}Methodologie}{53}{section.A.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}Verwachte resultaten}{52}{section.A.4}
+\contentsline {section}{\numberline {A.4}Verwachte resultaten}{54}{section.A.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.5}Verwachte conclusies}{52}{section.A.5}
+\contentsline {section}{\numberline {A.5}Verwachte conclusies}{54}{section.A.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografie}{53}{appendix*.12}
+\contentsline {chapter}{Bibliografie}{55}{appendix*.12}
 \contentsfinish 

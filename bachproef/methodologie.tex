@@ -6,14 +6,81 @@
 \label{ch:methodologie}
 
 \section{Uitleg termen}
-Al deze termen krijgen meer context bij het verderlezen van dit hoofdstuk.
-Onder andere wat voor communicatie methode
+In tabel 3.1 zijn termen terug te vinden die in dit hoofdstuk regelmatig zullen voorkomen.
+
+\begin{table}[]
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|l|p{10cm}|}
+			\hline 
+			Queue & Een wachtrij waar berichten op geplaatst worden. Het bericht op de queue kan maar één keer gelezen worden. \\ \hline
+			Consumption & De term om een bericht van de queue te lezen. \\ \hline
+			Acknowledgement & Het verwijderen van een bericht op de queue. \\ \hline
+			Overhead &  Als er teveel data aanwezig is op de queue dan spreekt men van overhead. Dit kan er voor zorgen dat de queue geen berichten meer ontvangt. \\ \hline
+		\end{tabular}%
+	}
+	\caption{Termen die vaker voorkomen in dit hoofdstuk.}
+\end{table}
 
 \section{Communicatie methode}
-Enterprise messaging.
+Microservices moeten met elkaar kunnen communiceren. Bijvoorbeeld: Er wordt een order geplaatst door klant 66. Om na te gaan of die klant wel een order mag plaatsen, wordt de klant nummer doorgestuurd naar credit management. Om toch onafhankelijk van elkaar te blijven, gaan de microservices niet controleren of de data is aangekomen bij de andere microservices. De berichten worden op de queue van de microservice geplaatst. Dan is de microservice zelf verantwoordelijk voor het ophalen van hun data. Het ophalen van de data gebeurt via consumption en acknowledgement. Elke keer er een bericht geplaatst wordt op de queue, wordt de consumption en acknowledgement getriggerd om te gebeuren. Zo kunnen er meerdere credit controles gelijklopend gebeuren. 
+Dus volgende queue's zouden moeten bestaan:
+\begin{itemize}
+	\item QorderMan is een queue voor order management: Het plaatsen van een order.
+	\item QcreditMan is een queue voor credit management: Om te controleren of een klant wel een order mag plaatsen.
+	\item QorderFul is een queue voor order fulfilment: Het ophalen van de order in het magazijn.
+	\item QorderShip is een queue voor order shipment: Het plannen van de route en welke goederen op welke vrachtwagen moeten geladen worden.
+	\item Qfact is een queue voor de facturatie.
+	\item QaccountsRec is een queue voor accounts receivable: De betaling van de factuur nagaan en tijdig aanmaningen sturen. 
+\end{itemize}
+
+Niet alle data wordt volledig naar de queue gestuurd enkel de belangrijke data. Zoals bijvoorbeeld de klant die een order plaatste, die zijn klantnummer zal doorgestuurd worden naar credit management. Bij credit manangement wordt er dan aan de hand van het klantnummer de gegevens opgehaald en dan zo nagegaan of die klant wel een order mag plaatsen. Zo blijft de overhead op de queue minimaal. Om meer gegevens op te halen, moet de databank aangesproken worden. De gehele structuur van de databank wordt beschreven in het volgende gedeelte.
 
 \section{De databank structuur}
-Wat er allemaal wordt weggeschreven naar de databank.
+Onderliggend is één grote databank waar alle masterdata in terug te vinden is. Hier is de enige plaats waar een single point-of-failure terug te vinden is. 
+Volgende databanken zullen voorkomen in deze uitwerking:
+\begin{itemize}
+	\item Klant gegevens:
+		\begin{itemize}
+			\item Klant nummer,
+			\item naam (voornaam, achternaam),
+			\item adres,
+			\item geboortedatum,
+		\end{itemize}
+	\item Order gegevens:
+		\begin{itemize}
+			\item Ordernummer,
+			\item klantnummer: om na te gaan aan welke klant dit order gelinkt is,
+			\item betalingswijze,
+			\item totaal bedrag,
+			\item timestamp van aanmaak
+		\end{itemize}
+	\item Orderlijnen:
+		\begin{itemize}
+			\item Orderlijnnummer,
+			\item ordernummer,
+			\item productid,
+			\item hoeveelheid,
+			\item kostprijs per product,
+			\item totale kostprijs orderlijn.
+		\end{itemize}
+	\item Product gegevens:
+		\begin{itemize}
+			\item Product id,
+			\item productnaam,
+			\item beschrijving,
+			\item in voorraad
+		\end{itemize}
+	\item Facturatie:
+		\begin{itemize}
+			\item Factuurnummer,
+			\item ordernummer,
+			\item klantnummer,
+			\item betaald,
+			\item timestamp,
+			\item totaal bedrag BTW,
+			\item totaal bedrag factuur.
+		\end{itemize}
+\end{itemize}
 
 \section{De verschillende microservices}
 Welke heb ik uit de huidige architectuur kunnen halen.
