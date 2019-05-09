@@ -10,7 +10,7 @@ In tabel 3.1 zijn termen terug te vinden die in dit hoofdstuk regelmatig zullen 
 
 \begin{table}[]
 	\resizebox{\textwidth}{!}{%
-		\begin{tabular}{|l|p{10cm}|}
+		\begin{tabular}{|l|p{15cm}|}
 			\hline 
 			Queue & Een wachtrij waar berichten op geplaatst worden. Het bericht op de queue kan maar één keer gelezen worden. \\ \hline
 			Consumption & De term om een bericht van de queue te lezen. \\ \hline
@@ -23,11 +23,12 @@ In tabel 3.1 zijn termen terug te vinden die in dit hoofdstuk regelmatig zullen 
 
 \section{Communicatie methode}
 \begin{figure}[h]
-	\includegraphics[width=10cm]{schemaEM.png}
+	\includegraphics[width=15cm]{schemaEM.png}
 	\caption{Hoe de messaging zou toegepast worden binnen het proces.}
 	\centering
 \end{figure}
-Microservices moeten met elkaar kunnen communiceren. Bijvoorbeeld: Er wordt een order geplaatst door klant 66. Om na te gaan of die klant wel een order mag plaatsen, wordt de klant nummer doorgestuurd naar credit management. Om toch onafhankelijk van elkaar te blijven, gaan de microservices niet controleren of de data is aangekomen bij de andere microservices. De berichten worden op de queue van de microservice geplaatst. Dan is de microservice zelf verantwoordelijk voor het ophalen van hun data. Het ophalen van de data gebeurt via consumption en acknowledgement. Elke keer er een bericht geplaatst wordt op de queue, wordt de consumption en acknowledgement getriggerd om te gebeuren. Zo kunnen er meerdere credit controles gelijklopend gebeuren. 
+Microservices moeten met elkaar kunnen communiceren. De manier wordt voorgesteld in figuur 3.1. 
+Klant 66 plaats een order met vier verschillende producten. Het ordernummer is 23. De volledige bestelling komt binnen in het systeem en wordt op de queue van ordermanagement geplaatst. Het order wordt van de queue gehaald aan de hand van consumption en acknowledgement. Ordermanagement verwerkt de binnengekomen order. Dan wordt het klantnummer en ordernummer op de queue van creditmanagement geplaatst. Creditmanagement haalt het bericht van de queue. Dan wordt er gekeken naar het betaalgedrag van de klant. Is het een wanbetaler of betaald de klant altijd correct. Staat de klant gekend voor wanbetalen, dan wordt er geen goedkeuring gegeven om het order te plaatsen. Bij een corect betaalgedrag, krijgt de order goedkeuring om geplaatst te worden. Dan wordt het ordernummer doorgestuurd naar het volgende deel van het proces. 
 Dus volgende queue's zouden moeten bestaan:
 \begin{itemize}
 	\item QorderMan is een queue voor order management: Het plaatsen van een order.
@@ -38,12 +39,12 @@ Dus volgende queue's zouden moeten bestaan:
 	\item QaccountsRec is een queue voor accounts receivable: De betaling van de factuur nagaan en tijdig aanmaningen sturen. 
 \end{itemize}
 
-Niet alle data wordt volledig naar de queue gestuurd enkel de belangrijke data. Zoals bijvoorbeeld de klant die een order plaatste, die zijn klantnummer zal doorgestuurd worden naar credit management. Bij credit manangement wordt er dan aan de hand van het klantnummer de gegevens opgehaald en dan zo nagegaan of die klant wel een order mag plaatsen. Zo blijft de overhead op de queue minimaal. Om meer gegevens op te halen, moet de databank aangesproken worden. De gehele structuur van de databank wordt beschreven in het volgende gedeelte.
+Niet alle data wordt volledig naar de queue gestuurd enkel de belangrijke data. Zoals bijvoorbeeld het nummer van de klant die een order plaatste. Het ordernummer en klantnummer worden naar creditmanagement doorgestuurd. Bij creditmanangement wordt er dan aan de hand van het klantnummer de gegevens opgehaald en dan zo nagegaan of die klant wel een order mag plaatsen. Het ordernummer werd meegestuurd om zeker te zijn dat de correcte order goed- of afgekeurd wordt. Zo blijft de overhead op de queue minimaal. Om meer gegevens op te halen, moet de databank aangesproken worden. De gehele structuur van de databank wordt beschreven in het volgende gedeelte.
 
 \section{De databank structuur}
 Onderliggend is één grote databank waar alle masterdata in terug te vinden is. Hier is de enige plaats waar een single point-of-failure terug te vinden is. 
 \begin{figure}[h]
-	\includegraphics[width=10cm]{databank.png}
+	\includegraphics[width=15cm]{databank.png}
 	\caption{De databank structuur.}
 	\centering
 \end{figure}
@@ -104,11 +105,7 @@ Het opmaken en verwijderen van aanmaningen gebeurt enkel wanneer een wanbetaler 
 
 
 \section{De complete architectuur opbouwen}
-Stap per stap in het proces alles aanhalen
-\begin{itemize}
-	\item welke microservices aanspreken
-	\item waarom?
-\end{itemize}
+
 
 
 

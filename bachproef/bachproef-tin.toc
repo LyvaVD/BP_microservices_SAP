@@ -53,7 +53,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.4}De verschillende microservices}{47}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.1}Klantengegevens ophalen}{47}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.1}Klantengegevens ophalen}{48}{subsection.3.4.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4.2}Orders plaatsen, ophalen en verwijderen}{48}{subsection.3.4.2}
 \defcounter {refsection}{0}\relax 
@@ -61,7 +61,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4.4}Facturatie maken en ophalen}{48}{subsection.3.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.5}Shipment documentatie opstellen}{48}{subsection.3.4.5}
+\contentsline {subsection}{\numberline {3.4.5}Shipment documentatie opstellen}{49}{subsection.3.4.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4.6}Aanmaning opmaken en verwijderen}{49}{subsection.3.4.6}
 \defcounter {refsection}{0}\relax 
