@@ -16,12 +16,13 @@ In tabel 3.1 zijn termen terug te vinden die in dit hoofdstuk regelmatig zullen 
 			Consumption & De term om een bericht van de queue te lezen. \\ \hline
 			Acknowledgement & Het verwijderen van een bericht op de queue. \\ \hline
 			Overhead &  Als er teveel data aanwezig is op de queue dan spreekt men van overhead. Dit kan er voor zorgen dat de queue geen berichten meer ontvangt. \\ \hline
+			Datastore &  Een datastore is een kleinere versie van een databank. Er kunnen files in opgeslaan worden, alsook gegevens. \\ \hline
 		\end{tabular}%
 	}
 	\caption{Termen die vaker voorkomen in dit hoofdstuk.}
 \end{table}
 
-\section{Communicatie methode}
+\section{Communicatie methode in het algemeen uitgelegd}
 \begin{figure}[h]
 	\includegraphics[width=15cm]{schemaEM.png}
 	\caption{Hoe de messaging zou toegepast worden binnen het proces.}
@@ -42,7 +43,7 @@ Dus volgende queue's zouden moeten bestaan:
 Niet alle data wordt volledig naar de queue gestuurd enkel de belangrijke data. Zoals bijvoorbeeld het nummer van de klant die een order plaatste. Het ordernummer en klantnummer worden naar creditmanagement doorgestuurd. Bij creditmanangement wordt er dan aan de hand van het klantnummer de gegevens opgehaald en dan zo nagegaan of die klant wel een order mag plaatsen. Het ordernummer werd meegestuurd om zeker te zijn dat de correcte order goed- of afgekeurd wordt. Zo blijft de overhead op de queue minimaal. Om meer gegevens op te halen, moet de databank aangesproken worden. De gehele structuur van de databank wordt beschreven in het volgende gedeelte.
 
 \section{De databank structuur}
-Onderliggend is één grote databank waar alle masterdata in terug te vinden is. Hier is de enige plaats waar een single point-of-failure terug te vinden is. 
+Onderliggend is één grote databank waar alle masterdata in terug te vinden is. Hier is de enige plaats waar een single point-of-failure terug te vinden is. Naast de grote databank, heeft elke microservice zijn datastore. Bij een verandering in een datastore, stuurt deze de nieuwe record naar de databank zijn queue. Eens de databank de record heeft toegevoegd of aangepast, stuurt hij een bericht naar elke datastore zijn queue om te melden dat er een verandering gebeurt is. 
 \begin{figure}[h]
 	\includegraphics[width=15cm]{databank.png}
 	\caption{De databank structuur.}
@@ -102,10 +103,46 @@ Het shipment document wordt gegenereerd afhankelijk van het order. Er wordt geke
 \subsection{Aanmaning opmaken en verwijderen}
 Het opmaken en verwijderen van aanmaningen gebeurt enkel wanneer een wanbetaler is. Het proces zou niet vaak mogen voorkomen. 
 
+\subsection{Berichten plaatsen op de queue}
+Berichten plaatsen op de queue met de correcte gegevens. Deze microservice zorgt daarvoor. Hiervan wordt ook een microservice gemaakt omdat dit in elke stap voorkomt. Het is dan eenvoudiger om er een microservice van te maken, zodat elk onderdeel op een uniforme manier het bericht plaatst. 
+Deze microservice komt voor in elk onderdeel van het proces.
+
+\subsection{Berichten ophalen van de queue} 
+Elk onderdeel moet berichten van zijn queue kunnen halen. Door het meermaals voorkomen van deze taak, wordt er een microservice van gemaakt. Het ophalen van berichten gebeurt dan op een uniforme manier. 
+Deze microservice komt voor in elk onderdeel van het proces.
 
 
 \section{De complete architectuur opbouwen}
+Op figuur 3.3 is te zien hoe het proces in elkaar ziet. Door de microservice architectuur toe te passen op het order-to-cash proces verandert er niks aan de volgorde van het proces of het doel van het proces. De manier waarop gegevens worden opgehaald, verandert wel. 
 
+\subsection{De communicatie tussen de microservices}
 
+\begin{figure}[h]
+	\includegraphics[width=15cm]{schema_communicatie.png}
+	\caption{De communicatie tussen de verschillende onderdelen van het order-to-cash proces.}
+	\centering
+\end{figure}
+Op figuur 3.3 is het communicatie patroon zichtbaar.
+Voordat het proces van start kan gaan, moet een klant een order plaatsen. Een order bevat een aantal producten. Eens de klant een order geplaatst heeft dan is er een ordernummer gekend. De klant staat bekend in het systeem met een klantnummer. Dat zijn twee belangrijke gegevens die veel gebruikt zullen worden.
+Meer uitleg over wat elk onderdeel doet, bevindt zich in het volgende hoofdstuk.
+De nummers van de opsomming komen overeen met die op afbeelding 3.3.
+\begin{enumerate}
+	\item De communicatie tussen ordermanagement en creditmanagement. Er is een order geplaatst door klant 66. Ordermanagement zorgt ervoor dat het order in de databank geraakt. Eens de taak van ordermanagement gedaan is, plaatst die het klantnummmer en het ordernummer op de queue van creditmanagement. Dan is zijn taak gedaan. Ordermanagement houdt zich niet bezig met wat er gebeurt nadat hij het bericht geplaatst heeft.
+	\item De communicatie tussen creditmanagement en order fullfilment. Creditmanagement heeft het ordernummer en klantnummer van ordermanagement gekregen. Het bericht wordt van de queue gehaald. Creditmanagement gaat dan aan de hand van de klantgegevens beslissen of de klant het order mag plaatsen of niet. Is het order goedgekeurd dan wordt het ordernummer op de queue van order fullfilment gezet. De taak van creditmanagement is nu afgerond.
+	\item De communicatie tussen order fullfilment en order shipment. Order fullfilment heeft het ordernummer doorgekregen van credit management. Order fullfilment geeft het ordernummer door aan order shipment eens zijn taak gedaan is. 
+	\item De communicatie tussen order shipment en de facturatie. Het ordernummer werd op de queue van order shipment geplaatst. Eens alles opgemaakt is bij order shipment, wordt het ordernummer doorgestuurd naar de facturatie. De taak van order shipment is afgerond.
+	\item De communicatie tussen facturatie en accounts receivables. De facturatie kreeg een bericht van order shipment om de factuur op te maken voor het order met des betreffende ordernummer. Is de taak van facturatie afgerond dan wordt de factuurnummer doorgestuurd naa accounts receivables. Zodat de betaling verder kan worden opgevolgd.
+	\item Ordermanagement plaatst het ordernummer op de queue van klant management. Klant managment stuurt een bevestiging naar de klant van het goed ontvangen van zijn/haar order. En laat weten dat er eerst een controle komt op het betaalbedrag van de klant.
+	\item Creditmanagement plaatst het ordernummer en de status van goedgekeurd of afgekeurd op de queue. Dan wordt er een bericht verzonden naar de klant. Het bericht bevat de info of de klant zijn order is goedgekeurd of afgekeurd.
+	\item Order fullfilment plaatst een bericht op de queue om te laten weten dat het order gemaakt is. Dat de goederen uit het magazijn zijn opgehaald en klaar gemaakt worden voor verzending.
+	\item Order shipment plaatst een bericht op de queue wanneer de goederen klaar zijn voor vertrek. Klant management zorgt er dan voor dat het bericht tot bij de klant geraakt.
+	\item Facturatie plaatst een bericht op de queue van klant management om ervoor te zorgen dat de factuur tot bij de klant geraakt.
+	\item Accounts receivables plaatst een bericht op de queue van klant management als er aanmaningen moeten worden gestuurd.
+\end{enumerate}
 
-
+\subsection{Welk onderdeel spreekt welke microservices aan?}
+\begin{figure}[h]
+	\includegraphics[width=15cm]{schema_microservices.png}
+	\caption{Welk onderdeel, welke microservices aanspreekt.}
+	\centering
+\end{figure}
