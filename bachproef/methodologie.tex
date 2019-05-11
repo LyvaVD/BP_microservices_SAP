@@ -132,7 +132,7 @@ De nummers van de opsomming komen overeen met die op afbeelding 3.3.
 	\item De communicatie tussen order fullfilment en order shipment. Order fullfilment heeft het ordernummer doorgekregen van credit management. Order fullfilment geeft het ordernummer door aan order shipment eens zijn taak gedaan is. 
 	\item De communicatie tussen order shipment en de facturatie. Het ordernummer werd op de queue van order shipment geplaatst. Eens alles opgemaakt is bij order shipment, wordt het ordernummer doorgestuurd naar de facturatie. De taak van order shipment is afgerond.
 	\item De communicatie tussen facturatie en accounts receivables. De facturatie kreeg een bericht van order shipment om de factuur op te maken voor het order met des betreffende ordernummer. Is de taak van facturatie afgerond dan wordt de factuurnummer doorgestuurd naa accounts receivables. Zodat de betaling verder kan worden opgevolgd.
-	\item Ordermanagement plaatst het ordernummer op de queue van klant management. Klant managment stuurt een bevestiging naar de klant van het goed ontvangen van zijn/haar order. En laat weten dat er eerst een controle komt op het betaalbedrag van de klant.
+	\item Ordermanagement plaatst het ordernummer op de queue van klant management. Klant management stuurt een bevestiging naar de klant van het goed ontvangen van zijn/haar order. En laat weten dat er eerst een controle komt op het betaalbedrag van de klant.
 	\item Creditmanagement plaatst het ordernummer en de status van goedgekeurd of afgekeurd op de queue. Dan wordt er een bericht verzonden naar de klant. Het bericht bevat de info of de klant zijn order is goedgekeurd of afgekeurd.
 	\item Order fullfilment plaatst een bericht op de queue om te laten weten dat het order gemaakt is. Dat de goederen uit het magazijn zijn opgehaald en klaar gemaakt worden voor verzending.
 	\item Order shipment plaatst een bericht op de queue wanneer de goederen klaar zijn voor vertrek. Klant management zorgt er dan voor dat het bericht tot bij de klant geraakt.
@@ -140,9 +140,95 @@ De nummers van de opsomming komen overeen met die op afbeelding 3.3.
 	\item Accounts receivables plaatst een bericht op de queue van klant management als er aanmaningen moeten worden gestuurd.
 \end{enumerate}
 
-\subsection{Welk onderdeel spreekt welke microservices aan?}
+\subsection{De architectuur}
+In volgende tabel, zijn er letters en bijhorende microservices terug te vinden. Deze worden gebruikt bij het uitleggen van de architectuur.
+\begin{table}[]
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{|l|p{15cm}|}
+			\hline 
+			A & Klantgegevens ophalen \\ \hline
+			B & Orders plaatsen, ophalen en verwijderen \\ \hline
+			C & Producten ophalen en het aantal van voorraad aanpassen \\ \hline
+			D & Shipment documenten opstellen \\ \hline
+			E & Facturatie maken en ophalen \\ \hline
+			F & Aanmaning opmaken en verwijderen \\ \hline
+			G & Bericht plaatsen op de queue \\ \hline
+			H & Bericht ophalen van de queue \\ \hline
+		\end{tabular}%
+	}
+	\caption{Legende die gebruikt wordt in de afbeeldingen.}
+\end{table}
+
+In figuur 3.4 is te zien hoe het volledige proces communiceert met de verschillende microservices. Elk onderdeel van het proces is een microservice op zich. Een microservice die meerdere microservices aanspreekt om goed te functioneren.
 \begin{figure}[h]
 	\includegraphics[width=15cm]{schema_microservices.png}
 	\caption{Welk onderdeel, welke microservices aanspreekt.}
 	\centering
 \end{figure}
+
+\subsubsection{Order management}
+\begin{figure}[h]
+	\includegraphics[width=5cm]{ordermanagement.png}
+	\caption{Order management communiceert met volgende microservices.}
+	\centering
+\end{figure}
+Order management communiceert met volgende microservices:
+\begin{itemize}
+	\item Klantgegevens ophalen.
+	\item Orders plaatsen, ophalen en verwijderen.
+	\item Bericht plaatsen op queue.
+	\item Bericht van queue halen.
+\end{itemize}
+Een klant plaatst een order op het platform van het bedrijf. De gegevens van de klant worden opgehaald en gelinkt aan het nieuw gecreëerde order. Eens die twee taken zijn afgerond, wordt het bericht op de queue geplaatst van credit management.
+
+\subsubsection{Credit management}
+\begin{figure}[h]
+	\includegraphics[width=5cm]{creditmanagement.png}
+	\caption{Credit management communiceert met volgende microservices.}
+	\centering
+\end{figure}
+Credit management communiceert met volgende microservices:
+\begin{itemize}
+	\item Klantgegevens ophalen.
+	\item Facturatie maken en ophalen.
+	\item Bericht plaatsen op queue.
+	\item Bericht van queue halen.
+\end{itemize}
+
+
+\subsubsection{Order fullfilment}
+\begin{figure}[h]
+	\includegraphics[width=5cm]{orderfullfilment.png}
+	\caption{Order fullfilment communiceert met volgende microservices.}
+	\centering
+\end{figure}
+
+\subsubsection{Order shipment}
+\begin{figure}[h]
+	\includegraphics[width=5cm]{ordershipment.png}
+	\caption{Order shipment communiceert met volgende microservices.}
+	\centering
+\end{figure}
+
+\subsubsection{Facturatie}
+\begin{figure}[h]
+	\includegraphics[width=5cm]{facturatie.png}
+	\caption{Facturatie communiceert met volgende microservices.}
+	\centering
+\end{figure}
+
+\subsubsection{Accounts receivables}
+\begin{figure}[h]
+	\includegraphics[width=5cm]{accountreceivables.png}
+	\caption{Accounts receivables communiceert met volgende microservices.}
+	\centering
+\end{figure}
+
+\subsubsection{Klant management}
+\begin{figure}[h]
+	\includegraphics[width=5cm]{klantmanagement.png}
+	\caption{Klant management communiceert met volgende microservices.}
+	\centering
+\end{figure}
+
+\subsection{De volgende stappen: Het toevoegen van API, logging en authenticatie en authorisatie}

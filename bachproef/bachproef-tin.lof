@@ -49,6 +49,20 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Welk onderdeel, welke microservices aanspreekt.}}{52}{figure.3.4}
 \defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Order management communiceert met volgende microservices.}}{52}{figure.3.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Credit management communiceert met volgende microservices.}}{53}{figure.3.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Order fullfilment communiceert met volgende microservices.}}{53}{figure.3.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Order shipment communiceert met volgende microservices.}}{53}{figure.3.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Facturatie communiceert met volgende microservices.}}{54}{figure.3.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Accounts receivables communiceert met volgende microservices.}}{54}{figure.3.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Klant management communiceert met volgende microservices.}}{54}{figure.3.11}
+\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
