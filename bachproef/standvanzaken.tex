@@ -29,17 +29,17 @@ De definitie die te vinden is in dit artikel, gaat als volgt: "A method of devel
 	\caption{Een monolithic architectuur naast een microservice architectuur. \textcite{Watts2018}}
 \end{figure}
 Zoals te zien in figuur 2.1, \textcite{Watts2018}, is er een groot verschil tussen een monolithic architectuur en die van een microservice. De monolithic wordt weergegeven in de linkerkant van de foto. Aan de rechterkant van de foto is een voorbeeld te zien van een microservice architectuur. Daar is duidelijk te zien dat elke microservice een eigen databank/datastore heeft. Voor elke functionaliteit wordt een microserives aangemaakt, die dan nog eens apart een databank voor zich krijgt. Als bij microservice A een probleem is dan heeft dit niet meteen impact op de andere services. De communicatie tussen microservice A en de anderen zal wel hinder ondervinden. Maar de andere microservices kunnen wel nog steeds onafhankelijk verder. 
-Een andere definitie van microservices is: "A software architecting pattern that allows software to be developed into relatively small, distinct components. Each of the components is abstracted by an API(s) and provides a distinct subset of the functionality of the entire application". Ook hier zien we weer het puntje passeren dat een microservice een klein componentje is van een groter geheel. Die eigenschap wordt heel hard benadrukt. Na het uitleggen van microservices, schrijven ze ook over hoe microservices zo scalable zijn. Met scalable bedoelen ze schaalbaarheid. De mogelijkheid van software om mee te groeien als het aantal gebruikers vermeerderd. Dus eigenlijk dat de software nog steeds even goed presteerd bij 10 gebruikers als bij 2 000 gebruikers. Ook lichten ze toe hoe belangrijk API's zijn binnen een microservice architectuur. API's zijn een set van definities die ervoor zorgen dat deeltjes in een programma met elkaar kunnen communcieren. Een voordeel van API's is dat je niet moet weten hoe de andere code werkt. Verder wordt er ook gepraat over de verschillen tussen een monolithic architectuur en een microservice architectuur \textcite{series2018}.
+Een andere definitie van microservices is: "A software architecting pattern that allows software to be developed into relatively small, distinct components. Each of the components is abstracted by an API(s) and provides a distinct subset of the functionality of the entire application". Ook hier zien we weer het puntje passeren dat een microservice een klein componentje is van een groter geheel. Die eigenschap wordt heel hard benadrukt. Na het uitleggen van microservices, schrijven ze ook over hoe microservices zo scalable zijn. Met scalable bedoelen ze schaalbaarheid. De mogelijkheid van software om mee te groeien als het aantal gebruikers vermeerderd. Dus eigenlijk dat de software nog steeds even goed presteerd bij 10 gebruikers als bij 2 000 gebruikers. Ook lichten ze toe hoe belangrijk API's zijn binnen een microservice architectuur. API's zijn een set van definities die ervoor zorgen dat deeltjes in een programma met elkaar kunnen communcieren. Een voordeel van API's is dat je niet moet weten hoe de andere code werkt. Verder wordt er ook gepraat over de verschillen tussen een monolithic architectuur en een microservice architectuur.
 
 
- Zoals te zien is in figuur 2.2. We zien dat de monolithic alle puntjes in een kader heeft. Dit staat symbolisch voor het grote geheel dat eigen is aan een monolithic. Alles zit samen in één grote doos. Maar bij microservices is dit niet zo, daar zit elk deeltje/requirement in een aparte doos \textcite{Benetis2016a} . 
+ Op figuur 2.2 zien we dat de monolithic alle puntjes in een kader heeft. Dit staat symbolisch voor het grote geheel dat eigen is aan een monolithic. Alles zit samen in één grote doos. Maar bij microservices is dit niet zo, daar zit elk deeltje/requirement in een aparte doos \textcite{Benetis2016a} . 
 \begin{figure}[h]
 	\includegraphics[width=10cm]{Mono_Micro.png}
 	\centering
 	\caption{Een monolithic vergeleken met een microservice. \textcite{Benetis2016a}}
 \end{figure}
 
-In figuur X is duidelijk te zien hoe microservices een website pagina opuvllen.
+In figuur 2.3 is duidelijk te zien hoe microservices een website pagina opuvllen.
 \begin{figure}[h]
 	\includegraphics[width=10cm]{microservicesWebsite.png}
 	\centering
@@ -47,7 +47,7 @@ In figuur X is duidelijk te zien hoe microservices een website pagina opuvllen.
 \end{figure}
 De site bestaat uit zes onderdelen. Die onderdelen zijn allemaal dynamisch en ze halen hun info uit databanken. Bij het laden van de pagina gaat elk onderdeeltje zijn info gaan opvragen. Omdat dit allemaal met microservices gebeurt, wordt de info gelijktijdig opgehaald. Ook zullen ze niet moeten wachten op elkaar, tot de een info heeft ontvangen om dan naar de volgende zijn benodigde info te sturen. Elk spreekt zijn eigen databank aan. De microservices die de website opvullen, die kunnen onderliggend ook nog andere microservices aanspreken. Bijvoorbeeld: Een klant is aangemeld op de website van Amazon. De authenticatie microservices zorgt ervoor dat alle microservices weten dat die bepaalde persoon is aangemeld. Dan bij het inladen van voorkeuren of 'soort gelijke producten', kan de microservices die die sectie moet opvullen, vragen aan een andere microservice om de voorkeuren te laten genereren. \textcite{Koukia2018}.
 
-Een voorbeeld van een algemene architectuur is te zien op figuur X.
+Een voorbeeld van een algemene architectuur is te zien op figuur 2.4.
 \begin{figure}[h]
 	\includegraphics[width=10cm]{algArch.png}
 	\centering
@@ -58,7 +58,7 @@ Als eerste wordt er een request gemaakt. Die wordt naar de gateway gestuurd. Dan
 
 \subsection{Het belang van microservices}
 Bij een monolithic kan het aanpassen van een deeltje, veel werk vragen. Dit werd meer uitgelegd bij de definite van microservices. Microservices spelen gemakkelijker in op het periodieke opleveren van delen software. Deze technologie legt niet heel het framework plat als er deeltjes moeten bij gecodeerd worden. Microservices kunnen sneller inspelen op de Agile analyse/ontwikkel methode. Dit is ook een reden waarom microservices zo een opkomst kent. De analyse methode Agile werkt met periodieke opleveringen die kunnen gaan van twee weken tot een maand. In de periode wordt er gewerkt aan een functionaliteit of een eis van de klant. 
-Er voor zorgen dat software schaalbaar is, is een belangrijk punt en daar spelen microservices goed op in, \textcite{series2018}.
+Er voor zorgen dat software schaalbaar is, is een belangrijk punt en daar spelen microservices goed op in.
 
 
 
@@ -117,7 +117,7 @@ Eén van de meer bekendere manieren is, API gateway. De verantwoordelijkheden va
 	\item De requests doorsturen naar de correcte microservice.
 	\item Het 'antwoord' van de microservice in ontvangst nemen en doorsturen naar de gebruiker.
 \end{itemize}
-Zoals te zien is op figuur X, is een API gateway het toegangspunt. API gateway wordt gebruikt voor authenticatie en authorisatie. Meer uitleg hierover in de sectie over authenticatie en authorisatie.
+Zoals te zien is op figuur 2.5, is een API gateway het toegangspunt. API gateway wordt gebruikt voor authenticatie en authorisatie. Meer uitleg hierover in de sectie over authenticatie en authorisatie.
 \begin{figure}[h]
 	\includegraphics[width=10cm]{apiGateway_facadePattern.png}
 	\centering
@@ -132,7 +132,7 @@ Een belangrijk aspect van microservices is de authenticatie en de authorisatie. 
 	\centering
 	\caption{Een diagram van authenticatie bij een monolithic. \textcite{Ayoub2018}}
 \end{figure}
-Zoals te zien is op bovenstaande afbeelding, figuur 2.3, wordt de authenticatie afgehandeld binnen het monlithic proces. Wanneer de gebruiker inlogt, wordt de beveiligings module aangesproken. Deze kijkt of de gebruiker een bekende is, of er al gegevens in de databank zitten. Als het aanmelden gelukt is, wordt er een sessie gecreëerd. Een sessie wordt opgeslaan aan de hand van cookies. Cookies worden op je computer geplaatst door je browser. Het zijn kleine tekstbestanden. De sessie onthoudt wie je bent aan de hand van een ID. Dit zorgt ervoor dat je je niet elke keer opnieuw moet aanmelden als je van pagina verandert.  Elke keer dat de bezoeker van de site iets doet, wordt de sessie ID samen gestuurd met de request. Een request is een aanvraag. Als het ID correct is, weet de site dat de gebruiker ingelogd is. Bij elke aanvraag wordt de ID meegestuurd zodat er kan gecontroleerd worden of die zo wordt de authenticatie bij een monolithic afgehandeld.
+Zoals te zien is op bovenstaande afbeelding, figuur 2.6, wordt de authenticatie afgehandeld binnen het monlithic proces. Wanneer de gebruiker inlogt, wordt de beveiligings module aangesproken. Deze kijkt of de gebruiker een bekende is, of er al gegevens in de databank zitten. Als het aanmelden gelukt is, wordt er een sessie gecreëerd. Een sessie wordt opgeslaan aan de hand van cookies. Cookies worden op je computer geplaatst door je browser. Het zijn kleine tekstbestanden. De sessie onthoudt wie je bent aan de hand van een ID. Dit zorgt ervoor dat je je niet elke keer opnieuw moet aanmelden als je van pagina verandert.  Elke keer dat de bezoeker van de site iets doet, wordt de sessie ID samen gestuurd met de request. Een request is een aanvraag. Als het ID correct is, weet de site dat de gebruiker ingelogd is. Bij elke aanvraag wordt de ID meegestuurd zodat er kan gecontroleerd worden of die zo wordt de authenticatie bij een monolithic afgehandeld.
 Wanneer er gekeken wordt om authenticatie toe te passen bij microservices, komen volgende puntjes veel voor:
 \begin{itemize}
 	\item In elke microcservice moet er authenticatie en authorisatie afgehandeld worden. Het beste wordt dit toegepast op een uniforme manier. Dan wordt er van uit gegaan dat er in elke microservices een stukje code gaat komen dat herbruikt wordt. Maar dit zorgt ervoor dat elke microservice toch afhankelijk is. Bij het uitkomen van een nieuwe versie, moet dit deeltje dan weer geüpdate worden. Dit heeft invloed op de flexibiliteit van het framework.
@@ -153,7 +153,7 @@ Een andere manier is een client token wiht API gateway. Deze manier is gebaseerd
 
 \begin{table}[]
 	\resizebox{\textwidth}{!}{%
-		\begin{tabular}{|p{3cm}|p{10cm}|p{10cm}|p{10cm}|}
+		\begin{tabular}{|p{3cm}|p{5cm}|p{5cm}|p{5cm}|}
 			\hline 
 			Eigenschappen 
 				& Sidecar proxy 
@@ -189,10 +189,10 @@ Een andere manier is een client token wiht API gateway. Deze manier is gebaseerd
 		\textcite{Cavalcanti2018}, \textcite{Everard2017} }
 \end{table}
 
-De meest voorkomende methodes in API authenticatie terug te vinden in tabel X, \textcite{Sandoval2018}.
+De meest voorkomende methodes in API authenticatie terug te vinden in tabel 2.1, \textcite{Sandoval2018}.
 \begin{table}[]
 	\resizebox{\textwidth}{!}{%
-		\begin{tabular}{|p{2cm}|p{10cm}|p{10cm}|p{10cm}|}
+		\begin{tabular}{|p{2cm}|p{5cm}|p{5cm}|p{5cm}|}
 			\hline 
 			 
 				& HTTP Basic Authentication
@@ -227,7 +227,7 @@ Door de API Gateway to combineren met JSON Web Tokens is er meer mogelijkheid om
 \end{enumerate}
 De token vervalt na een bepaalde tijd. Er kan gekozen worden om deze automatisch te laten verlengen. Hier wordt niet verder op ingegaan. 
 
-De definitie van JSON Web Token, \textcite{Stecky-Efantis2016}: "A JSON Web Token (JWT) is a JSON object that is defined in RFC 7519 as a safe way to represent a set of information between two parties. The token is composed of a header, a payload, and a signature.". Het diagram te zien in figuur X, is een schematische voorstelling van hoe een JWT token wordt gegeven aan een gebruiker.
+De definitie van JSON Web Token, \textcite{Stecky-Efantis2016}: "A JSON Web Token (JWT) is a JSON object that is defined in RFC 7519 as a safe way to represent a set of information between two parties. The token is composed of a header, a payload, and a signature.". Het diagram te zien in figuur 2.7, is een schematische voorstelling van hoe een JWT token wordt gegeven aan een gebruiker.
 \begin{figure}[h]
 	\includegraphics[width=10cm]{jwt.png}
 	\centering
@@ -335,7 +335,7 @@ De eerste stap is "Serve a business purpose". De titel zegt al veel van wat er v
 	\item Opslag van data
 	\item Schaalbaarheid en belasting
 \end{itemize}
-Zoals te zien is op figuur 2.2, is een microservices één klein deeltje in een groot geheel. Later in dit stappenplan zal de figuur ook uitgebreidt worden en zal het geheel duidelijk worden. 
+Zoals te zien is op figuur 2.8, is een microservices één klein deeltje in een groot geheel. Later in dit stappenplan zal de figuur ook uitgebreidt worden en zal het geheel duidelijk worden. 
 \begin{figure}[h]
 	\includegraphics[width=10cm]{1.png}
 	\caption{Een microservice dat voldoet aan een business requirement. \textcite{Benetis2016}}
@@ -348,16 +348,16 @@ Na "Serve a business purpose" komt "Protect your stuff". Dit gaat over de besche
 	\caption{Een microservice waar bescherming aan is toegevoegd. \textcite{Benetis2016}}
 	\centering
 \end{figure}
-In figuur 2.3 is de authenticatie in een microservices gestoken. 
+In figuur 2.9 is de authenticatie in een microservices gestoken. 
 
-Na de eerste twee stappen komt "See no evil, hear no evil". Eens de microservice is opgezet en gedeployed, moet er gemonitord worden. Daarmee wordt bedoeld dat hoe de microserivces zich gedraagd goed moet bijgehouden worden. Alles zou goed moeten gelogd worden, zodat bij een probleem het geen moeite is om te vinden waar het probleem zich voordeed. Ook hier is het aangeraden om doorheen het hele systeem een uniforme manier van loggen aan te houden. Ook kan men hiervan een microservice maken. Dit wordt ook afgebeeld in figuur 2.4.
+Na de eerste twee stappen komt "See no evil, hear no evil". Eens de microservice is opgezet en gedeployed, moet er gemonitord worden. Daarmee wordt bedoeld dat hoe de microserivces zich gedraagd goed moet bijgehouden worden. Alles zou goed moeten gelogd worden, zodat bij een probleem het geen moeite is om te vinden waar het probleem zich voordeed. Ook hier is het aangeraden om doorheen het hele systeem een uniforme manier van loggen aan te houden. Ook kan men hiervan een microservice maken. Dit wordt ook afgebeeld in figuur 2.10.
 \begin{figure}[h]
 	\includegraphics[width=10cm]{3.png}
 	\caption{Een microservice waar er monitoring is aan toegevoegd om chaos te voorkomen. \textcite{Benetis2016}}
 	\centering
 \end{figure}
 
-Als vierde stap komt er "Find your stuff". In deze stap wordt er gezocht naar een manier om de microservices met elkaar te communiceren. Hiermee wordt bedoelt hoe dat microservices A gegevens vraag aan microservices B. Die dat dan ook vraagt van een andere microservice. Een veel gebruikte techniek hiervoor is "service registry". Een service registry is een databank waar alle services met hun instanties en locatie woren opgeslaan. Daar worden dan ook connecties in opgeslaan. Ook hier wordt er aangeraden om dat in een microservices te gieten. Zodat ook hiervan het gedrag kan gemonitord worden. In figuur 2.5 zie je hoe de service registry kan toegevoegd worden. In de figuur is die terug te vinden onder de naam "service discorvery".
+Als vierde stap komt er "Find your stuff". In deze stap wordt er gezocht naar een manier om de microservices met elkaar te communiceren. Hiermee wordt bedoelt hoe dat microservices A gegevens vraag aan microservices B. Die dat dan ook vraagt van een andere microservice. Een veel gebruikte techniek hiervoor is "service registry". Een service registry is een databank waar alle services met hun instanties en locatie woren opgeslaan. Daar worden dan ook connecties in opgeslaan. Ook hier wordt er aangeraden om dat in een microservices te gieten. Zodat ook hiervan het gedrag kan gemonitord worden. In figuur 2.11 zie je hoe de service registry kan toegevoegd worden. In de figuur is die terug te vinden onder de naam "service discorvery".
 \begin{figure}[h]
 	\includegraphics[width=10cm]{4.png}
 	\caption{Een microservice dat authenticatie als bescherming toepast. \textcite{Benetis2016}}
@@ -372,7 +372,7 @@ Nu is er een service, bestaande uit microservices, dat beschermd is en kan doen 
 	\item Abstractie van de clientinterface. Wanneer er van microservice verandert wordt, moet er niet van interface/scherm verandert worden. 
 \end{itemize}
 
-In figuur 2.6 is te zien hoe zo een API gateway kan worden toegepast. Zo is ok te zien dat de authenticatie microservice er niet inzit. Die wordt apart gehouden. De request naar de authenticatie mogen niet langs de API gateway gaan. Omdat ze dan zo meteen 'binnen' zitten. Pas na authenticatie mag men request sturen naar de API gateway.
+In figuur 2.12 is te zien hoe zo een API gateway kan worden toegepast. Zo is ok te zien dat de authenticatie microservice er niet inzit. Die wordt apart gehouden. De request naar de authenticatie mogen niet langs de API gateway gaan. Omdat ze dan zo meteen 'binnen' zitten. Pas na authenticatie mag men request sturen naar de API gateway.
 \begin{figure}[h]
 	\includegraphics[width=10cm]{5.png}
 	\caption{Een microservice dat een gateway gebruikt. \textcite{Benetis2016}}
@@ -385,7 +385,7 @@ Nu is er al een deftige architectuur aanwezig. Stap 6, "construct events", zal h
 	\item Abonneren op bepaalde events.
 	\item Het asynchrone systeem laten bloot leggen zodat externe klanten verschillende notificaties kunnen handelen.
 \end{itemize}
-In figuur 2.7 wordt de volledige architectuur weergegeven. Daar wordt er ook mooi afgebeeld hoe men events pland. Als event A voor event B moet gebeuren dan zetten ze die zo op de wachtrij event A voor event B. Want een wachtrij werkt volgens het FIFO (first in first out) principe.
+In figuur 2.13 wordt de volledige architectuur weergegeven. Daar wordt er ook mooi afgebeeld hoe men events pland. Als event A voor event B moet gebeuren dan zetten ze die zo op de wachtrij event A voor event B. Want een wachtrij werkt volgens het FIFO (first in first out) principe.
 \begin{figure}[h]
 	\includegraphics[width=10cm]{6.png}
 	\caption{Een microservice met asynchronisatie. \textcite{Benetis2016}}
@@ -474,7 +474,7 @@ Volgende acht stappen komen voor in een OTC proces:
 	\item Inning van het geld
 	\item Rapportering en data management
 \end{itemize}
-In figuur X wordt het afgebeeld in een schema.
+In figuur 2.14 wordt het afgebeeld in een schema.
 \begin{figure}[h]
 	\includegraphics[width=10cm]{wong2.png}
 	\caption{Het order-to-cash proces. \textcite{Wong2018}}
@@ -541,7 +541,7 @@ Er zijn vier grote onderdelen, namelijk:
 Bij de voor-verkoopsactiviteiten verstaan we het contact dat moet worden gemaakt worden met klant. De klant moet overtuigd worden van het product. Na contact komt er al dan niet een offerte. Soms kan er ook van contact rechtstreeks naar een order gaan. 
 Het orderproces bevat maar één onderdeel namelijk: de sales order. 
 Binnen de order afwerking valt het leveren van goederen, het verzenden van goederen.
-\textcite{Kumaran2015} geeft een mooi overzicht van de stappen die een order to cash proces kan bevatten. Zo begint het artikel met een toelichting dat dit proces een core proces is van de business. Dit wil zeggen dat een bedrijf, zonder dit proces, geen winst kan maken. Het is een essentieel onderdeel van zo wat elk bedrijf. Hoe deze vorm krijgt binnen een bedrijf, is heel verschillend. Een OTC proces start met het ontvangen van orders. Daarna kan, dit gebeurt niet overal, er gekeken worden naar het krediet van de klanten. Mag deze klant wel nog een bestelling plaatsen? Hierna wordt het order opgenomen in het systeem. Het product wordt verzonden en geleverd. En als laatste wordt de factuur betaald. Dit is welliswaar het 'perfecte' verloop van een order to cash proces. 
+\textcite{Kumaran2015} geeft een mooi overzicht van de stappen die een order to cash proces kan bevatten. Zo begint het artikel met een toelichting dat dit proces een core proces is van de business. Dit wil zeggen dat een bedrijf, zonder dit proces, geen winst kan maken. Het is een essentieel onderdeel van zo wat elk bedrijf. Hoe deze vorm krijgt binnen een bedrijf, is heel verschillend. Een OTC proces start met het ontvangen van orders. Daarna kan, dit gebeurt niet overal, er gekeken worden naar het krediet van de klanten. Mag deze klant wel nog een bestelling plaatsen? Hierna wordt het order opgenomen in het systeem. Het product wordt verzonden en geleverd. En als laatste wordt de factuur betaald. Dit is welliswaar het 'perfecte' verloop van een order to cash proces, figuur 2.16. 
 \begin{figure}[h]
 	\includegraphics[width=10cm]{Order-to-cash-cycle.jpg}
 	\caption{Order-to-cash proces volgens \textcite{Kumaran2015}.}
@@ -585,7 +585,7 @@ Kyma zorgt voor betere end-to-end ervarings scenario's. Die volgen een best-prac
 Het idee achter Kyma is het creëeren van serverless applicaties, mashups en microservices. Ook kan het gebruikt worden om snel kleine, gecustomizede modules te developen. Die modules zijn dan verworven met business logica. 
 Er werd iets zoals Knative gemaakt. Knative is een platform dat developers ondersteund om serverless applicaties te maken op Kubernetes. Dit zorgde voor groot enthousiasme bij SAP omdat hun Kyma project een soort van bevesteging keer. Al snel werd Kyma gerefactored om samen te kunnen werken met Knative. Er werden overlappende componenten weggelaten, wat Kyma slanker en gestroomlijnder maakt. Dankzij Knative kan Kyma zich richten op higer-level enterprise applications en service consumption scenario's. En gebruik maken van Knative voor de infrastructuur en development scenario's. 
 
-\textcite{Hofmann2018} geeft het update over de integratie tussen Kyma en Knative. Een toch redelijk belangrijke samenwerking. Beide bieden een complete set van bouwblokken aan. Beiden zijn ook een sterk framework. Bij het gebruik van beide kunnen er could-native oplossingen gebouwd worden op Kubernetes met een sterk framework. Op figuur X is te wat Kyma en wat Knative aanbiedt. 
+\textcite{Hofmann2018} geeft het update over de integratie tussen Kyma en Knative. Een toch redelijk belangrijke samenwerking. Beide bieden een complete set van bouwblokken aan. Beiden zijn ook een sterk framework. Bij het gebruik van beide kunnen er could-native oplossingen gebouwd worden op Kubernetes met een sterk framework. Op figuur 2.17 is te wat Kyma en wat Knative aanbiedt. 
 \begin{figure}[h]
 	\includegraphics[width=10cm]{1-kyma-knative.png}
 	\caption{Wat Kyma, boven de lijn, aanbiedt en wat Knative, onder de lijn, aanbiedt \textcite{Hofmann2018}.}

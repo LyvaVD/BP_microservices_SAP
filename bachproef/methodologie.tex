@@ -190,25 +190,43 @@ Een klant plaatst een order op het platform van het bedrijf. De gegevens van de 
 Credit management communiceert met volgende microservices:
 \begin{itemize}
 	\item Klantgegevens ophalen.
+	\item Orders ophalen, plaatsen en verwijderen.
 	\item Facturatie maken en ophalen.
 	\item Bericht plaatsen op queue.
 	\item Bericht van queue halen.
 \end{itemize}
-
+Eerst wordt het bericht dat door order management op de queue geplaatst werd, opgehaald. Dan is er een klantnummer en een ordernummer. Bij credit management kijkt of de klant een goed betaalgedrag heeft. Staat de klant gekend als wanbetaler dan naar het order gegaan om de plaatsing van het order af te keuren. In andere gevallen krijgt de order een goedkeuring en wordt het ordernummer geplaatst op de queue van order fullfilment. Dan zit de taak van credit management erop.
 
 \subsubsection{Order fullfilment}
 \begin{figure}[h]
-	\includegraphics[width=5cm]{orderfullfilment.png}
+	\includegraphics[width=5cm]{orderfullfilment.jpg}
 	\caption{Order fullfilment communiceert met volgende microservices.}
 	\centering
 \end{figure}
+Order fullfilment communiceert met volgende microservices:
+\begin{itemize}
+	\item Orders ophalen, plaatsen en verwijderen.
+	\item Producten ophalen en het aantal in de voorraad aanpassen.
+	\item Bericht plaatsen op queue.
+	\item Bericht van queue halen.
+\end{itemize}
+Bij order fullfilment staat er een ordernummer op de queue. Die wordt opgehaald en aan de hand van het ordernummer, weet men welke goederen er uit het magazijn moeten gehaald worden. Voor alle goederen moet het aantal in de voorraad aangepast worden. Eens het order compleet is, wordt het ordernummer op de queue van order shipment geplaatst.
 
 \subsubsection{Order shipment}
 \begin{figure}[h]
-	\includegraphics[width=5cm]{ordershipment.png}
+	\includegraphics[width=5cm]{ordershipment.jpg}
 	\caption{Order shipment communiceert met volgende microservices.}
 	\centering
 \end{figure}
+Order shipment communiceert met volgende microservices:
+\begin{itemize}
+	\item Orders ophalen, plaatsen en verwijderen.
+	\item Klantgegevens ophalen.
+	\item Shipment document opstellen.
+	\item Bericht plaatsen op queue.
+	\item Bericht van queue halen.
+\end{itemize}
+Order shipment krijgt het ordernummer binnen via zijn queue. Het order wordt bekeken en de klant gegevens worden opgehaald aan de hand van het gekoppelde klantnummer aan het order. Eens het order shipment document is opgesteld en alle goederen klaar zijn voor vertrek, wordt het ordernummer geplaatst op de queue van facturatie.
 
 \subsubsection{Facturatie}
 \begin{figure}[h]
@@ -216,6 +234,15 @@ Credit management communiceert met volgende microservices:
 	\caption{Facturatie communiceert met volgende microservices.}
 	\centering
 \end{figure}
+Facturatie communiceert met volgende microservices:
+\begin{itemize}
+	\item Klantgegevens ophalen.
+	\item Orders ophalen, plaatsen en verwijderen.
+	\item Facturatie maken en ophalen.
+	\item Bericht plaatsen op queue.
+	\item Bericht van queue halen.
+\end{itemize}
+Eens het ordernummer opgehaald is van de queue, wordt alle nodig info opgehaald om de factuur op te maken. De nodige gegevens zijn klantgegevens en het order. Eens de factuur opgemaakt is, wordt het factuur nummer geplaatst op de queue van account receivables.
 
 \subsubsection{Accounts receivables}
 \begin{figure}[h]
@@ -223,6 +250,13 @@ Credit management communiceert met volgende microservices:
 	\caption{Accounts receivables communiceert met volgende microservices.}
 	\centering
 \end{figure}
+Accounts receivable gaat na of de betaling wel goed wordt afgerond. Om dit te kunnen, worden volgende microservices aangesproken:
+\begin{itemize}
+	\item Klantgegevens ophalen.
+	\item Facturatie maken en ophalen.
+	\item Bericht plaatsen op queue.
+	\item Bericht van queue halen.
+\end{itemize}
 
 \subsubsection{Klant management}
 \begin{figure}[h]
@@ -230,5 +264,32 @@ Credit management communiceert met volgende microservices:
 	\caption{Klant management communiceert met volgende microservices.}
 	\centering
 \end{figure}
+Klant management staat in voor het contact met de klant. Dit deel gebruikt volgende microservices:
+\begin{itemize}
+	\item Klantgegevens ophalen.
+	\item Orders ophalen, plaatsen en verwijderen.
+	\item Facturatie maken en ophalen.
+	\item Bericht van queue halen.
+\end{itemize}
+Als een van de vorige onderdelen een bericht plaatst op de queue, zal die verwerkt worden en de nodige info wordt opgehaald.
 
 \subsection{De volgende stappen: Het toevoegen van API, logging en authenticatie en authorisatie}
+\subsubsection{Logging}
+Logging kan toegepast worden door nog een extra onderdeel toe te voegen. Hiernaar kunnen alle onderdelen hun logs posten. Hier gaat niet verder op ingegaan worden. 
+
+\subsubsection{API gateway}
+Een API gateway wordt toegevoegd om ervoor te zorgen dat de architctuur niet openbaar is voor iedereen. Er is één aanspreekpunt en die regelt de rest van de communicatie.
+De API communiceert in dit geval enkel met order management. De API geeft alle nodige informatie door en order management schrijft deze weg naar de datastore en naar de databank.
+\begin{figure}[h]
+	\includegraphics[width=10cm]{apiSchema.jpg}
+	\caption{Vereenvoudigd schema.}
+	\centering
+\end{figure}
+
+\subsubsection{Authenticatie en autorisatie}
+Onder het hoofdstuk 'stand van zaken', is een vergelijking te vinden over authenticatie. Uit die vergelijking, is de keuzen API gekozen als authenticatie. Binnen API zijn er verschillende opties, die worden ook overlopen in het vorige hoofdstuk. Er is gekozen voor OAuth omdat dit de meest bekende en gebruikte versie is.
+
+De gebruiker moet gekend zijn voordat die een order kan plaatsen. De authenticatie van de gebruiker gebeurt vooraf. Er is een aparte micrservice voor authenticatie. Hier wordt niet dieper op in gegaan.
+Op afbeelding X is wel een mogelijke plaatsing zichtbaar.
+
+

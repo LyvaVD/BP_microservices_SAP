@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.20)  11 MAY 2019 16:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.20)  12 MAY 2019 21:31
 entering extended mode
 **./bachproef-tin.tex
 (bachproef-tin.tex
@@ -1855,27 +1855,25 @@ Hoofdstuk 2.
 [17
 
 ]
-<img/microservices-vs-monolithic.jpg, id=404, 1830.84pt x 885.3075pt>
+<img/microservices-vs-monolithic.jpg, id=407, 1830.84pt x 885.3075pt>
 File: img/microservices-vs-monolithic.jpg Graphic file (type jpg)
 <use img/microservices-vs-monolithic.jpg>
 Package pdftex.def Info: img/microservices-vs-monolithic.jpg  used on input lin
 e 27.
 (pdftex.def)             Requested size: 284.52756pt x 137.57246pt.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 32.
  [18 <./img/microservices-vs-monolithic.jpg>]
-<img/Mono_Micro.png, id=413, 963.6pt x 345.29pt>
+<img/Mono_Micro.png, id=416, 963.6pt x 345.29pt>
 File: img/Mono_Micro.png Graphic file (type png)
 <use img/Mono_Micro.png>
 Package pdftex.def Info: img/Mono_Micro.png  used on input line 37.
 (pdftex.def)             Requested size: 284.52756pt x 101.9545pt.
-<img/microservicesWebsite.png, id=415, 1380.15625pt x 586.19pt>
+<img/microservicesWebsite.png, id=418, 1380.15625pt x 586.19pt>
 File: img/microservicesWebsite.png Graphic file (type png)
 <use img/microservicesWebsite.png>
 Package pdftex.def Info: img/microservicesWebsite.png  used on input line 44.
 (pdftex.def)             Requested size: 284.52756pt x 120.84056pt.
  [19 <./img/Mono_Micro.png> <./img/microservicesWebsite.png (PNG copy)>]
-<img/algArch.png, id=424, 1111.15125pt x 626.34pt>
+<img/algArch.png, id=426, 1111.15125pt x 626.34pt>
 File: img/algArch.png Graphic file (type png)
 <use img/algArch.png>
 Package pdftex.def Info: img/algArch.png  used on input line 52.
@@ -1892,13 +1890,13 @@ LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10.95> not available
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [22]
-<img/apiGateway_facadePattern.png, id=450, 1606.0pt x 785.93625pt>
+<img/apiGateway_facadePattern.png, id=452, 1606.0pt x 785.93625pt>
 File: img/apiGateway_facadePattern.png Graphic file (type png)
 <use img/apiGateway_facadePattern.png>
 Package pdftex.def Info: img/apiGateway_facadePattern.png  used on input line 1
 22.
 (pdftex.def)             Requested size: 284.52756pt x 139.23183pt.
-<img/monolithic_auth.png, id=453, 606.265pt x 462.72874pt>
+<img/monolithic_auth.png, id=455, 606.265pt x 462.72874pt>
 File: img/monolithic_auth.png Graphic file (type png)
 <use img/monolithic_auth.png>
 Package pdftex.def Info: img/monolithic_auth.png  used on input line 131.
@@ -1957,8 +1955,38 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 187.
 
+Underfull \hbox (badness 2903) in paragraph at lines 187--187
+\T1/ptm/m/n/12 (+20) run-ning in the same host
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 187--187
 []\T1/ptm/m/n/12 (+20) Heeft vol-gende
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--187
+[]
+ []
+
+
+Overfull \hbox (8.8283pt too wide) in paragraph at lines 187--187
+\T1/ptm/m/n/12 (-20) Authenticatie/authorizatie 
+ []
+
+
+Underfull \hbox (badness 2173) in paragraph at lines 187--187
+[]\T1/ptm/m/n/12 (+20) circuit-breakers: Een
+ []
+
+
+Underfull \hbox (badness 1755) in paragraph at lines 187--187
+\T1/ptm/m/n/12 (+20) len van de mi-cro-ser-vice(s)
+ []
+
+
+Underfull \hbox (badness 2990) in paragraph at lines 187--187
+\T1/ptm/m/n/12 (+20) kun-nen hier-on-der ge-bracht
  []
 
 
@@ -1966,80 +1994,81 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 193.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1092) has occurred while \output is active []
 
  [25]
-<img/jwt.png, id=480, 2007.5pt x 1380.15625pt>
+<img/jwt.png, id=482, 2007.5pt x 1380.15625pt>
 File: img/jwt.png Graphic file (type png)
 <use img/jwt.png>
 Package pdftex.def Info: img/jwt.png  used on input line 232.
 (pdftex.def)             Requested size: 284.52756pt x 195.60028pt.
 
-Underfull \vbox (badness 3907) has occurred while \output is active []
+Underfull \vbox (badness 6016) has occurred while \output is active []
 
- [26 <./img/jwt.png (PNG copy)>]
-Underfull \vbox (badness 1571) has occurred while \output is active []
+ [26]
+[27 <./img/jwt.png (PNG copy)>]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 286.
 
- [27]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28]
-Underfull \vbox (badness 1448) has occurred while \output is active []
-
- [29]
-<img/1.png, id=531, 963.6pt x 425.59pt>
+[29]
+<img/1.png, id=534, 963.6pt x 425.59pt>
 File: img/1.png Graphic file (type png)
 <use img/1.png>
 Package pdftex.def Info: img/1.png  used on input line 340.
 (pdftex.def)             Requested size: 284.52756pt x 125.66484pt.
-<img/2.png, id=533, 963.6pt x 425.59pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<img/2.png, id=536, 963.6pt x 425.59pt>
 File: img/2.png Graphic file (type png)
 <use img/2.png>
 Package pdftex.def Info: img/2.png  used on input line 347.
 (pdftex.def)             Requested size: 284.52756pt x 125.66484pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<img/3.png, id=535, 963.6pt x 552.0625pt>
+[30]
+<img/3.png, id=542, 963.6pt x 552.0625pt>
 File: img/3.png Graphic file (type png)
 <use img/3.png>
 Package pdftex.def Info: img/3.png  used on input line 355.
 (pdftex.def)             Requested size: 284.52756pt x 163.00865pt.
-[30 <./img/1.png>]
-<img/4.png, id=543, 963.6pt x 626.34pt>
-File: img/4.png Graphic file (type png)
-<use img/4.png>
-Package pdftex.def Info: img/4.png  used on input line 362.
-(pdftex.def)             Requested size: 284.52756pt x 184.94072pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[31 <./img/2.png> <./img/3.png>]
-<img/5.png, id=552, 963.6pt x 626.34pt>
+<img/4.png, id=545, 963.6pt x 626.34pt>
+File: img/4.png Graphic file (type png)
+<use img/4.png>
+Package pdftex.def Info: img/4.png  used on input line 362.
+(pdftex.def)             Requested size: 284.52756pt x 184.94072pt.
+[31 <./img/1.png> <./img/2.png>] [32 <./img/3.png> <./img/4.png>]
+<img/5.png, id=560, 963.6pt x 626.34pt>
 File: img/5.png Graphic file (type png)
 <use img/5.png>
 Package pdftex.def Info: img/5.png  used on input line 377.
 (pdftex.def)             Requested size: 284.52756pt x 184.94072pt.
- [32 <./img/4.png> <./img/5.png>]
-<img/6.png, id=560, 963.6pt x 708.6475pt>
+<img/6.png, id=562, 963.6pt x 708.6475pt>
 File: img/6.png Graphic file (type png)
 <use img/6.png>
 Package pdftex.def Info: img/6.png  used on input line 390.
 (pdftex.def)             Requested size: 284.52756pt x 209.24384pt.
- [33 <./img/6.png>]
-Underfull \vbox (badness 1448) has occurred while \output is active []
+ [33 <./img/5.png>] [34 <./img/6.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34]
-<img/wong.png, id=576, 948.54375pt x 1448.41125pt>
+ [35]
+<img/wong.png, id=584, 948.54375pt x 1448.41125pt>
 File: img/wong.png Graphic file (type png)
 <use img/wong.png>
 Package pdftex.def Info: img/wong.png  used on input line 445.
 (pdftex.def)             Requested size: 284.52756pt x 434.46043pt.
 
-[35] [36 <./img/wong.png>]
-<img/wong2.png, id=589, 948.54375pt x 1575.8875pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[36]
+<img/wong2.png, id=591, 948.54375pt x 1575.8875pt>
 File: img/wong2.png Graphic file (type png)
 <use img/wong2.png>
 Package pdftex.def Info: img/wong2.png  used on input line 479.
@@ -2053,7 +2082,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [37]
 [38]
-<img/Order-to-cash-cycle.jpg, id=602, 375.65344pt x 195.73125pt>
+<img/Order-to-cash-cycle.jpg, id=604, 375.65344pt x 195.73125pt>
 File: img/Order-to-cash-cycle.jpg Graphic file (type jpg)
 <use img/Order-to-cash-cycle.jpg>
 Package pdftex.def Info: img/Order-to-cash-cycle.jpg  used on input line 546.
@@ -2067,11 +2096,8 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 563.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [40]
-<img/1-kyma-knative.png, id=619, 709.14937pt x 366.61969pt>
+[40]
+<img/1-kyma-knative.png, id=623, 709.14937pt x 366.61969pt>
 File: img/1-kyma-knative.png Graphic file (type png)
 <use img/1-kyma-knative.png>
 Package pdftex.def Info: img/1-kyma-knative.png  used on input line 590.
@@ -2084,14 +2110,16 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [41])
-(methodologie.tex [42] [43 <./img/wong2.png>] [44 <./img/Order-to-cash-cycle.jp
-g> <./img/1-kyma-knative.png>]
+(methodologie.tex [42] [43 <./img/wong.png>] [44 <./img/wong2.png>] [45 <./img/
+Order-to-cash-cycle.jpg> <./img/1-kyma-knative.png>] [46
+
+]
 Hoofdstuk 3.
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 11.
 
-<img/schemaEM.png, id=645, 1493.58pt x 676.02562pt>
+<img/schemaEM.png, id=656, 1493.58pt x 676.02562pt>
 File: img/schemaEM.png Graphic file (type png)
 <use img/schemaEM.png>
 Package pdftex.def Info: img/schemaEM.png  used on input line 27.
@@ -2099,10 +2127,8 @@ Package pdftex.def Info: img/schemaEM.png  used on input line 27.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[45
-
-]
-<img/databank.png, id=650, 965.85844pt x 800.23969pt>
+[47]
+<img/databank.png, id=662, 965.85844pt x 800.23969pt>
 File: img/databank.png Graphic file (type png)
 <use img/databank.png>
 Package pdftex.def Info: img/databank.png  used on input line 48.
@@ -2110,33 +2136,33 @@ Package pdftex.def Info: img/databank.png  used on input line 48.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [46 <./img/schemaEM.png>] [47 <./img/databank.png>] [48]
+ [48 <./img/schemaEM.png>] [49 <./img/databank.png>] [50]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [49]
-<img/schema_communicatie.png, id=670, 306.24413pt x 150.5625pt>
+ [51]
+<img/schema_communicatie.png, id=681, 306.24413pt x 150.5625pt>
 File: img/schema_communicatie.png Graphic file (type png)
 <use img/schema_communicatie.png>
 Package pdftex.def Info: img/schema_communicatie.png  used on input line 121.
 (pdftex.def)             Requested size: 426.79134pt x 209.8441pt.
 
-[50 <./img/schema_communicatie.png>]
+[52 <./img/schema_communicatie.png>]
 
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 145.
 
-<img/schema_microservices.png, id=678, 314.07338pt x 105.09262pt>
+<img/schema_microservices.png, id=689, 314.07338pt x 105.09262pt>
 File: img/schema_microservices.png Graphic file (type png)
 <use img/schema_microservices.png>
 Package pdftex.def Info: img/schema_microservices.png  used on input line 164.
 (pdftex.def)             Requested size: 426.79134pt x 142.81342pt.
-[51]
-<img/ordermanagement.png, id=692, 99.07013pt x 46.07213pt>
+[53]
+<img/ordermanagement.png, id=704, 99.07013pt x 46.07213pt>
 File: img/ordermanagement.png Graphic file (type png)
 <use img/ordermanagement.png>
 Package pdftex.def Info: img/ordermanagement.png  used on input line 171.
 (pdftex.def)             Requested size: 142.26378pt x 66.16382pt.
-<img/creditmanagement.png, id=693, 72.57112pt x 46.67438pt>
+<img/creditmanagement.png, id=705, 72.57112pt x 46.67438pt>
 File: img/creditmanagement.png Graphic file (type png)
 <use img/creditmanagement.png>
 Package pdftex.def Info: img/creditmanagement.png  used on input line 186.
@@ -2145,60 +2171,64 @@ Package pdftex.def Info: img/creditmanagement.png  used on input line 186.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/orderfullfilment.png, id=694, 64.74188pt x 45.771pt>
-File: img/orderfullfilment.png Graphic file (type png)
-<use img/orderfullfilment.png>
-Package pdftex.def Info: img/orderfullfilment.png  used on input line 201.
-(pdftex.def)             Requested size: 142.26378pt x 100.58823pt.
+[54 <./img/schema_microservices.png> <./img/ordermanagement.png>]
+<img/orderfullfilment.jpg, id=714, 1716.4125pt x 998.9822pt>
+File: img/orderfullfilment.jpg Graphic file (type jpg)
+<use img/orderfullfilment.jpg>
+Package pdftex.def Info: img/orderfullfilment.jpg  used on input line 202.
+(pdftex.def)             Requested size: 142.26378pt x 82.78593pt.
+<img/ordershipment.jpg, id=715, 1778.14313pt x 1154.06157pt>
+File: img/ordershipment.jpg Graphic file (type jpg)
+<use img/ordershipment.jpg>
+Package pdftex.def Info: img/ordershipment.jpg  used on input line 217.
+(pdftex.def)             Requested size: 142.26378pt x 92.32681pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/ordershipment.png, id=695, 54.2025pt x 44.26538pt>
-File: img/ordershipment.png Graphic file (type png)
-<use img/ordershipment.png>
-Package pdftex.def Info: img/ordershipment.png  used on input line 208.
-(pdftex.def)             Requested size: 142.26378pt x 116.21382pt.
-[52 <./img/schema_microservices.png> <./img/ordermanagement.png>]
-<img/facturatie.png, id=704, 77.69025pt x 48.18pt>
+[55 <./img/creditmanagement.png> <./img/orderfullfilment.jpg>]
+<img/facturatie.png, id=723, 77.69025pt x 48.18pt>
 File: img/facturatie.png Graphic file (type png)
 <use img/facturatie.png>
-Package pdftex.def Info: img/facturatie.png  used on input line 215.
+Package pdftex.def Info: img/facturatie.png  used on input line 233.
 (pdftex.def)             Requested size: 142.26378pt x 88.22803pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<img/accountreceivables.png, id=705, 75.58238pt x 45.771pt>
+<img/accountreceivables.png, id=724, 75.58238pt x 45.771pt>
 File: img/accountreceivables.png Graphic file (type png)
 <use img/accountreceivables.png>
-Package pdftex.def Info: img/accountreceivables.png  used on input line 222.
+Package pdftex.def Info: img/accountreceivables.png  used on input line 249.
 (pdftex.def)             Requested size: 142.26378pt x 86.15631pt.
 
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<img/klantmanagement.png, id=706, 79.79813pt x 43.06088pt>
+[56 <./img/ordershipment.jpg> <./img/facturatie.png>]
+<img/klantmanagement.png, id=732, 79.79813pt x 43.06088pt>
 File: img/klantmanagement.png Graphic file (type png)
 <use img/klantmanagement.png>
-Package pdftex.def Info: img/klantmanagement.png  used on input line 229.
+Package pdftex.def Info: img/klantmanagement.png  used on input line 263.
 (pdftex.def)             Requested size: 142.26378pt x 76.76967pt.
+<img/apiSchema.jpg, id=733, 788.9475pt x 545.03625pt>
+File: img/apiSchema.jpg Graphic file (type jpg)
+<use img/apiSchema.jpg>
+Package pdftex.def Info: img/apiSchema.jpg  used on input line 284.
+(pdftex.def)             Requested size: 284.52756pt x 196.5622pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-) (conclusie.tex [53 <./img/creditmanagement.png> <./img/orderfullfilment.png> 
-<./img/ordershipment.png>] [54 <./img/facturatie.png> <./img/accountreceivables
-.png> <./img/klantmanagement.png>]
+ [57 <./img/accountreceivables.png> <./img/klantmanagement.png>]) (conclusie.te
+x [58 <./img/apiSchema.jpg>]
 Hoofdstuk 4.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [55
+ [59
 
 ])
-[56]
+[60]
 B"ylage A.
-(../voorstel/voorstel-inhoud.tex [57
+(../voorstel/voorstel-inhoud.tex [61
 
-] [58] [59]) [60]
+] [62] [63]) [64]
 Overfull \hbox (103.75824pt too wide) in paragraph at lines 132--132
 [][]\T1/ptm/m/n/12 (-20) Ananthasubramanian, H. (2018). Chal-len-ges in im-ple-
 me-ting mi-cro-ser-vi-ces. \T1/ptm/m/it/12 (-20) https://dzone.com/articles/cha
@@ -2255,7 +2285,7 @@ our mi-cro-ser-vi-ces ar-chi-tec-ture. \T1/ptm/m/it/12 (-20) https://medium.com
 /@rcandidosilva/best-
  []
 
-[61
+[65
 
 ]
 Overfull \hbox (76.25168pt too wide) in paragraph at lines 132--132
@@ -2322,7 +2352,7 @@ de-bug-ging mi-cro-ser-vi-ces. \T1/ptm/m/it/12 (-20) https://raygun.com/blog/be
 st-
  []
 
-[62]
+[66]
 Overfull \hbox (43.96507pt too wide) in paragraph at lines 132--132
 [][]\T1/ptm/m/n/12 (-20) Wasson, M. (2018). De-sig-ning mi-cro-ser-vi-ces: log-
 ging and mo-ni-to-ring. \T1/ptm/m/it/12 (-20) https://docs.microsoft.com/en-
@@ -2334,7 +2364,7 @@ Overfull \hbox (23.02646pt too wide) in paragraph at lines 132--132
 /ptm/m/it/12 (-20) https://whatis.techtarget.com/definition/monolithic-
  []
 
-[63]
+[67]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 134.
  (bachproef-tin.aux)
@@ -2345,10 +2375,10 @@ Package logreq Info: Writing requests to 'bachproef-tin.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 40432 strings out of 492970
- 758568 string characters out of 3127037
- 1355486 words of memory out of 3000000
- 43244 multiletter control sequences out of 15000+200000
+ 40445 strings out of 492970
+ 758740 string characters out of 3127037
+ 1358489 words of memory out of 3000000
+ 43248 multiletter control sequences out of 15000+200000
  592145 words of font info for 204 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,12n,67p,1961b,3825s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2360,9 +2390,9 @@ urw/avantgar/uagk8a.pfb><C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fonts/
 type1/urw/times/utmb8a.pfb><C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fon
 ts/type1/urw/times/utmr8a.pfb><C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/
 fonts/type1/urw/times/utmri8a.pfb>
-Output written on bachproef-tin.pdf (65 pages, 3149127 bytes).
+Output written on bachproef-tin.pdf (69 pages, 4132415 bytes).
 PDF statistics:
- 991 PDF objects out of 1000 (max. 8388607)
- 222 named destinations out of 1000 (max. 500000)
- 33286 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 1015 PDF objects out of 1200 (max. 8388607)
+ 230 named destinations out of 1000 (max. 500000)
+ 33291 words of extra memory for PDF output out of 35830 (max. 10000000)
 
