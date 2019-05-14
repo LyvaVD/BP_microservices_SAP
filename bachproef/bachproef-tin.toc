@@ -23,7 +23,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Authenticatie en authorisatie}{23}{section*.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Verband met Agile en DevOps}{27}{section*.8}
+\contentsline {subsubsection}{Verband met Agile en DevOps}{26}{section*.8}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Het monitoren van microservices}{28}{section*.9}
 \defcounter {refsection}{0}\relax 
@@ -35,13 +35,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.1}Definite}{36}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Technologie}{39}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.2}Technologie}{40}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Onderdelen van een order-to-cash proces}{39}{section*.10}
+\contentsline {subsubsection}{Onderdelen van een order-to-cash proces}{40}{section*.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Wat biedt SAP zelf aan voor microservices}{40}{section*.11}
+\contentsline {subsubsection}{Wat biedt SAP zelf aan voor microservices}{42}{section*.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Requirements van de business}{42}{section.2.3}
+\contentsline {section}{\numberline {2.3}Requirements van de business}{43}{section.2.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Methodologie}{47}{chapter.3}
 \defcounter {refsection}{0}\relax 
