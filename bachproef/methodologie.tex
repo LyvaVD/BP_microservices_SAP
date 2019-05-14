@@ -16,13 +16,13 @@ In tabel 3.1 zijn termen terug te vinden die in dit hoofdstuk regelmatig zullen 
 			Consumption & De term om een bericht van de queue te lezen. \\ \hline
 			Acknowledgement & Het verwijderen van een bericht op de queue. \\ \hline
 			Overhead &  Als er teveel data aanwezig is op de queue dan spreekt men van overhead. Dit kan er voor zorgen dat de queue geen berichten meer ontvangt. \\ \hline
-			Datastore &  Een datastore is een kleinere versie van een databank. Er kunnen files in opgeslaan worden, alsook gegevens. \\ \hline
+			Datastore &  Een datastore is een kleinere versie van een databank. Er kunnen files in opgeslaan worden. \\ \hline
 		\end{tabular}%
 	}
 	\caption{Termen die vaker voorkomen in dit hoofdstuk.}
 \end{table}
 
-\section{Communicatie methode in het algemeen uitgelegd}
+\section{Communicatie methode tussen microservices}
 \begin{figure}[h]
 	\includegraphics[width=15cm]{schemaEM.png}
 	\caption{Hoe de messaging zou toegepast worden binnen het proces.}
@@ -50,7 +50,7 @@ Onderliggend is één grote databank waar alle masterdata in terug te vinden is.
 	\centering
 \end{figure}
 
-Een order weet wie zijn klant is. Dit is zodat het credit management de eigenschap bij de order kan veranderen van 'goedgekeurd' naar 'niet goedgekeurd'. Van elk order wordt ook een orderlijn bijgehouden. Zodat er geweten is wat er op de order staat. Op elk orderlijn staat er een product of service. Van het product moet er een beschrijving en verkoopprijs geweten zijn. Het aantal in voorraad is ook gekend omdat bij het order fullfilment moet de voorraad aangepast worden van het specifieke product. Een order en de klant zijn gekend op de facturatie. Zo kan er nagegaan worden of de factuur overeenkomt met wat er op het order staat. De klant zijn gegevens moeten gekend zijn om naar het juiste adres te factureren.
+Een order weet wie zijn klant is. Dit is zodat het credit management de eigenschap bij de order kan veranderen van 'goedgekeurd' naar 'niet goedgekeurd'. Van elk order wordt een orderlijn bijgehouden. Zodat er geweten is wat er op de order staat. Op elk orderlijn staat er een product of service. Van het product moet er een beschrijving en verkoopprijs geweten zijn. Het aantal in voorraad is gekend omdat bij het order fullfilment moet de voorraad aangepast worden van het specifieke product. Een order en de klant zijn gekend op de facturatie. Zo kan er nagegaan worden of de factuur overeenkomt met wat er op het order staat. De klant zijn gegevens moeten gekend zijn om naar het juiste adres te factureren.
 
 
 \section{De verschillende microservices}
@@ -94,7 +94,7 @@ Deze microservice zal gebruikt worden in volgende onderdelen:
 \end{itemize}
 
 \subsection{Facturatie maken en ophalen}
-Het begin van het einde in een order-to-cash proces. Facturen maken en ophalen zijn van groot belang bij een order-to-cash proces. Het zorgt er voor dat mensen geld gaan betalen voor hun order. Een factuur moet overeenstemmen met wat geleverd is. Het is van groot belang dat achter kan gekeken worden of de factuur ook klopt met de order. Het maken van de factuur gebeurt ook aan de hand van het order. 
+Het begin van het einde in een order-to-cash proces. Facturen maken en ophalen zijn van groot belang bij een order-to-cash proces. Het zorgt er voor dat mensen geld gaan betalen voor hun order. Een factuur moet overeenstemmen met wat geleverd is. Het is van groot belang dat achter kan gekeken worden of de factuur klopt met de order. Het maken van de factuur gebeurt aan de hand van het order. 
 Deze microservice komt voor in het onderdeel facturatie.
 
 \subsection{Shipment documentatie opstellen}
@@ -104,7 +104,7 @@ Het shipment document wordt gegenereerd afhankelijk van het order. Er wordt geke
 Het opmaken en verwijderen van aanmaningen gebeurt enkel wanneer een wanbetaler is. Het proces zou niet vaak mogen voorkomen. 
 
 \subsection{Berichten plaatsen op de queue}
-Berichten plaatsen op de queue met de correcte gegevens. Deze microservice zorgt daarvoor. Hiervan wordt ook een microservice gemaakt omdat dit in elke stap voorkomt. Het is dan eenvoudiger om er een microservice van te maken, zodat elk onderdeel op een uniforme manier het bericht plaatst. 
+Berichten plaatsen op de queue met de correcte gegevens. Deze microservice zorgt daarvoor. Hiervan wordt een microservice gemaakt omdat dit in elke stap voorkomt. Het is dan eenvoudiger om er een microservice van te maken, zodat elk onderdeel op een uniforme manier het bericht plaatst. 
 Deze microservice komt voor in elk onderdeel van het proces.
 
 \subsection{Berichten ophalen van de queue} 
@@ -290,6 +290,6 @@ De API communiceert in dit geval enkel met order management. De API geeft alle n
 Onder het hoofdstuk 'stand van zaken', is een vergelijking te vinden over authenticatie. Uit die vergelijking, is de keuzen API gekozen als authenticatie. Binnen API zijn er verschillende opties, die worden ook overlopen in het vorige hoofdstuk. Er is gekozen voor OAuth omdat dit de meest bekende en gebruikte versie is.
 
 De gebruiker moet gekend zijn voordat die een order kan plaatsen. De authenticatie van de gebruiker gebeurt vooraf. Er is een aparte micrservice voor authenticatie. Hier wordt niet dieper op in gegaan.
-Op afbeelding X is wel een mogelijke plaatsing zichtbaar.
+Op afbeelding 3.12 is wel een mogelijke plaatsing zichtbaar.
 
 
