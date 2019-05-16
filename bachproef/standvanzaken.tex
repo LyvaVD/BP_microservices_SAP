@@ -8,12 +8,13 @@
 
 % Pas na deze inleidende paragraaf komt de eerste sectiehoofding.
 
-Dit hoofdstuk bevat de literatuurstudie omtrend het onderwerp. Hier wordt de architectuur en de termen uitgelegd. Daarnaast zal hier een vergelijking gemaakt worden tussen onderdelen van microservices. Tenslotte zal hier een beeld van een order-to-cash proces gemaakt worden.
+Dit hoofdstuk bevat de literatuurstudie omtrent het onderwerp. Hier wordt de architectuur en de termen uitgelegd. Daarnaast zal hier een vergelijking gemaakt worden tussen onderdelen van microservices. Tenslotte zal hier een beeld van een order-to-cash proces gemaakt worden.
 
 \section{Microservices}
 \subsection{Definitie}
-Aangezien monolithic veelvuldig zal gebruikt worden, zal de definitie bij aanvang reeds een beeld scheppen omtrent de term:  "Monolithic software is designed to be self-contained; components of the program are interconnected and interdependent rather than loosely coupled as is the case with modular software programs." \textcite{Wigmore2016}.
-Om te begrijpen waarom een overschakeling naar microservices een goed idee is, worden de de moeilijkheden bij monolithic architectuur aangehaald. Bij een verandering binnen een monolithic architectuur, wordt een geheel nieuwe  versie hiervan uitgebracht. Dit creëert een aanzienlijke overhead  \textcite{Mauersberger2017}. Dit omvat onder andere
+Aangezien monolithic veelvuldig zal gebruikt worden, zal de definitie bij aanvang reeds een beeld scheppen omtrent de term:  "Monolithic software is designed to be self-contained; components of the program are interconnected and interdependent rather than loosely coupled as is the case with modular software programs.",  \textcite{Wigmore2016}.
+Om te begrijpen waarom een overschakeling naar microservices een goed idee is, worden de de moeilijkheden bij monolithic architectuur aangehaald. Bij een verandering binnen een monolithic architectuur, wordt een geheel nieuwe  versie hiervan uitgebracht. Dit creëert een aanzienlijke overhead  \textcite{Mauersberger2017}. Met architectuur wordt de algemene manier van implementatie bedoeld. Bij het gebruik van het woord architectuur, wordt er niet verwezen naar de applicatie maar de achterliggende logica ervan.
+De overschakeling naar microservice omvat onder andere
 \begin{itemize}
 	\item De volledige architectuur moet opnieuw getest worden.
 	\item Deze architectuur kan heel complex worden bij het toevoegen van functionaliteiten.
@@ -21,16 +22,15 @@ Om te begrijpen waarom een overschakeling naar microservices een goed idee is, w
 	\item De impact van een verandering kan verkeerd ingeschat worden.
 	\item Bij een fout in een proces, kan de volledige architectuur falen.
 \end{itemize}
-De definitie die te vinden is in dit artikel, luidt als volgt: "A method of developing software applications as a suite of independently deployable, small, modular services in which each service runs a unique process and communicates through a  well-defined, light weight mechanism to serve a business goals.". Wanneer mend de definitie herleest, zijn er 3 onderdelen aanwezig. Het eerste onderdeel spitst zich toe op de  werking van een microservice. Het is een onafhankelijke, kleine, modulaire service. Modulaire services zijn services waarbij veel delen uitwisselbaar zijn met diverse services. Wordt er info gestuurd of gevraagd van services A dan zal dit geen invloed hebben op de andere services. Een tweede eigenschap is de eenvoudig communicatie. Er is nood aan omdat sommige services data moeten uitwisselen om hun 'job' te kunnen doen. De communicatie kan gebeuren op verschillende manier. De manier die gekender is, is 'Messaging via a Message Broker'. Dit wil zeggen dat microservice A een bericht plaats op de wachtrij bij microservice B wanneer die data wil doorsturen. Dan kan microservices B aan die data wanneer hij die nodig heeft. Ze zullen soms moeten wachten maar ze zijn zo goed als onafhankelijk van elkaar. De derde eigenschap omvat dat een microservice wordt gemaakt in functie van een requirement uit de business. Elk product in de business heeft een doel dat moet voldoen aan eisen. Het unieke aan microservices is dat  men  ze gaat bekijken vanuit de eisen binnen de business. Het doel van microservices is, de problemen die te vinden zijn bij een monolithic, verhelpen. De vorige definite legde uit wat microservices zijn. Dit artikel zegt waar men microservices kan plaatsen. Er is dus één groot framework. Daar zitten meerdere onafhankelijke services in.
+De definitie die te vinden is in het artikel van \textcite{Mauersberger2017}, luidt als volgt: "A method of developing software applications as a suite of independently deployable, small, modular services in which each service runs a unique process and communicates through a  well-defined, light weight mechanism to serve a business goals.". Wanneer mend de definitie herleest, zijn er 3 onderdelen aanwezig. Het eerste onderdeel spitst zich toe op de  werking van een microservice. Het is een onafhankelijke, kleine, modulaire service. Modulaire services zijn services waarbij veel delen uitwisselbaar zijn met diverse services. Wordt er info gestuurd of gevraagd van services A dan zal dit geen invloed hebben op de andere services. Een tweede eigenschap is de eenvoudig communicatie. Er is nood aan omdat sommige services data moeten uitwisselen om hun 'job' te kunnen doen. De communicatie kan gebeuren op verschillende manieren. De manier die gekender is, is 'Messaging via a Message Broker'. Dit wil zeggen dat microservice A een bericht plaatst op de wachtrij bij microservice B wanneer die data wil doorsturen. Dan kan microservices B aan die data wanneer hij die nodig heeft. Ze zullen soms moeten wachten maar ze zijn zo goed als onafhankelijk van elkaar. De derde eigenschap omvat dat een microservice wordt gemaakt in functie van een requirement uit de business. Elk product in de business heeft een doel dat moet voldoen aan eisen. Het unieke aan microservices is dat  men  ze gaat bekijken vanuit de eisen binnen de business. Het doel van microservices is, de problemen die te vinden zijn bij een monolithic, verhelpen. De vorige definite legde uit wat microservices zijn. Dit artikel zegt waar men microservices kan plaatsen. Er is dus één groot framework. Daar zitten meerdere onafhankelijke services in.
 
 \begin{figure}[h]
 	\includegraphics[width=10cm]{microservices-vs-monolithic.jpg}
 	\centering
 	\caption{Een monolithic architectuur naast een microservice architectuur. \textcite{Watts2018}}
 \end{figure}
-Zoals te zien in figuur 2.1, \textcite{Watts2018}, is er een groot verschil tussen een monolithic architectuur en die van een microservice. De monolithic wordt  weergegeven in de linkerkant van de foto. Aan de rechterkant van de foto is een voorbeeld te zien van een microservice architectuur. Daar is duidelijk te zien dat elke microservice een eigen databank/datastore heeft. Voor elke functionaliteit wordt een microserives aangemaakt, die dan nog eens apart een databank voor zich krijgt. Als bij microservice A een probleem is dan heeft dit niet meteen impact op de andere services. De communicatie tussen microservice A en de anderen zullen hier echter wel hinder ondervinden. Maar de andere microservices kunnen wel nog steeds onafhankelijk verder. 
-Een andere definitie van microservices is: "A software architecting pattern that allows software to be developed into relatively small, distinct components. Each of the components is abstracted by an API(s) and provides a distinct subset of the functionality of the entire application". Hier ziet men het puntje passeren dat een microservice een klein componentje is van een groter geheel. Deze eigenschap wordt heel hard benadrukt. Er wordt uileg gegeven over wat microservices zijn. Dan schrijven ze over hoe microservices scalable zijn. Met scalable bedoelen ze schaalbaarheid. De mogelijkheid van software om mee te groeien als het aantal gebruikers vermeerderd. De software moet nog even goed presteerd bij 10 gebruikers als bij 2 000 gebruikers. Er wordt toegelicht hoe belangrijk API's zijn binnen een microservice architectuur. API's zijn een set van definities die ervoor zorgen dat deeltjes in een programma met elkaar kunnen communcieren. Een voordeel van API's is dat je niet moet  weten hoe de andere code werkt. Verder wordt er gepraat over de verschillen tussen een monolithic architectuur en een microservice architectuur.
-
+Zoals te zien in figuur 2.1, \textcite{Watts2018}, is er een groot verschil tussen een monolithic architectuur en die van een microservice. De monolithic wordt  weergegeven in de linkerkant van de foto. Aan de rechterkant van de foto is een voorbeeld te zien van een microservice architectuur. Daar is duidelijk te zien dat elke microservice een eigen databank/datastore heeft. Voor elke functionaliteit wordt een microserives aangemaakt, die dan nog eens apart een databank voor zich krijgt. Met functionaliteit verwijst men naar de geschiktheid van het onderdeel om zijn taak te volbrengen. Als bij microservice A een probleem is dan heeft dit niet meteen impact op de andere services. De communicatie tussen microservice A en de anderen zullen hier echter wel hinder ondervinden. Maar de andere microservices kunnen wel nog steeds onafhankelijk verder. 
+Een andere definitie van microservices is: "A software architecting pattern that allows software to be developed into relatively small, distinct components. Each of the components is abstracted by an API(s) and provides a distinct subset of the functionality of the entire application". Hier ziet men het punt passeren dat een microservice een klein component is van een groter geheel. Deze eigenschap wordt heel hard benadrukt. Er wordt uileg gegeven over wat microservices zijn. Dan schrijven ze over hoe microservices scalable zijn. De mogelijkheid van software om mee te groeien als het aantal gebruikers vermeerderd. De software moet nog even goed presteert bij 10 gebruikers als bij 2 000 gebruikers. Er wordt toegelicht hoe belangrijk API's zijn binnen een microservice architectuur. API's zijn een set van definities die ervoor zorgen dat deeltjes in een programma met elkaar kunnen communcieren. Een voordeel van API's is dat je niet moet  weten hoe de andere code werkt.
 
  Op figuur 2.2 ziet men dat de monolithic alle puntjes in een kader heeft. Dit staat symbolisch voor het grote geheel dat eigen is aan een monolithic. Alles zit samen in één grote doos. Maar bij microservices is dit niet zo, daar zit elk deeltje/requirement in een aparte doos \textcite{Benetis2016a} . 
 \begin{figure}[h]
@@ -39,13 +39,13 @@ Een andere definitie van microservices is: "A software architecting pattern that
 	\caption{Een monolithic vergeleken met een microservice. \textcite{Benetis2016a}}
 \end{figure}
 
-In figuur 2.3 is duidelijk te zien hoe microservices een  website pagina opuvllen.
+In figuur 2.3 is een voorbeeld te zien hoe microservices een  website pagina opvullen.
 \begin{figure}[h]
 	\includegraphics[width=10cm]{microserviceswebsite.png}
 	\centering
 	\caption{Microservices die de inhoud op een site invullen. \textcite{Koukia2018}}
 \end{figure}
-De site bestaat uit zes onderdelen. Deze onderdelen zijn allemaal dynamisch en ze halen hun info uit databanken. Bij het laden van de pagina gaat elk onderdeeltje zijn info gaan opvragen. Omdat dit allemaal met microservices gebeurt, wordt de info gelijktijdig opgehaald. Men zal niet moeten wachten op elkaar, eens de een info heeft ontvangen om dan naar de volgende info te sturen. Elk spreekt zijn eigen databank aan. De microservices die de  website opvullen, die kunnen onderliggend ook nog andere microservices aanspreken. Een voorbeeld hiervan is een klant is aangemeld op de  website van Amazon. De authenticatie microservices zorgt ervoor dat alle microservices  weten dat die bepaalde persoon is aangemeld. Dan bij het inladen van voorkeuren of 'soort gelijke producten', kan de microservices die die sectie moet opvullen, vragen aan een andere microservice om de voorkeuren te laten genereren. \textcite{Koukia2018}.
+De site bestaat uit zes onderdelen. Deze onderdelen zijn allemaal dynamisch en ze halen hun info uit databanken. Bij het laden van de pagina gaat elk onderdeel zijn info opvragen. Omdat dit allemaal met microservices gebeurt, wordt de info gelijktijdig opgehaald. Men zal niet moeten wachten op elkaar, eens de één info heeft ontvangen om dan naar de volgende info te sturen. Elk spreekt zijn eigen databank aan. De microservices die de  website opvullen, kunnen onderliggend ook nog andere microservices aanspreken. Een voorbeeld hiervan is een klant is aangemeld op de  website van Amazon. De authenticatie, bij microservices, zorgt ervoor dat de microservice weet dat die persoon is aangemeld. Dan bij het inladen van voorkeuren of 'soort gelijke producten', kan de microservices die die sectie moet opvullen, vragen aan een andere microservice om de voorkeuren te laten genereren. \textcite{Koukia2018}.
 
 Een voorbeeld van een algemene architectuur is te zien op figuur 2.4.
 \begin{figure}[h]
@@ -53,7 +53,7 @@ Een voorbeeld van een algemene architectuur is te zien op figuur 2.4.
 	\centering
 	\caption{Een algemene architectuur voor microservices. \textcite{Koukia2018}}
 \end{figure}
-Als eerste wordt er een request gemaakt. Die wordt naar de gateway gestuurd. Vervolgens wordt er gekeken, moet er een commando of een query uitgevoerd worden. Bij een commando wordt er naar een domein microservice gestuurd en anders naar een real-model microservice.  Daarna worden er gegevens opgeslaan.
+Als eerste wordt er een request gemaakt. Die wordt naar de gateway gestuurd. Vervolgens wordt er gekeken, moet er een commando of een query uitgevoerd worden. Een commando wordt binnen het domein naar een microservice gestuurd of naar een real-model microservice.  Daarna worden er gegevens opgeslaan.
 
 
 \subsection{Het belang van microservices}
@@ -61,27 +61,12 @@ Bij een monolithic kan het aanpassen van een deeltje, veel  werk vragen. Dit  we
 Er voor zorgen dat software schaalbaar is, is een belangrijk punt en daar spelen microservices goed op in.
 
 
-
-\textcite{Troisi2019} geeft acht best practices over de bescherming van microservices. 
-De best practices:
-\begin{itemize}
-	\item Het gebruik van OAuth voor gebruikers identificatie en wat de gebruiker kan. OAuth/OAuth2 is een protocol voor authorisatie. Het is een gemak om gebruik te maken van een protocol. Een protocol zijn een aantal regels om te communiceren tussen computers. 
-	\item Gebruik bescherming in de diepte om een prioriteit toe te kennen aan service keys.  Dit kan verwoord worden als bescherming steken in verschillende lagen van een systeem. Er moet worden nagegaan  welke deeltjes het kwetsbaarst zijn en daar dan op verschillende lagen van beveiliging op toepassen. 
-	Microservices maken het toepassen van deze methode, eenvoudiger. Doordat er gefocust kan worden op beveiliging. Het framework maakt het gemakkelijker om de verschillende lagen vast te stellen. Als ze binnen zijn bij een van de microservices zijn ze niet binnen in het volledige systeem. 
-	\item Schrijf zelf geen krypto code. Er zijn genoeg open source alternatieven. Enkel bij heel uitzonderlijke redenen wordt een eigen krypto code geschreven. 
-	\item Update je bescherming tijdig. Als er updates komen in de software van beveiliging, moeten die ook uitgevoerd worden. Het automatiseren van die updates, kan veel  werk besparen achteraf. Dit wordt dan ook best gedaan bij het begin van microservices. Bescherming binnen software is niet langer meer een nice to have maar een must have. 
-	\item Maak gebruik van een firewaal met gecentraliseerde controle. Het biedt onder andere meer controle aan aan de gebruiker.
-	\item Zorg dat je 'containers' niet in een publiek net werk te vinden is. Dit is eigenlijk zorgen dat gebruikers je achterliggende architectuuur niet kunnen zien. Ervoor zorgen dat erna maat één toegangspoort is.  Hier kan een vorige manier ook bijgestoken worden. Microservices kunnen ondergebracht worden achter een firewall als vorm van berscherming.  Als er met containers wordt gewerkt, moet er ook beschemring aanwezig zijn. Een container is een plek waar kleine deeltjes code kunnen op gedeployed worden. 
-	\item Maak gebruik van software om virussen te vinden.
-	\item Monitor alles.
-\end{itemize}
-
 Enkele andere redenen om microservices te gebruiken, \textcite{Koukia2018}, zijn volgende:
 \begin{itemize}
-	\item Het is gemakkelijker om kleine services te onderhouden. Bij een monolithic is alles één groot geheel, als daar een deeltje van moet worden uitgelegd, kan je verdwalen in het grote geheel. Dit is niet het geval bij microservices. Want elke services is afgebakend met een functionaliteit. Bij het uitleggen van een services kan er duidelijk aangetoond worden waar een services begint en eindigt. 
+	\item Het is gemakkelijker om kleine services te onderhouden. Bij een monolithic is alles één groot geheel, als daar een deeltje van moet worden uitgelegd, kan je verdwalen in het grote geheel. Dit is niet het geval bij microservices. Want elke service is afgebakend met een functionaliteit. Bij het uitleggen van een service kan er duidelijk aangetoond worden waar een services begint en eindigt. 
 	\item Een microservices kan onafhankelijk gedeployed worden. Eens een microservices klaar is om gebruikt te worden, moet er naar niets anders gekeken worden. Bij het deeltje definitie  werd hier dieper op ingegaan.
 	\item Gemakkelijker aan te passen aan nieuwe  technologie. Komt er een nieuwe  technologie uit die kan toegepast worden op een paar microservices, dan moeten enkel die microservices herschreven worden. Dit is anders bij een monolithic. Als er een nieuwe  technologie is die kan toegepast worden op onderdelen van het geheel, moet de gehele architectuur herschreven worden.
-	\item Het is eenvoudiger om te schalen. Zoals al eerder aangehaald, kan schalen van de architectuur gebeuren door de microservices te dupliceren. Niet het gehele systeem moet geschaald worden, enkel de nodige microservices moeten gedupliceerd worden. 
+	\item Het is eenvoudiger om te schalen. Schalen gebeurt door een microservice te dupliceren. Niet het gehele systeem moet geschaald worden, enkel de nodige microservices moeten gedupliceerd worden. 
 	\item No single point of failure. Faalt er een microservices in het uitvoeren van zijn functionaliteit, dan heeft dit geen invloed op de andere services. Hier is dieper op ingegaan in de definitie.
 	\item Freedom of technology stack choices. Dit omvat dat elk team kan kiezen in  welke programmeertaal ze de microservices schrijven. Een team is verantwoordelijk voor één microservices. Ze zijn dus gespecialiseerd in die ene service. 
 	\item De evolutie en de oplevering van business features is sneller. Dit komt door de onafhankelijkheid van de services. Er kan op het zelfde moment aan verschillende services gewerkt worden, zonder elkaar te beïnvloeden.
@@ -93,6 +78,9 @@ Onder volgende deeltjes wordt er dieper ingegaan op de authenticatie en authoris
 \subsubsection{De verschillende manieren van bescherming}
 Microservices moeten een doel in de business vervullen. Naast dit, zorgen microservices er ook voor dat de bescherming eenvoudiger wordt, \textcite{RDX2016}.
 
+De term bescherming omvat volgende: Er voor zorgen dat hackers de applicatie niet kapot maken.
+Hackers zijn mensen die inbreken op applicatie.
+
 Enkele tips om de bescherming van microservices aan te pakken, \textcite{Matteson2017}, \textcite{Silva2017}:
 \begin{itemize}
 	\item Zorg bij het ontwikkelen van microservices voor coderingsstandaarden die kunnen herbruikt worden. Door eenmaal een goede code te voorzien wordt de kans op kwetsbaarheden en gaten in de bescherming kleiner.
@@ -101,15 +89,29 @@ Enkele tips om de bescherming van microservices aan te pakken, \textcite{Matteso
 	\item Ga geen beveiligingsprincipes gebruiken van externen, implementeer deze in de code van de microservice.
 	\item Zorg voor goede documentatie van elke microservice. Dit kan handig zijn bij het ontdekken van een zwak punt in de bescherming. De documentatie kan mogelijke problemen verduidelijken.
 	\item Maak een API gateway. Wat het precies allemaal doet wordt verder nog uitgelegd.
-	\item Zorg ervoor dat enkel de API gateway zichtbaar is en dat alle data onleesbaar moet worden verzonden. Dit kan gebueren aan de hand van SSL of TSL. Wat SSL is wordt verder in deze thesis uitgelegd. 
+	\item Zorg ervoor dat enkel de API gateway zichtbaar is en dat alle data onleesbaar moet worden verzonden. Dit kan gebeuren aan de hand van SSL of TSL. Wat SSL is wordt verder in deze thesis uitgelegd. 
 	\item Zorg voor garantie op data privacy. In Europa is de GDPR een  wetgeving die zegt wat er  wel en niet mag gebeuren met mensen hun data. Daarom is het belangrijk dat er gebruik wordt gemaakt van een beveiligd protocol. Op elk level moet er gezorgd worden voor een correcte beveiliging van de gebruikers hun data. 
 	\item Voor het encrypteren van data, wordt er best gebruik gemaakt van al bestaande techonologieën . 
 	\item Zorg ervoor dat er geen denial of service kan gebeuren. Denail of service komt voor wanneer er heel veel requests naar de applicatie worden gestuurd, waardoor de applicatie faalt. Maak gebruik van throtteling. De term wordt na deze opsomming verder uitgelegd.
-	\item Maak gebruik van CSRF en CORS filters. Cross-site request forgery is een poging tot hacken waarbij de eindgebruiker gedwongen wordt om acties te doen terwijl hij geauthenticeerd is. Cross-origin resource sharing laat toe dat er requests van een ander domein kunnen worden gemaakt. 
+	\item Maak gebruik van Cross-site request forgery (CSRF) en Cross-origin resource sharing (CORS) filters. Cross-site request forgery is een poging tot hacken waarbij de eindgebruiker gedwongen wordt om acties te doen terwijl hij geauthenticeerd is. Cross-origin resource sharing laat toe dat er requests van een ander domein kunnen worden gemaakt. 
 	\item De API gateway kan goed beschermd zijn, zorg eveneens voor goede bescherming aan de code. Zorg ervoor dat er niks moet worden gerund als administrator, geef duidelijke namen en maak duidelijke afspraken. Enkel de nodige personen mogen de juiste permissies krijgen. 
 \end{itemize}
 
-Throtteling, \textcite{Cavalcanti2018}, is een manier van bescherming die het volgende beschrijft: "Throttling is a process used to control the usage of APIs by consumers during a given period.". Het kan zijn dat de gebruiker heel veel requests stuurt naar de API gateway of een bug kan zorgen voor een oneidig aantal request. Om dit te voorkomen kan er een limiet binnen een bepaalde periode opgelegd worden. Bijvoorbeeld als je je toegangscode drie maal fout hebt op je gsm, dan blokeert die voor een bepaalde tijd. Het systeem zo ontwerpen dat het bestand is tegen fouten en falen. Met bestand zijn tegen, wordt bedoelt om ervoor te zorgen dat bij een bug of een fout, deze goed wordt opgevangen zodat de gebruiker er geen last van heeft. 
+\textcite{Troisi2019} geeft acht best practices over de bescherming van microservices. 
+De best practices:
+\begin{itemize}
+	\item Het gebruik van OAuth voor gebruikers identificatie en wat de gebruiker kan. OAuth/OAuth2 is een protocol voor authorisatie. Het is een gemak om gebruik te maken van een protocol. Een protocol zijn een aantal regels om te communiceren tussen computers. 
+	\item Gebruik bescherming in de diepte om een prioriteit toe te kennen aan service keys.  Dit kan verwoord worden als bescherming steken in verschillende lagen van een systeem. Er moet worden nagegaan  welke deeltjes het kwetsbaarst zijn en daar dan op verschillende lagen van beveiliging op toepassen. 
+	Microservices maken het toepassen van deze methode, eenvoudiger. Doordat er gefocust kan worden op beveiliging. Het framework maakt het gemakkelijker om de verschillende lagen vast te stellen. Als ze binnen zijn bij een van de microservices zijn ze niet binnen in het volledige systeem. 
+	\item Schrijf zelf geen krypto code. Er zijn genoeg open source alternatieven. Enkel bij heel uitzonderlijke redenen wordt een eigen krypto code geschreven. 
+	\item Update je bescherming tijdig. Als er updates komen in de software van beveiliging, moeten die ook uitgevoerd worden. Het automatiseren van die updates, kan veel  werk besparen achteraf. Dit wordt dan ook best gedaan bij het begin van microservices. Bescherming binnen software is niet langer meer een nice to have maar een must have. 
+	\item Maak gebruik van een firewall met gecentraliseerde controle. Het biedt onder andere meer controle aan de gebruiker.
+	\item Zorg dat je 'containers' niet in een publiek net werk te vinden zijn. Dit is eigenlijk zorgen dat gebruikers je achterliggende architectuuur niet kunnen zien. Hier kan een vorige manier ook bijgestoken worden. Microservices kunnen ondergebracht worden achter een firewall als vorm van berscherming.  Als er met containers wordt gewerkt, moet er ook beschemring aanwezig zijn. Een container is een plek waar kleine deeltjes code kunnen op gedeployed worden. 
+	\item Maak gebruik van software om virussen te vinden.
+	\item Monitor alles.
+\end{itemize}
+
+Throtteling, \textcite{Cavalcanti2018}, is een manier van bescherming die het volgende beschrijft: "Throttling is a process used to control the usage of APIs by consumers during a given period.". Het kan zijn dat de gebruiker heel veel requests stuurt naar de API gateway of een bug kan zorgen voor een oneidig aantal requests. Om dit te voorkomen kan er een limiet binnen een bepaalde periode opgelegd worden. Bijvoorbeeld als je je toegangscode drie maal fout hebt op je gsm, dan blokkeert die voor een bepaalde tijd. Het systeem zo ontwerpen dat het bestand is tegen fouten en falen. Met bestand zijn tegen, wordt bedoelt om ervoor te zorgen dat bij een bug of een fout, deze goed wordt opgevangen zodat de gebruiker er geen last van heeft. 
 
 Eén van de meer bekendere manieren is, API gateway. De verantwoordelijkheden van een API gateway zijn volgende, \textcite{Siraj2017}:
 \begin{itemize}
@@ -117,7 +119,7 @@ Eén van de meer bekendere manieren is, API gateway. De verantwoordelijkheden va
 	\item De requests doorsturen naar de correcte microservice.
 	\item Het 'antwoord' van de microservice in ontvangst nemen en doorsturen naar de gebruiker.
 \end{itemize}
-Zoals te zien is op figuur 2.5, is een API gateway het toegangspunt. API gateway wordt gebruikt voor authenticatie en authorisatie. Meer uitleg hierover in de sectie over authenticatie en authorisatie.
+Zoals te zien is op figuur 2.5, is een API gateway het toegangspunt. Om via de API gateway requests te kunnen maken, moet er eerst authenticatie en authorisatie toegepast worden. Meer uitleg hierover in de sectie over authenticatie en authorisatie.
 \begin{figure}[h]
 	\includegraphics[width=10cm]{apiGateway_facadePattern.png}
 	\centering
@@ -139,7 +141,7 @@ Wanneer er gekeken wordt om authenticatie toe te passen bij microservices, komen
 	\item "Single responsibility" zijn twee woorden die microservices mooi omschrijven. Een microservice omvat een stukje business logica. De algemene logica van authenticatie en authorisatie mag niet in een microservices gegoten worden. 
 \end{itemize}
 In het algemeen zijn authenticatie en authorisatie een complex onderdeel van microservices.
-Er zijn vijf oplossingen volgens dit artikel.
+Er zijn vijf oplossingen volgens \textcite{Ayoub2018}
 \begin{itemize}
 	\item Distributed session manangement,
 	\item client token,
@@ -185,11 +187,11 @@ Een andere manier is een client token with API gateway. Deze manier is gebaseerd
 			
 		\end{tabular}%
 	}
-	\caption{De verschillende manieren voor authenticatie en authorisatie toe te passen.
+	\caption{De verschillende manieren om authenticatie en authorisatie toe te passen.
 		\textcite{Cavalcanti2018}, \textcite{Everard2017} }
 \end{table}
 
-De meest voorkomende methodes in API authenticatie terug te vinden in tabel 2.1, \textcite{Sandoval2018}.
+De meest voorkomende methodes in API authenticatie terug te vinden in tabel 2.2, \textcite{Sandoval2018}.
 \begin{table}[]
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{|p{2cm}|p{5cm}|p{5cm}|p{5cm}|}
@@ -245,7 +247,7 @@ Het proces gaat als volgt:
 \subsubsection{Verband met Agile en DevOps}
 Microservices komen uit dezelfde ideologie als Agile en DevOps. DevOps is een contaminatie  van development en operations. Bij deze methode ligt de nadruk op de samenwerking en communicatie tussen verschillende partijen. Hier zijn de partijen de software engineers en andere IT specialisten. Deze ideologie omvat het volgende: het afbreken van kleine, traag evoluerende architectuur of monolithic en deze in microservices steken.
 
-DevOps heeft volgende definitie: "DevOps is a methodology that enables developers and IT Ops to work closer together so they can deliver better quality software faster", \textcite{Morgan2019}. Met DevOps probeert de productie zo goed mogelijk na te bootsen. Net zoals bij Agile, zorgt DevOps ervoor dat de software in kleinere delen wordt opgesplitst om ook  weer op kortere periodes kleinere deeltjes software op te leveren. Dit is iets waar ook microservices in terug te vinden is. Verschillende DevOp teams kunnen dus tegelijkertijd  werken aan microservices  werken.
+DevOps heeft volgende definitie: "DevOps is a methodology that enables developers and IT Ops to work closer together so they can deliver better quality software faster", \textcite{Morgan2019}. Met DevOps probeert men de productie zo goed mogelijk na te bootsen. Net zoals bij Agile, zorgt DevOps ervoor dat de software in kleinere delen wordt opgesplitst om ook  weer op kortere periodes kleinere deeltjes software op te leveren. Dit is iets waar ook microservices in terug te vinden is. Verschillende DevOp teams kunnen dus tegelijkertijd aan microservices  werken.
 
 Enkele voordelen van de combinatie microservices en DevOps:
 \begin{itemize}
@@ -266,7 +268,7 @@ Microservices en DevOps vullen elkaar aan op volgende vlakken, \textcite{Mulesof
 
 
 \subsubsection{Het monitoren van microservices}
-Logs zijn records binnen een databank waar naar  weggeschreven wordt terwijl de applicatie draait. Metrics zijn numerieke waarden die kunnen geanalyseerd worden. Metrics zijn terug te vinden op volgende niveau's van een applicatie, \textcite{Wasson2018}:
+Logs zijn records binnen een databank naar weggeschreven wordt terwijl de applicatie draait. Metrics zijn numerieke waarden die kunnen geanalyseerd worden. Metrics zijn terug te vinden op volgende niveau's van een applicatie, \textcite{Wasson2018}:
 \begin{itemize}
 	\item Node-level: Dit houdt in de gegevens van de CPU, het geheugen, netwerk en de harde schijf. 
 	\item Container: Draait de service binnen een container dan moeten er ook metrics bijgehouden worden van die container. 
@@ -275,9 +277,9 @@ Logs zijn records binnen een databank waar naar  weggeschreven wordt terwijl de 
 \end{itemize}
 
 
-Het monitoren of loggen van microservices houdt in dat er wordt bijgehouden hoe een microservice zich gedraagt. Er wordt bijgehouden hoe snel de data wordt opgehaald uit de databank. Bij het vinden van problemen is monitoren een belangrijk onderdeel. Dankzij monitoring kan een fout sneller gevonden worden. Er kan worden nagegaan hoelang het duurde om een bepaalde request te maken. Van die gegevens kunnen er dan conclusies getrokken worden, \textcite{Ananthasubramanian2018}.
+Het monitoren of loggen van microservices houdt in dat er wordt bijgehouden hoe een microservice zich gedraagt. Er wordt bijgehouden hoe snel de data wordt opgehaald uit de databank. Bij het vinden van problemen is monitoren een belangrijk onderdeel. Dankzij monitoring kan een bug sneller gevonden worden. Er kan worden nagegaan hoelang het duurde om een bepaalde request te maken. Van die gegevens kunnen er dan conclusies getrokken worden, \textcite{Ananthasubramanian2018}.
 
-Loggen is belangrijk omdat bij meedere services het moeilijk kan zijn om het traject binnen de services te volgen, \textcite{Saldanha2016}.
+Loggen is belangrijk omdat bij meerdere services het moeilijk kan zijn om het traject binnen de services te volgen, \textcite{Saldanha2016}.
 
 De verschillende tools om te debuggen, \textcite{Swersky2019}:
 \begin{itemize}
@@ -287,7 +289,7 @@ De verschillende tools om te debuggen, \textcite{Swersky2019}:
 			\item Wordt de performance beeïnvloedt?
 			\item Is het framework voor logging al gekend onder het team?
 		\end{itemize}
-	\item Logging databases: Log data wordt gebruikt voor het captueren van events. Logs worden nooit aangepast. Logs worden ook gesorteerd op datum en tijd. 
+	\item Logging databases: Log data wordt gebruikt voor het capturen van events. Logs worden nooit aangepast. Logs worden ook gesorteerd op datum en tijd. 
 \end{itemize}
 
 
@@ -299,7 +301,7 @@ Bij microservices wordt elke microservice gelogd. Bij een fout moet er gekeken w
 	\item De logging zou moeten  werken voor alle verschillende codeertalen. Er zou niets moeten worden aangepast bij de configuratie files van het logging systeem.
 	\item Geef elke request een uniek ID. Zo kan de request snel teruggevonden worden bij falen. Of bij het zien van een fout kan er snel achterhaald worden  welke request er in fout is gegaan. 
 	\item Laat het antwoord ook een uniek ID meesturen. Als de gebruiker dan een fout krijgt, kan er achterhaald worden vanwaar de teruggestuurde fout komt. De administrators kunnen dan de details van de fout bekijken.
-	\item Een oplossing is om alle logs  weg te schrijven naar een centrale databank. Zo kan het hele pad van de fout snel en eenvoudig teruggevonden worden. Het duurt langer om verschillende fouten aan elkaar te linken als de logs in de datastore van de microservice worden opgeslaan. Bij het opslaan op één plaats, worden fouten sneller aan elkaar gelinkt. Het  wegschrijven naar een plaats is tegen het principe van microservices. Elke microservice op zichzelf. Binnen die enkele database met alle logs kan er gezocht worden op fout, microservice, tijdstip, .... Ook het volgen van een gebruiker zijn traject binnen de applicatie is eenvoudiger. Bij een fout kan er gekeken worden naar de acties die er op voorhand zijn gemaakt. 
+	\item Een oplossing is om alle logs  weg te schrijven naar een centrale databank. Zo kan het hele pad van de fout snel en eenvoudig teruggevonden worden. Het duurt langer om verschillende fouten aan elkaar te linken als de logs in de datastore van de microservice worden opgeslaan. Bij het opslaan op één plaats, worden fouten sneller aan elkaar gelinkt. Het  wegschrijven naar een plaats is tegen het principe van microservices. Binnen die enkele database met alle logs kan er gezocht worden op fout, microservice, tijdstip, .... Ook het volgen van een gebruiker zijn traject binnen de applicatie is eenvoudiger. Bij een fout kan er gekeken worden naar de acties die er op voorhand zijn gemaakt. 
 	\item Zorg voor structuur in de log data. Een algemene format zoals JSON of XML om een structuur te creëeren in de logs. 
 	\item Geef iedere request een context.  Weten wat de oorzaak is van de fout, is belangrijk om ervoor te zorgen dat de fout zich niet zal herhalen. Volgende velden zouden zeker in de log terug te moeten vinden zijn:
 		\begin{itemize}
@@ -322,7 +324,7 @@ Bij microservices wordt elke microservice gelogd. Bij een fout moet er gekeken w
 Voordat er wordt begonnen aan het overschakelen naar microservices, moet er research gedaan worden, \textcite{Koukia2018}. De logische eerste stap is het lezen van artikels en hoe andere bedrijven zijn overgeschakeld naar microservices. Wat hun problemen en moeilijkheden waren. Door artikels en ervaringen van anderen te lezen, kan je zelf mogelijke problemen voorkomen. Na de verdieping in microservices, moet er een plan opgemaakt worden. Het opstellen van dit plan gebeurt doorgaans in samenwerking met meerdere personen. Op die manier is er een bredere waaier aan opinies en om ervoor te zorgen dat iedereen op dezelfde lijn zit.
 
 
-\textcite{Benetis2016} schreef een zesstappen plan om microservices te implementeren. Over de grote lijn wordt er daarop gebaseerd, maar per stap gaat er dieper op worden ingegaan.
+\textcite{Benetis2016} schreef een zesstappen plan om microservices te implementeren. Over de grote lijn wordt hierop gebaseerd. Stap per stap gaat er dieper op de overschakeling worden ingegaan.
 Een paar woorden die meer verklaring nodig hebben voordat  we  verder gaan. Een gateway is een netwerkpunt dat dient als toegang tot een ander netwerk.
 Implementatie is een procesmatige invoering van een verandering of vernieuwing. 
 
@@ -432,7 +434,7 @@ Enkele nadelen en moeilijkheden, \textcite{Koukia2018}:
 \begin{itemize}
 	\item Distributed systems zijn ingewikkeld. Microservices vragen meer  werk. Dit komt omdat het een nieuwere technologie is en het concept is niet altijd meteen duidelijk. 
 	\item Complexiteit is overal. Een monolithic bevat ook complexiteit, maar  wel een bekende complexiteit. Als er al een tijdje gewerkt wordt met monolithic, dan is die complexiteit een bekende eigenschap van de architectuur. Omdat microservices iets nieuws is, komt er complexiteit die minder bekend is onder de developers.
-	\item Debuggen en fouten vinden is moeilijker. Bij een monolithic is het eenvoudig, bij aanpassingen wordt de volledige architectuur gerund. Als de gehele architectuur bij een microservices moet getest worden. Hier  werd in het vorige deel meer uitleg over gegeven.
+	\item Debuggen en fouten vinden is moeilijker. Bij een monolithic is het eenvoudig, bij aanpassingen wordt de volledige architectuur gerund. De gehele architectuur bij een microservices moet getest worden. Hier werd in het vorige deel meer uitleg over gegeven.
 	\item Bij aanpassingen binnen een monolithic moest er maar één request gedaan worden om code samen te voegen. Bij microservices is dit verschillend. Er moet bijvoorbeeld in vier microservices iets aangepast worden voor een nieuwe  feature. Dan moeten er vier requests verstuurd worden om die code te mergen. Want de services binnen de microservice architectuur zijn onafhankelijk van elkaar. 
 \end{itemize}
 
@@ -607,7 +609,7 @@ Kyma heeft hard gewerkt om deze problemen/uitdagingen te proberen  wegwerken. Ky
 \textcite{Biedron2018} legt uit wat een order to cash proces is. Daaruit kunnen volgende requirements uit afgeleid worden:
 \begin{itemize}
 	\item De klant moet een order of meerdere orders kunnen plaatsen. Een goed werkend order-systeem is een must.
-	\item De order ophalen uit de voorraad. Er moet een goed voorraad beheer aanwezig zijn. Dit moet ervoor zorgen dat het aantal laattijdige leveringen geminimaliseerd wordt. Samen met het goede voorraadbeheer wordt ook best bijgehouden waar men goederen geplaatst heeft in het magazijn.
+	\item Het order ophalen uit de voorraad. Er moet een goed voorraad beheer aanwezig zijn. Dit moet ervoor zorgen dat het aantal laattijdige leveringen geminimaliseerd wordt. Samen met het goede voorraadbeheer wordt ook best bijgehouden waar men goederen geplaatst heeft in het magazijn.
 	\item De levering moet goed gepland worden. Dit zou voor het grootste deel al geautomatiseerd moeten zijn. Een email met informatie over de levering is een must. 
 	\item Aanmaken van een factuur op basis van het geplaatst order met de juiste klantgegevens zou een geautmatiseerd onderdeel moeten zijn. 
 	\item De betaling van de factuur komt toe in de financiele afdeling. Automatische afhandeling is een must.
