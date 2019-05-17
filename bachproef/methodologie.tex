@@ -5,6 +5,15 @@
 \chapter{\IfLanguageName{dutch}{Methodologie}{Methodology}}
 \label{ch:methodologie}
 
+In dit hoofdstuk zal er een schets gemaakt worden van het OTC proces met een microservice architectuur. 
+
+Eerst worden er enkele termen uitgelegd. Dan worden alle microservices binnen het OTC proces uitgelgd. Wat ze precies doen en tot welk onderdeel, van het OTC proces, ze behoren. Hierna wordt de communicatiemethode tussen de verschillende microservices uitgelegd. Als voorlaatste wordt de databank structuur uitgetekend. Als laatste wordt de complete architectuur uitgelegd. Onder de complete architectuur worden volgende punten aangehaald:
+\begin{itemize}
+	\item De communicatie tussen de onderdelen van het OTC proces. Hier wordt aan de hand van een schema uitgelegd hoe de communicatie gebeurt tussen de onderdelen.
+	\item De architectuur. Dit deel bevat een schema, waar duidelijk op wordt welk onderdeel welke microservices aanspreekt. Per onderdeel wordt ook uitgelegd waarom deze microservices worden aangesproken.
+	\item Als laatste worden de API gateway, logging, authenticatie en authorisatie toegevoegd.
+\end{itemize}
+
 \section{Uitleg termen}
 In tabel 3.1 zijn termen terug te vinden die in dit hoofdstuk regelmatig zullen voorkomen.
 
@@ -153,7 +162,7 @@ In volgende tabel, zijn er letters en bijhorende microservices terug te vinden. 
 	\caption{Legende die gebruikt wordt in de afbeeldingen.}
 \end{table}
 
-In figuur 3.4 is te zien hoe het volledige proces communiceert met de verschillende microservices. Elk onderdeel van het proces is een microservice op zich. Een microservice die meerdere microservices aanspreekt om goed te functioneren.
+In figuur 3.3 is te zien hoe het volledige proces communiceert met de verschillende microservices. Elk onderdeel van het proces is een microservice op zich. Een microservice die meerdere microservices aanspreekt om goed te functioneren.
 \begin{figure}[h]
 	\includegraphics[width=15cm]{schema_microservices.png}
 	\caption{Welk onderdeel, welke microservices aanspreekt.}
@@ -270,7 +279,7 @@ Als een van de vorige onderdelen een bericht plaatst op de queue, zal die verwer
 
 \subsection{De volgende stappen: Het toevoegen van API, logging en authenticatie en authorisatie}
 \subsubsection{Logging}
-Logging kan toegepast worden door nog een extra onderdeel toe te voegen. Hiernaar kunnen alle onderdelen hun logs posten. Hier gaat niet verder op ingegaan worden. 
+Logging kan toegepast worden door nog een extra microservice te ontwikkelen. Hiernaar kunnen de andere microservices hun logs posten. Hier zal niet verder op worden ingegaan. 
 
 \subsubsection{API gateway}
 Een API gateway wordt toegevoegd om ervoor te zorgen dat de architctuur niet openbaar is voor iedereen. Er is één aanspreekpunt en die regelt de rest van de communicatie.
