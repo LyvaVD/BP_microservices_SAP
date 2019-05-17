@@ -128,7 +128,7 @@ Op figuur 3.3 is te zien hoe het proces in elkaar ziet. Door de microservice arc
 Op figuur 3.3 is het communicatie patroon zichtbaar.
 Voordat het proces van start kan gaan, moet een klant een order plaatsen. Een order bevat een aantal producten. Eens de klant een order geplaatst heeft dan is er een ordernummer gekend. De klant staat bekend in het systeem met een klantnummer. Dat zijn twee belangrijke gegevens die veel gebruikt zullen worden.
 Meer uitleg over wat elk onderdeel doet, bevindt zich in het volgende hoofdstuk.
-De nummers van de opsomming komt overeen met die op afbeelding 3.2.
+De nummers van de opsomming komen overeen met die op afbeelding 3.2.
 \begin{enumerate}
 	\item De communicatie tussen ordermanagement en creditmanagement. Er is een order geplaatst door klant 66. Ordermanagement zorgt ervoor dat het order in de databank geraakt. Eens de taak van ordermanagement gedaan is, plaatst die het klantnummmer en het ordernummer op de queue van creditmanagement. Dan is zijn taak gedaan. Ordermanagement houdt zich niet bezig met wat er gebeurt nadat hij het bericht geplaatst heeft.
 	\item De communicatie tussen creditmanagement en order fullfilment. Creditmanagement heeft het ordernummer en klantnummer van ordermanagement gekregen. Het bericht wordt van de queue gehaald. Creditmanagement gaat dan aan de hand van de klantgegevens beslissen of de klant het order mag plaatsen of niet. Is het order goedgekeurd dan wordt het ordernummer op de queue van order fullfilment gezet. Er moet niet worden teruggekeerd naar order management. Credit management heeft de rechten om het veld goedgekeurd aan te passen. De taak van creditmanagement is nu afgerond.
@@ -162,6 +162,7 @@ In volgende tabel, zijn er letters en bijhorende microservices terug te vinden. 
 	\caption{Legende die gebruikt wordt in de afbeeldingen.}
 \end{table}
 
+In tabel 3.2 is de legende terug te vinden die gebruikt wordt bij het uitleggen van elk onderdeel apart.
 In figuur 3.3 is te zien hoe het volledige proces communiceert met de verschillende microservices. Elk onderdeel van het proces is een microservice op zich. Een microservice die meerdere microservices aanspreekt om goed te functioneren.
 \begin{figure}[h]
 	\includegraphics[width=15cm]{schema_microservices.png}
