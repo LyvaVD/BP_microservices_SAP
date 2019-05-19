@@ -33,35 +33,42 @@ In tabel 3.1 zijn termen terug te vinden die in dit hoofdstuk regelmatig zullen 
 
 \section{De verschillende microservices binnen het OTC proces}
 De microservices die logging, authenticatie, authorisatie en bescherming omvatten, zullen niet uitgelegd worden.
+De microservices die hier uitgelegd worden, liggen achter het OTC proces. Deze microservices worden aangesproken door de onderdelen van het OTC proces. 
+De onderdelen van het OTC proces zijn ook microservices. Deze zijn microservices spreken de hieronder opgelijste microserivces aan.
+In dit deel wordt naar een databank verwijst. Deze gaat later aangehaald worden.
 Voor elk van volgende microservices gaan we volgende vragen beantwoorden:
 \begin{itemize}
-	\item Wat kunnen ze?
-	\item Hoe ziet de databank eruit?
-	\item Welk deeltje van de databank spreken ze aan?
-	\item Waar kunnen ze gebruikt worden?
 	\item Waarom werd hiervan een microservice gemaakt?
+	\item Wat kunnen ze?
+	\item Door welk onderdeel van het OTC proces wordt deze gebruikt?
 \end{itemize}
 
+Een microservice is schaalbaar. Omdat de volgende requirement meermaals voorkomen in het proces, is het voordeliger om te dupliceren en te hergebruiken van deze microservices. 
+
 \subsection{Klantengegevens ophalen}
+Veel onderdelen van het OTC proces moeten aan de klantgegevens kunnen. Om te zorgen dat alles op een gelijke manier gebeurt, is hier een microservice van gemaakt.
 Deze microservice gaat ervoor zorgen dat de klantengegevens uit de databank worden gehaald. Het zal de databank aanspreken en vragen om de data van een specifieke klant. 
-Hoe het schema van de databank er uit ziet, is terug te vinden in het vorige deel. 
-Deze microservice wordt gebruikt in meerdere delen van het order-to-cash proces. Een van de voordelen van microservices is de schaalbaarheid. Omdat de requirement meermaals zal voorkomen in het proces, is het voordeliger om de microservice te dupliceren en te hergebruiken. 
+Deze wordt gebruikt in meerdere delen van het order-to-cash proces. 
 Deze microservice komt voor in volgende onderdelen:
 \begin{itemize}
 	\item Order management
 	\item Credit management
+	\item Order shipment
 	\item Klant management
 	\item Facturatie
 	\item Accounts receivables
 \end{itemize}
 
 \subsection{Orders plaatsen, ophalen en verwijderen}
-Een belangrijk onderdeel is het plaatsen, ophalen en verwijderen van orders. Deze microservice heeft verschillende verantwoordelijkheden en rechten op de databank. 
+Een belangrijk onderdeel is het plaatsen, ophalen en verwijderen van orders. Er zijn een aantal onderdelen van het OTC proces dat de specificaties van een order moeten weten. Een aantal documenten zijn gebaseerd op het order, zoals een factuur en leveringspapieren. 
 Deze microservice zal gebruikt worden in volgende onderdelen:
 \begin{itemize}
 	\item Order management
+	\item Credit management
 	\item Order fullfilment
+	\item Order shipment
 	\item Facturatie
+	\item Klant management
 \end{itemize}
 
 \subsection{Producten ophalen en het aantal in voorraad veranderen}
@@ -125,6 +132,7 @@ Op figuur 3.3 is te zien hoe het proces in elkaar ziet. Door de microservice arc
 	\caption{De communicatie tussen de verschillende onderdelen van het order-to-cash proces.}
 	\centering
 \end{figure}
+Zoals al eerder vermeld, elk onderdeel van het OTC proces is een microservice. Elk onderdeel laat andere microservices het werk doen.
 Op figuur 3.3 is het communicatie patroon zichtbaar.
 Voordat het proces van start kan gaan, moet een klant een order plaatsen. Een order bevat een aantal producten. Eens de klant een order geplaatst heeft dan is er een ordernummer gekend. De klant staat bekend in het systeem met een klantnummer. Dat zijn twee belangrijke gegevens die veel gebruikt zullen worden.
 Meer uitleg over wat elk onderdeel doet, bevindt zich in het volgende hoofdstuk.

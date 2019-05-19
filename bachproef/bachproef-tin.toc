@@ -61,7 +61,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.6}Aanmaning opmaken en verwijderen}{49}{subsection.3.2.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.7}Berichten plaatsen op de queue}{49}{subsection.3.2.7}
+\contentsline {subsection}{\numberline {3.2.7}Berichten plaatsen op de queue}{50}{subsection.3.2.7}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.8}Berichten ophalen van de queue}{50}{subsection.3.2.8}
 \defcounter {refsection}{0}\relax 
@@ -77,49 +77,49 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Order management}{54}{section*.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Credit management}{54}{section*.13}
+\contentsline {subsubsection}{Credit management}{55}{section*.13}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Order fullfilment}{55}{section*.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Order shipment}{55}{section*.15}
+\contentsline {subsubsection}{Order shipment}{56}{section*.15}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Facturatie}{56}{section*.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Accounts receivables}{56}{section*.17}
+\contentsline {subsubsection}{Accounts receivables}{57}{section*.17}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Klant management}{57}{section*.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.3}De volgende stappen: Het toevoegen van API, logging en authenticatie en authorisatie}{57}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.3}De volgende stappen: Het toevoegen van API, logging en authenticatie en authorisatie}{58}{subsection.3.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Logging}{57}{section*.19}
+\contentsline {subsubsection}{Logging}{58}{section*.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{API gateway}{57}{section*.20}
+\contentsline {subsubsection}{API gateway}{58}{section*.20}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Authenticatie en autorisatie}{58}{section*.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Conclusie}{59}{chapter.4}
+\contentsline {chapter}{\numberline {4}Conclusie}{61}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{61}{appendix.A}
+\contentsline {chapter}{\numberline {A}Onderzoeksvoorstel}{65}{appendix.A}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.1}Introductie}{61}{section.A.1}
+\contentsline {section}{\numberline {A.1}Introductie}{65}{section.A.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.2}Literatuurstudie}{61}{section.A.2}
+\contentsline {section}{\numberline {A.2}Literatuurstudie}{65}{section.A.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.1}Wat zijn microservices?}{62}{subsection.A.2.1}
+\contentsline {subsection}{\numberline {A.2.1}Wat zijn microservices?}{66}{subsection.A.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.2}Waarom microservices gebruiken}{62}{subsection.A.2.2}
+\contentsline {subsection}{\numberline {A.2.2}Waarom microservices gebruiken}{66}{subsection.A.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.3}Principes voor Microservices Integration}{62}{subsection.A.2.3}
+\contentsline {subsection}{\numberline {A.2.3}Principes voor Microservices Integration}{66}{subsection.A.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.4}Order-to-cash in SAP}{63}{subsection.A.2.4}
+\contentsline {subsection}{\numberline {A.2.4}Order-to-cash in SAP}{67}{subsection.A.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {A.2.5}Kyma}{63}{subsection.A.2.5}
+\contentsline {subsection}{\numberline {A.2.5}Kyma}{67}{subsection.A.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.3}Methodologie}{63}{section.A.3}
+\contentsline {section}{\numberline {A.3}Methodologie}{67}{section.A.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.4}Verwachte resultaten}{64}{section.A.4}
+\contentsline {section}{\numberline {A.4}Verwachte resultaten}{68}{section.A.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {A.5}Verwachte conclusies}{64}{section.A.5}
+\contentsline {section}{\numberline {A.5}Verwachte conclusies}{68}{section.A.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografie}{65}{appendix*.22}
+\contentsline {chapter}{Bibliografie}{69}{appendix*.22}
 \contentsfinish 
