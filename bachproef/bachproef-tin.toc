@@ -21,19 +21,19 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{De verschillende manieren van bescherming}{21}{section*.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Authenticatie en authorisatie}{24}{section*.7}
+\contentsline {subsubsection}{Authenticatie en authorisatie}{23}{section*.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Verband met Agile en DevOps}{26}{section*.8}
+\contentsline {subsubsection}{Verband met Agile en DevOps}{28}{section*.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Het monitoren van microservices}{28}{section*.9}
+\contentsline {subsubsection}{Het monitoren van microservices}{29}{section*.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.3}Algemene aanpak om microservices te implementeren}{30}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.3}Algemene aanpak om microservices te implementeren}{31}{subsection.2.1.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.4}De voordelen en nadelen van microserivces}{35}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.4}De voordelen en nadelen van microserivces}{36}{subsection.2.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Order-to-cash proces in SAP}{36}{section.2.2}
+\contentsline {section}{\numberline {2.2}Order-to-cash proces in SAP}{37}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Definite}{36}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.1}Definite}{37}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.2}Technologie}{40}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
