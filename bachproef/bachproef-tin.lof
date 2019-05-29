@@ -43,25 +43,25 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.1}{\ignorespaces De databank structuur.}}{51}{figure.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.2}{\ignorespaces De communicatie tussen de verschillende onderdelen van het order-to-cash proces.}}{52}{figure.3.2}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces De communicatie tussen de verschillende onderdelen van het order-to-cash proces.}}{53}{figure.3.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Welk onderdeel, welke microservices aanspreekt.}}{54}{figure.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Order management communiceert met volgende microservices.}}{54}{figure.3.4}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Order management communiceert met volgende microservices.}}{55}{figure.3.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Credit management communiceert met volgende microservices.}}{55}{figure.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Order fullfilment communiceert met volgende microservices.}}{55}{figure.3.6}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Order fullfilment communiceert met volgende microservices.}}{56}{figure.3.6}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Order shipment communiceert met volgende microservices.}}{56}{figure.3.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Facturatie communiceert met volgende microservices.}}{56}{figure.3.8}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Facturatie communiceert met volgende microservices.}}{57}{figure.3.8}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Accounts receivables communiceert met volgende microservices.}}{57}{figure.3.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Klant management communiceert met volgende microservices.}}{57}{figure.3.10}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Klant management communiceert met volgende microservices.}}{58}{figure.3.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Vereenvoudigd schema.}}{58}{figure.3.11}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Vereenvoudigd schema.}}{59}{figure.3.11}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 

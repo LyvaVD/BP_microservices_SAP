@@ -33,7 +33,7 @@ In tabel 3.1 zijn termen terug te vinden die in dit hoofdstuk regelmatig zullen 
 	\caption{Termen die vaker voorkomen in dit hoofdstuk.}
 \end{table}
 
-\section{De verschillende microservices binnen het OTC proces}
+\section{De microservices binnen het OTC proces}
 De microservices die logging, authenticatie, authorisatie en bescherming omvatten, zullen niet uitgelegd worden.
 De microservices die hier uitgelegd worden, liggen achter het OTC proces. Deze microservices worden aangesproken door de onderdelen van het OTC proces. 
 De onderdelen van het OTC proces zijn ook microservices. Deze zijn microservices spreken de hieronder opgelijste microserivces aan.
@@ -47,7 +47,8 @@ Voor elk van volgende microservices gaan we volgende vragen beantwoorden:
 
 Een microservice is schaalbaar. Omdat de volgende requirement meermaals voorkomen in het proces, is het voordeliger om te dupliceren en te hergebruiken van deze microservices. 
 
-\subsection{Klantengegevens ophalen}
+\subsection{De microservices van het order-to-cash proces met hun onderliggende communicatie}
+\subsubsection{Klantengegevens ophalen}
 Veel onderdelen van het OTC proces moeten aan de klantgegevens kunnen. Om te zorgen dat alles op een gelijke manier gebeurt, is hier een microservice van gemaakt.
 Deze microservice gaat ervoor zorgen dat de klantengegevens uit de databank worden gehaald. Het zal de databank aanspreken en vragen om de data van een specifieke klant. 
 Deze wordt gebruikt in meerdere delen van het order-to-cash proces. 
@@ -61,7 +62,7 @@ Deze microservice komt voor in volgende onderdelen:
 	\item Accounts receivables
 \end{itemize}
 
-\subsection{Orders plaatsen, ophalen en verwijderen}
+\subsubsection{Orders plaatsen, ophalen en verwijderen}
 Een belangrijk onderdeel is het plaatsen, ophalen en verwijderen van orders. Er zijn een aantal onderdelen van het OTC proces dat de specificaties van een order moeten weten. Een aantal documenten zijn gebaseerd op het order, zoals een factuur en leveringspapieren. 
 Deze microservice zal gebruikt worden in volgende onderdelen:
 \begin{itemize}
@@ -73,7 +74,7 @@ Deze microservice zal gebruikt worden in volgende onderdelen:
 	\item Klant management
 \end{itemize}
 
-\subsection{Producten ophalen en het aantal in voorraad veranderen}
+\subsubsection{Producten ophalen en het aantal in voorraad veranderen}
 In het order-to-cash proces worden er geen producten toegevoegd aan de lijst dus moet dit niet in een microservice gestoken worden. Het aantal van de voorraad moet worden aangepast wanneer er een product uit de rekken wordt gehaald en bij een bestelling wordt geplaatst. Het ophalen van producten is vooral voor het werk achter de schermen. Het ophalen van een product omvat vooral de verkoopprijs ophalen om die dan te gebruiken in de orderlijn. 
 Deze microservice zal gebruikt worden in volgende onderdelen:
 \begin{itemize}
@@ -81,25 +82,26 @@ Deze microservice zal gebruikt worden in volgende onderdelen:
 	\item order fullfilment
 \end{itemize}
 
-\subsection{Facturatie maken en ophalen}
+\subsubsection{Facturatie maken en ophalen}
 Het begin van het einde in een order-to-cash proces. Facturen maken en ophalen zijn van groot belang bij een order-to-cash proces. Het zorgt er voor dat mensen geld gaan betalen voor hun order. Een factuur moet overeenstemmen met wat geleverd is. Het is van groot belang dat achter kan gekeken worden of de factuur klopt met de order. Het maken van de factuur gebeurt aan de hand van het order. 
 Deze microservice komt voor in het onderdeel facturatie.
 
-\subsection{Shipment documentatie opstellen}
+\subsubsection{Shipment documentatie opstellen}
 Het shipment document wordt gegenereerd afhankelijk van het order. Er wordt gekeken naar het ordernummer en dan wordt er gekeken naar het klantnummer. Hierna wordt dan de microservice om klantgegevens op te halen aangesproken om de gegevens van de specifieke klant op te halen. Dit wordt enkel gebruikt binnen het onderdeel verzending.
 
-\subsection{Aanmaning opmaken en verwijderen}
+\subsubsection{Aanmaning opmaken en verwijderen}
 Het opmaken en verwijderen van aanmaningen gebeurt enkel wanneer een wanbetaler is. Het proces zou niet vaak mogen voorkomen. 
 
-\subsection{Berichten plaatsen op de queue}
+\subsubsection{Berichten plaatsen op de queue}
 Berichten plaatsen op de queue met de correcte gegevens. Deze microservice zorgt daarvoor. Hiervan wordt een microservice gemaakt omdat dit in elke stap voorkomt. Het is dan eenvoudiger om er een microservice van te maken, zodat elk onderdeel op een uniforme manier het bericht plaatst. 
 Deze microservice komt voor in elk onderdeel van het proces.
 
-\subsection{Berichten ophalen van de queue} 
+\subsubsection{Berichten ophalen van de queue} 
 Elk onderdeel moet berichten van zijn queue kunnen halen. Door het meermaals voorkomen van deze taak, wordt er een microservice van gemaakt. Het ophalen van berichten gebeurt dan op een uniforme manier. 
 Deze microservice komt voor in elk onderdeel van het proces.
 
-\section{Communicatie methode tussen microservices}
+\subsection{Communicatie methode tussen microservices}
+
 Microservices moeten met elkaar kunnen communiceren. De manier wordt voorgesteld in figuur 3.1. 
 Klant 66 plaats een order met vier verschillende producten. Het ordernummer is 23. De volledige bestelling komt binnen in het systeem en wordt op de queue van ordermanagement geplaatst. Het order wordt van de queue gehaald aan de hand van consumption en acknowledgement. Ordermanagement verwerkt de binnengekomen order. Dan wordt het klantnummer en ordernummer op de queue van creditmanagement geplaatst. Creditmanagement haalt het bericht van de queue. Dan wordt er gekeken naar het betaalgedrag van de klant. Is het een wanbetaler of betaalt de klant altijd correct. Staat de klant gekend voor wanbetalen, dan wordt er geen goedkeuring gegeven om het order te plaatsen. Bij een corect betaalgedrag, krijgt het order goedkeuring om geplaatst te worden. Dan wordt het ordernummer doorgestuurd naar het volgende deel van het proces. 
 Dus volgende queue's zouden moeten bestaan:
@@ -115,7 +117,8 @@ Dus volgende queue's zouden moeten bestaan:
 Niet alle data wordt volledig naar de queue gestuurd enkel de belangrijke data. Zoals bijvoorbeeld het nummer van de klant die een order plaatste. Het ordernummer en klantnummer worden naar creditmanagement doorgestuurd. Bij creditmanangement wordt er dan aan de hand van het klantnummer de gegevens opgehaald en dan zo nagegaan of die klant wel een order mag plaatsen. Het ordernummer werd meegestuurd om zeker te zijn dat de correcte order goed- of afgekeurd wordt. Zo blijft de overhead op de queue minimaal. Om meer gegevens op te halen, moet de databank aangesproken worden. De gehele structuur van de databank wordt beschreven in het volgende gedeelte.
 
 \section{De databank structuur}
-Onderliggend is één grote databank waar alle masterdata in terug te vinden is. Hier is de enige plaats waar een single point-of-failure terug te vinden is. Naast de grote databank, heeft elke microservice zijn datastore. Bij een verandering in een datastore, wordt deze aangebracht in de algemene databank. Eens de databank het record heeft toegevoegd of aangepast, stuurt hij een bericht naar elke datastore zijn queue om te melden dat er een verandering gebeurt is. 
+Onderliggend is één grote databank waar alle masterdata in terug te vinden is. Hier is de enige plaats waar een single point-of-failure terug te vinden is. Naast de grote databank, heeft elke microservice zijn datastore. Bij een verandering in een datastore, wordt deze aangebracht in de algemene databank. Eens de databank het record heeft toegevoegd of aangepast, stuurt hij een bericht naar elke datastore zijn queue om te melden dat er een verandering gebeurt is. Leest een microservice het bericht van verandering, dan wordt er een nieuwe kopie van de masterdata gemaakt. 
+De master data zit in een grote databank zodat er maar één plaats is waar de correcte data zit. De verschillende datastores nemen een kopie van de data die zij nodig hebben. 
 \begin{figure}[h]
 	\includegraphics[width=15cm]{databank.png}
 	\caption{De databank structuur.}
@@ -123,6 +126,16 @@ Onderliggend is één grote databank waar alle masterdata in terug te vinden is.
 \end{figure}
 
 Een order weet wie zijn klant is. Credit management kan de eigenschap bij het order veranderen van 'goedgekeurd' naar 'niet goedgekeurd'. Van elk order wordt een orderlijn bijgehouden. Zodat er geweten is wat er op de order staat. Op elk orderlijn staat er een product of service. Van het product moet er een beschrijving en verkoopprijs zijn. Het aantal in voorraad is gekend omdat bij het order fullfilment moet de voorraad aangepast worden van het specifieke product. Een order en de klant zijn gekend op de facturatie. Zo kan er nagegaan worden of de factuur overeenkomt met wat er op het order staat. De klant zijn gegevens moeten gekend zijn om naar het juiste adres te factureren.
+
+Elke datastore heeft een queue. Wanneer een microserivce B iets nodig heeft van microserivce A, kan die vraag naar de queue gepost worden.
+
+De datastore van microservice 'klant gegevens ophalen' zal alle data van de klanten bevatten.
+De datastore van microservice 'order plaatsen, ophalen en verwijderen' zal alle data van de orders bevatten.
+De datastore van microservice 'producten ophalen en aantal in de voorraad veranderen' zal alle data van de producten bevatten.
+De datastore van microservice 'facturatie maken en ophalen' alle data van de facturatie bevatten.
+De datastore van microservice 'Shipment documentatie opstellen' bevat de data van de orders om aan de hand van die data, de documenten op te stellen en dan toe te voegen aan de data met alle shipment documenten.
+De datastore van microservice 'Aanmaning opmaken en verwijderen' bevat alle data van de aanmaningen. 
+De microservices 'bericht op queue plaatsen' en 'bericht van de queue halen', hebben geen datastore. Het zijn twee microservices die geen data moeten gaan ophalen of wegschrijven. Ze staan in voor het ophalen en plaatsen van berichten. 
 
 \section{De complete architectuur opbouwen}
 Op figuur 3.3 is te zien hoe het proces in elkaar ziet. Door de microservice architectuur toe te passen op het order-to-cash proces verandert er niks aan de volgorde van het proces of het doel van het proces. De manier waarop gegevens worden opgehaald, verandert wel. 
@@ -135,7 +148,7 @@ Op figuur 3.3 is te zien hoe het proces in elkaar ziet. Door de microservice arc
 	\centering
 \end{figure}
 Zoals al eerder vermeld, elk onderdeel van het OTC proces is een microservice. Elk onderdeel laat andere microservices het werk doen.
-Op figuur 3.3 is het communicatie patroon zichtbaar.
+Op figuur 3.2 is het communicatie patroon zichtbaar.
 Voordat het proces van start kan gaan, moet een klant een order plaatsen. Een order bevat een aantal producten. Eens de klant een order geplaatst heeft dan is er een ordernummer gekend. De klant staat bekend in het systeem met een klantnummer. Dat zijn twee belangrijke gegevens die veel gebruikt zullen worden.
 Meer uitleg over wat elk onderdeel doet, bevindt zich in het volgende hoofdstuk.
 De nummers van de opsomming komen overeen met die op afbeelding 3.2.

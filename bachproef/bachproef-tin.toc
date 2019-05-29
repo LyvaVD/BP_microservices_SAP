@@ -47,55 +47,57 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}Uitleg termen}{47}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}De verschillende microservices binnen het OTC proces}{48}{section.3.2}
+\contentsline {section}{\numberline {3.2}De microservices binnen het OTC proces}{48}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Klantengegevens ophalen}{48}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.1}De microservices van het order-to-cash proces met hun onderliggende communicatie}{48}{subsection.3.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Orders plaatsen, ophalen en verwijderen}{48}{subsection.3.2.2}
+\contentsline {subsubsection}{Klantengegevens ophalen}{48}{section*.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.3}Producten ophalen en het aantal in voorraad veranderen}{49}{subsection.3.2.3}
+\contentsline {subsubsection}{Orders plaatsen, ophalen en verwijderen}{49}{section*.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.4}Facturatie maken en ophalen}{49}{subsection.3.2.4}
+\contentsline {subsubsection}{Producten ophalen en het aantal in voorraad veranderen}{49}{section*.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.5}Shipment documentatie opstellen}{49}{subsection.3.2.5}
+\contentsline {subsubsection}{Facturatie maken en ophalen}{49}{section*.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.6}Aanmaning opmaken en verwijderen}{49}{subsection.3.2.6}
+\contentsline {subsubsection}{Shipment documentatie opstellen}{49}{section*.16}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.7}Berichten plaatsen op de queue}{50}{subsection.3.2.7}
+\contentsline {subsubsection}{Aanmaning opmaken en verwijderen}{50}{section*.17}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.8}Berichten ophalen van de queue}{50}{subsection.3.2.8}
+\contentsline {subsubsection}{Berichten plaatsen op de queue}{50}{section*.18}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Communicatie methode tussen microservices}{50}{section.3.3}
+\contentsline {subsubsection}{Berichten ophalen van de queue}{50}{section*.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}De databank structuur}{51}{section.3.4}
+\contentsline {subsection}{\numberline {3.2.2}Communicatie methode tussen microservices}{50}{subsection.3.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}De complete architectuur opbouwen}{52}{section.3.5}
+\contentsline {section}{\numberline {3.3}De databank structuur}{51}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.1}De communicatie tussen de onderdelen van het OTC proces}{52}{subsection.3.5.1}
+\contentsline {section}{\numberline {3.4}De complete architectuur opbouwen}{52}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.2}De architectuur}{53}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.4.1}De communicatie tussen de onderdelen van het OTC proces}{52}{subsection.3.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Order management}{54}{section*.12}
+\contentsline {subsection}{\numberline {3.4.2}De architectuur}{54}{subsection.3.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Credit management}{55}{section*.13}
+\contentsline {subsubsection}{Order management}{55}{section*.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Order fullfilment}{55}{section*.14}
+\contentsline {subsubsection}{Credit management}{55}{section*.21}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Order shipment}{56}{section*.15}
+\contentsline {subsubsection}{Order fullfilment}{56}{section*.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Facturatie}{56}{section*.16}
+\contentsline {subsubsection}{Order shipment}{56}{section*.23}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Accounts receivables}{57}{section*.17}
+\contentsline {subsubsection}{Facturatie}{57}{section*.24}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Klant management}{57}{section*.18}
+\contentsline {subsubsection}{Accounts receivables}{57}{section*.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.3}De volgende stappen: Het toevoegen van API, logging en authenticatie en authorisatie}{58}{subsection.3.5.3}
+\contentsline {subsubsection}{Klant management}{57}{section*.26}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Logging}{58}{section*.19}
+\contentsline {subsection}{\numberline {3.4.3}De volgende stappen: Het toevoegen van API, logging en authenticatie en authorisatie}{58}{subsection.3.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{API gateway}{58}{section*.20}
+\contentsline {subsubsection}{Logging}{58}{section*.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Authenticatie en autorisatie}{58}{section*.21}
+\contentsline {subsubsection}{API gateway}{58}{section*.28}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Authenticatie en autorisatie}{58}{section*.29}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Conclusie}{61}{chapter.4}
 \defcounter {refsection}{0}\relax 
@@ -121,5 +123,5 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {A.5}Verwachte conclusies}{68}{section.A.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliografie}{69}{appendix*.22}
+\contentsline {chapter}{Bibliografie}{69}{appendix*.30}
 \contentsfinish 
