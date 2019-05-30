@@ -45,8 +45,13 @@ Voor elk van volgende microservices gaan we volgende vragen beantwoorden:
 	\item Door welk onderdeel van het OTC proces wordt deze gebruikt?
 \end{itemize}
 
-Een microservice is schaalbaar. Omdat de volgende requirement meermaals voorkomen in het proces, is het voordeliger om te dupliceren en te hergebruiken van deze microservices. 
 
+Deze microservices lopen gelijk met business requirements die terug te vinden zijn in de literatuurstudie. 
+Eerst werd elk onderdeel van het OTC proces apart bekeken. Er werd gekeken naar de requirements van elk onderdeel. Na het bekijken van elk onderdeel, werd de conclusie getrokken dat bepaalde requirements meermaals terugkwamen. Die requirements zijn omgegoten in onderstaande onderdeel van de methodologie. Later in deze bachelorproef zal duidelijk worden welke microservices bij welk onderdeel van het OTC proces horen. 
+
+Er werd gekozen om de microservice niet nog kleiner te maken. De microservices zouden nog kleiner gemaakt kunnen worden. Maar hiervoor werd niet gekozen wegens overzichtelijkheid. Het opsplitsen in nog kleinere microservices zorgt ervoor dat men kan verloren lopen tussen de microservices. Nu weet men welke microservice men moet gebruiken als men iets met orders wil doen.   
+
+Een microservice is schaalbaar. Omdat de volgende requirement meermaals voorkomen in het proces, is het voordeliger om te dupliceren en te hergebruiken van deze microservices. 
 \subsection{De microservices van het order-to-cash proces met hun onderliggende communicatie}
 \subsubsection{Klantengegevens ophalen}
 Veel onderdelen van het OTC proces moeten aan de klantgegevens kunnen. Om te zorgen dat alles op een gelijke manier gebeurt, is hier een microservice van gemaakt.

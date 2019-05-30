@@ -59,7 +59,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Facturatie maken en ophalen}{49}{section*.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Shipment documentatie opstellen}{49}{section*.16}
+\contentsline {subsubsection}{Shipment documentatie opstellen}{50}{section*.16}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Aanmaning opmaken en verwijderen}{50}{section*.17}
 \defcounter {refsection}{0}\relax 
@@ -73,7 +73,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.4}De complete architectuur opbouwen}{52}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.1}De communicatie tussen de onderdelen van het OTC proces}{52}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.1}De communicatie tussen de onderdelen van het OTC proces}{53}{subsection.3.4.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4.2}De architectuur}{54}{subsection.3.4.2}
 \defcounter {refsection}{0}\relax 
@@ -89,7 +89,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{Accounts receivables}{57}{section*.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Klant management}{57}{section*.26}
+\contentsline {subsubsection}{Klant management}{58}{section*.26}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.4.3}De volgende stappen: Het toevoegen van API, logging en authenticatie en authorisatie}{58}{subsection.3.4.3}
 \defcounter {refsection}{0}\relax 
@@ -97,7 +97,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{API gateway}{58}{section*.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{Authenticatie en autorisatie}{58}{section*.29}
+\contentsline {subsubsection}{Authenticatie en autorisatie}{59}{section*.29}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Conclusie}{61}{chapter.4}
 \defcounter {refsection}{0}\relax 
