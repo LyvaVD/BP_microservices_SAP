@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.20)  1 JUN 2019 13:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.20)  7 JUN 2019 10:47
 entering extended mode
 **./conference_poster.tex
 (conference_poster.tex
@@ -483,28 +483,31 @@ Package xcolor Warning: Incompatible color definition on input line 84.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <35.83> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 85.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <29.86> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 88.
 
-Package xcolor Warning: Incompatible color definition on input line 102.
-
-
-Package xcolor Warning: Incompatible color definition on input line 115.
-
-<figures/grail.jpg, id=3, 855.195pt x 481.8pt>
-File: figures/grail.jpg Graphic file (type jpg)
-<use figures/grail.jpg>
-Package pdftex.def Info: figures/grail.jpg  used on input line 121.
-(pdftex.def)             Requested size: 1002.183pt x 564.60797pt.
-
-Package xcolor Warning: Incompatible color definition on input line 122.
+Package xcolor Warning: Incompatible color definition on input line 98.
 
 
-Package xcolor Warning: Incompatible color definition on input line 122.
+Package xcolor Warning: Incompatible color definition on input line 106.
+
+<figures/schema_microservices.png, id=3, 732.03488pt x 272.217pt>
+File: figures/schema_microservices.png Graphic file (type png)
+<use figures/schema_microservices.png>
+Package pdftex.def Info: figures/schema_microservices.png  used on input line 1
+12.
+(pdftex.def)             Requested size: 1002.183pt x 372.68994pt.
+
+Package xcolor Warning: Incompatible color definition on input line 113.
 
 
-Package xcolor Warning: Incompatible color definition on input line 129.
+Package xcolor Warning: Incompatible color definition on input line 113.
 
 
-Package xcolor Warning: Incompatible color definition on input line 136.
+Package xcolor Warning: Incompatible color definition on input line 120.
+
+
+Package xcolor Warning: Incompatible color definition on input line 140.
 
 [1
 
@@ -512,24 +515,24 @@ Package xcolor Warning: Incompatible color definition on input line 136.
 Non-PDF special ignored!
 <special> papersize=83.96cm,118.82cm
 {C:/Users/Lyva/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./figures/HO
-GENT_Logo_Pos_rgb.png> <./figures/grail.jpg>] (conference_poster.aux) ) 
+GENT_Logo_Pos_rgb.png> <./figures/schema_microservices.png>]
+(conference_poster.aux) ) 
 Here is how much of TeX's memory you used:
- 5445 strings out of 492970
- 85086 string characters out of 3127037
- 172966 words of memory out of 3000000
- 9215 multiletter control sequences out of 15000+200000
- 16727 words of font info for 33 fonts, out of 3000000 for 9000
+ 5449 strings out of 492970
+ 85216 string characters out of 3127037
+ 175966 words of memory out of 3000000
+ 9219 multiletter control sequences out of 15000+200000
+ 18860 words of font info for 36 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,8n,77p,395b,422s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/User
-s/Lyva/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/
-Lyva/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/U
-sers/Lyva/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C
-:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb
->
-Output written on conference_poster.pdf (1 page, 161155 bytes).
+ 41i,8n,77p,568b,425s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fonts
+/enc/dvips/base/8r.enc}<C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/urw/courier/ucrr8a.pfb><C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/urw/times/utmb8a.pfb><C:/Users/Lyva/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/urw/times/utmr8a.pfb>
+Output written on conference_poster.pdf (1 page, 213965 bytes).
 PDF statistics:
- 23 PDF objects out of 1000 (max. 8388607)
+ 24 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

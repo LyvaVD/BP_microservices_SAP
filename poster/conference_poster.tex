@@ -75,8 +75,8 @@
 \color{HoGentAccent1} % Navy color for the abstract
 
 \begin{abstract}
-Abstract zoals in bap
-\end{abstract}
+Dit onderwerp, hoe microservices invloed hebben op het SAP order-to-cash proces, werd voorgesteld door delaware. Dit werd gekozen omdat deze nieuwe technology een interessante invloed kan hebben op de order-to-cash proces. Dit is een manier om een proces robuuster te maken. In de meeste software wordt gebruik gemaakt van één grote databank of meerdere databanken
+die in staan zijn om meerde services te voorzien van data. Bij microservices wordt voor elke service een aparte databank opgesteld. Dit is maar een klein deeltje van een microservice. De microservice moet voldoen aan business requirements. SAP zelf heeft ook al veel ondernomen omtrend microservices. Eén van hun oplossingen is Kyma. Maar de belangrijkste vraag is namelijk: Hoe microservice integration patterns een SAP order-to-cash beïnvloedt. \end{abstract}
 %----------------------------------------------------------------------------------------
 %	INTRODUCTION
 %----------------------------------------------------------------------------------------
@@ -85,15 +85,11 @@ Abstract zoals in bap
 \section*{Introductie}
 \color{black}
 \color{black}
-Be quiet! Found them? In Mercia?! The coconut's tropical! But you are dressed as one… Well, what do you want? Knights of Ni, we are but simple travelers who seek the enchanter who lives beyond these woods.
+\subsection{Waarom microservices?}
+De architectuur maken aan de hand van microservice patroon of aan de hand van monolithic? Een vraag die wel vaker gesteld wordt. Afstappen van het iets dat we kennen? Een sprong in het donkere, het onbekende. Een microservice architecture brengt voordelen en nadelen met zich mee, net zoals monolithic. Maar waarom kiezen we de microservice techniek boven die van monolithic? En welke passen heeft SAP al genomen om hun klanten de mogelijkheid van microservices aan te bieden?
 
-Well, what do you want? It's only a model. Camelot! We found them. We shall say 'Ni' again to you, if you do not appease us.
-
-The nose? Shut up! Burn her! I am your king. You don't vote for kings.
-
-You can't expect to wield supreme power just 'cause some watery tart threw a sword at you! Well, we did do the nose. I don't want to talk to you no more, you empty-headed animal food trough water! I fart in your general direction! Your mother was a hamster and your father smelt of elderberries! Now leave before I am forced to taunt you a second time!
-
-Why do you think that she is a witch? We want a shrubbery!! I don't want to talk to you no more, you empty-headed animal food trough water! I fart in your general direction! Your mother was a hamster and your father smelt of elderberries! Now leave before I am forced to taunt you a second time!
+\subsection{Waarom order-to-cash proces?}
+Het order-to-cash proces is een veel gebruikt proces binnen bedrijven. Dit proces heeft veel invloed op het succes van een bedrijf. Er kan aangetoond worden hoe het proces beïnvloedt wordt door microservices. Welke obstakels er waren bij het uitdenken van de architectuur. Waar waren er problemen, waar moest er meer nagedacht worden over een oplossing? Een order-to-cash proces wordt over verschillende afdelingen gebruikt. Dit is een reden om dit proces uit te kiezen. Het proces bevat onderdelen die verschillende doelen hebben.
 %----------------------------------------------------------------------------------------
 %	GEOLOGY
 %----------------------------------------------------------------------------------------
@@ -102,13 +98,8 @@ Why do you think that she is a witch? We want a shrubbery!! I don't want to talk
 \color{HoGentAccent1} 
 \section*{Experimenten}
 \color{black}
-A newt? Camelot! Why? No, no, no! Yes, yes. A bit. But she's got a wart.
-
-Shut up! I dunno. Must be a king. Who's that then? Look, my liege! On second thoughts, let's not go there. It is a silly place.
-
-Shut up! Will you shut up?! No, no, no! Yes, yes. A bit. But she's got a wart. He hasn't got shit all over him. It's only a model. It's only a model.
-
-Bring her forward! I don't want to talk to you no more, you empty-headed animal food trough water! I fart in your general direction! Your mother was a hamster and your father smelt of elderberries! Now leave 
+Deze bachelorproef was een theoretisch onderzoek naar de invloed van microservices op een order-to-cash proces. Er werd onderzoek uitgevoerd naar op welke manier er moest worden overgeschakeld worden. Welke communicatie methode er kan gebruikt worden tussen de microservices. Het volledige proces werd opgesplitst. Er werd nagegaan welke requirements elk onderdeel van het proces had. 
+Er werd een uitgebreide literatuurstudie gedaan over microservices. Dit is een breed onderwerp. Er is diep ingegaan op bepaalde eigenschappen van microservices. De term zelf is heel breed.
 
 
 
@@ -118,8 +109,8 @@ Bring her forward! I don't want to talk to you no more, you empty-headed animal 
 
 
 \begin{center}\vspace{1cm}
-\includegraphics[width=1.0\linewidth]{grail}
-\captionof{figure}{\color{HoGentAccent5} He hasn't got shit all over him. The nose? Where'd you get the coconuts? What do you mean? We shall say 'Ni' again to you, if you do not appease us}
+\includegraphics[width=1.0\linewidth]{schema_microservices}
+\captionof{figure}{\color{HoGentAccent5} Het order-to-cash proces waarvan elk onderdeel zijn nodige microservices aanspreekt.}
 \end{center}\vspace{1cm}
 
 %------------------------------------------------
@@ -129,17 +120,27 @@ Bring her forward! I don't want to talk to you no more, you empty-headed animal 
 \color{HoGentAccent1} 
 \section*{Conclusies}
 \color{black}
-on't underestimate the Force. Oh God, my uncle. How am I ever gonna explain this? I suggest you try it again, Luke. This time, let go your conscious self and act on instinct. Don't be too proud of this technological terror you've constructed. The ability to destroy a planet is insignificant next to the power of the Force.
+Microservice is een architectuur en ideologie waarin logica en de requirements, die te
+vinden zijn bij een monolithic, terugkomen. Dit heeft invloed op de overschakeling naar
+microservices. Deze manier van implementatie moet aangepast worden bij het gebruik
+van microservices. Dat kan een obstakel zijn. Er wordt een andere manier van denken
+en organiseren gevraagd binnen een de IT-afdeling. De teams worden hervormd. Een
+team bevat niet meer de kennis van de volledige architectuur., enkel over de microservice
+waaraan zij werken.
+
+De performance zal stabieler zijn bij pieken van orders. Omdat de microservices
+onafhankelijk zijn van elkaar. De onderdelen van het OTC proces kunnen onafhankelijker
+functioneren. Valt er een onderdeel uit of tijdelijk niet beschikbaar dan heeft dat geen
+grote gevolgen voor het proces in het algemeen. Het onderdeel ervoor kan nog altijd data
+op de queue plaatsen. Maar de onderdelen na het onbeschikbare deel, zal wel wat hinder
+ondervinden. Maar niet zodat het gehele proces plat zal liggen.
 %----------------------------------------------------------------------------------------
 %	FORTHCOMING RESEARCH
 %----------------------------------------------------------------------------------------
 \color{HoGentAccent1} 
 \section*{Toekomstig onderzoek}
 \color{black}
-
-I care. So, what do you think of her, Han? No! Alderaan is peaceful. We have no weapons. You can't possibly… I have traced the Rebel spies to her. Now she is my only link to finding their secret base.
-
-Kid, I've flown from one side of this galaxy to the other. I've seen a lot of strange stuff, but I've never seen anything to make me believe there's one all-powerful Force controlling everything. There's no mystical energy field that controls my destiny. It's all a lot of simple tricks and nonsense. You are a part of the Rebel Alliance and a traitor! Take her away! 
+In de toekomst kan er een proof of concept gemaakt worden. De verschillende communicatie methodes kunnen verder onderzocht worden. De manier om authenticatie en authorisatie toe te passen, kunnen nog dieper worden onderzocht. Deze studie probeerde zo veel mogelijk eigenschappen van microservices aan te halen. Dit zogrt ervoor dat er niet op elk deel diep kan worden ingegaan. In de toekomst kan elk deel van microservices dieper worden onderzocht en uitgetest.
 
 
 %----------------------------------------------------------------------------------------
